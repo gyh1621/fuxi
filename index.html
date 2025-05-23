@@ -924,6 +924,19 @@
                     <li><a href="#market-model-diversification" class="level-2">市场指数模型、系统风险与非系统风险、分散化</a></li>
                     <li><a href="#capm-model" class="level-2">资本资产定价模型(CAPM)估计收益率</a></li>
                     <li><a href="#sml-cml" class="level-2">证券市场线(SML)与资本市场线(CML)</a></li>
+                    <li><a href="#investment-decisions">投资决策知识点</a></li>
+                    <li><a href="#cash-flow-estimation" class="level-2">现金流估计</a></li>
+                    <li><a href="#project-feasibility" class="level-2">项目可行性判断的各种指标</a></li>
+                    <li><a href="#uncertainty-analysis" class="level-2">不确定性分析</a></li>
+                    <li><a href="#mutually-exclusive-projects" class="level-2">互斥项目选择</a></li>
+                    <li><a href="#capital-rationing" class="level-2">资本限额下的投资</a></li>
+                    <li><a href="#financing-decisions">融资决策知识点</a></li>
+                    <li><a href="#capital-cost-structure" class="level-2">资本成本构成</a></li>
+                    <li><a href="#capital-costs" class="level-2">个别资本成本、加权资本成本、边际资本成本、筹资突破点</a></li>
+                    <li><a href="#dividend-decisions">股利决策知识点</a></li>
+                    <li><a href="#dividend-payment-methods" class="level-2">股利发放方式</a></li>
+                    <li><a href="#dividend-policy-types" class="level-2">股利政策类型</a></li>
+                    <li><a href="#dividend-theory" class="level-2">理论 (股利政策的相关理论)</a></li>
                 </ul>
             </div>
         </nav>
@@ -1812,6 +1825,112 @@
                         </div>
                     </div>
                 </section>
+
+                <section id="capital-rationing">
+                    <h3>资本限额下的投资</h3>
+                    
+                    <p>当企业面临资本限额（可用投资资金有限）时，目标是在资金约束下选择能使总NPV最大化的项目组合。</p>
+
+                    <h4><span class="underline-clickable" data-explanation="pi-ranking-method">净现值率排序法 (Profitability Index Ranking Method)</span></h4>
+                    
+                    <div class="explanation" id="pi-ranking-method">
+                        <strong>净现值率排序法详解:</strong> 这是处理资本限额问题的基本方法，通过PI指标反映每单位投资的价值创造能力。但当项目不可分割或存在相互依赖关系时，可能无法得到最优解。
+                    </div>
+
+                    <ol>
+                        <li>计算所有 NPV > 0 的项目的盈利指数 (PI)。</li>
+                        <li>按PI从高到低对项目进行排序。</li>
+                        <li>按排序顺序选择项目，直到资金用完。</li>
+                    </ol>
+
+                    <p><strong>局限性:</strong> 当项目不可分割或存在互斥项目时，此方法可能无法得到最优组合。</p>
+
+                    <h4><span class="underline-clickable" data-explanation="portfolio-combination-method">互斥方案组合法</span></h4>
+                    
+                    <div class="explanation" id="portfolio-combination-method">
+                        <strong>互斥方案组合法详解:</strong> 当存在项目间的相互排斥或依赖关系时，需要考虑所有可能的项目组合，从中选择总NPV最大且不超过资本限额的组合。这种方法更精确但计算复杂。
+                    </div>
+
+                    <p>如果存在互斥项目，或项目间存在依赖关系，需要将它们组合成不同的投资方案，然后计算各方案的总NPV和总投资额，在资本限额内选择总NPV最大的方案。</p>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题 4-9</div>
+                        <p>可用资金100,000元，选择项目组合。</p>
+                        
+                        <div class="table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>项目</th>
+                                        <th>投资支出</th>
+                                        <th>净现值</th>
+                                        <th>PI</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>A</td>
+                                        <td>-15,000</td>
+                                        <td>10,000</td>
+                                        <td>1.67</td>
+                                    </tr>
+                                    <tr>
+                                        <td>B</td>
+                                        <td>-10,000</td>
+                                        <td>5,000</td>
+                                        <td>1.50</td>
+                                    </tr>
+                                    <tr>
+                                        <td>C</td>
+                                        <td>-100,000</td>
+                                        <td>15,000</td>
+                                        <td>1.15</td>
+                                    </tr>
+                                    <tr>
+                                        <td>D</td>
+                                        <td>-60,000</td>
+                                        <td>12,000</td>
+                                        <td>1.20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>E</td>
+                                        <td>-75,000</td>
+                                        <td>15,000</td>
+                                        <td>1.20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>F</td>
+                                        <td>-15,000</td>
+                                        <td>3,000</td>
+                                        <td>1.20</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <p><strong>按PI排序:</strong> A(1.67) > B(1.50) > D(1.20) = E(1.20) = F(1.20) > C(1.15)</p>
+                            
+                            <p><strong>方案一 (按PI排序选择):</strong></p>
+                            <ul>
+                                <li>选择A (-15,000)，剩余85,000</li>
+                                <li>选择B (-10,000)，剩余75,000</li>
+                                <li>选择E (-75,000)，资金用完</li>
+                                <li><strong>组合 A+B+E:</strong> 总投资 100,000，总NPV = 10+5+15 = 30,000</li>
+                            </ul>
+                            
+                            <p><strong>方案二 (另一种组合):</strong></p>
+                            <ul>
+                                <li>选择A+B+D+F</li>
+                                <li>总投资 15+10+60+15 = 100,000</li>
+                                <li>总NPV = 10+5+12+3 = 30,000</li>
+                            </ul>
+                            
+                            <p><strong>结论:</strong> 存在多个组合达到相同的总NPV。实际中还需考虑项目是否可分割等因素。</p>
+                        </div>
+                    </div>
+                </section>
             </section>
 
             <section id="risk-return">
@@ -2374,9 +2493,846 @@
                     </div>
                 </section>
             </section>
+
+            <section id="investment-decisions">
+                <h2>投资决策知识点</h2>
+
+                <section id="cash-flow-estimation">
+                    <h3>现金流估计</h3>
+                    
+                    <p>现金流估计是投资决策的基础，核心在于准确识别和计量项目在其整个经济寿命期内发生的现金流入和流出。</p>
+
+                    <ul>
+                        <li><strong><span class="underline-clickable" data-explanation="incremental-cash-flow">增量现金流 (Incremental Cash Flow)</span>:</strong> 进行投资决策时，只应考虑由项目直接或间接引起的<strong>增量现金流量</strong>。判断标准是：如果项目不被采纳，某项现金流量是否会发生变动；若变动，则变动部分即为增量现金流量。</li>
+                    </ul>
+
+                    <div class="explanation" id="incremental-cash-flow">
+                        <strong>增量现金流详解:</strong> 增量现金流是投资项目评价的核心概念。只有因为项目的存在而产生的现金流变化才应该纳入分析，这确保了投资决策的准确性，避免了无关成本的干扰。
+                    </div>
+
+                    <p><strong>相关成本的考虑:</strong></p>
+                    <ul>
+                        <li><strong><span class="underline-clickable" data-explanation="sunk-costs">沉没成本 (Sunk Costs)</span>:</strong> 已经发生且无论项目是否采纳都无法收回的成本，不应纳入增量现金流考虑。例如，前期的市场调研费。</li>
+                        <li><strong><span class="underline-clickable" data-explanation="opportunity-costs">机会成本 (Opportunity Costs)</span>:</strong> 将公司拥有的资源用于新项目而放弃的其他用途可能带来的最大收益。例如，使用公司自有闲置仓库的机会成本是将其出租可能获得的租金收入（税后）。</li>
+                        <li><strong>项目外部性 (Externalities/Side Effects):</strong> 项目可能对公司其他经营活动产生的间接影响（正面或负面）。例如，新产品可能侵蚀公司现有产品的销售。</li>
+                        <li><strong><span class="underline-clickable" data-explanation="working-capital">营运资本 (Working Capital)</span>:</strong> 项目投资可能需要额外的营运资本投入（如存货、应收账款增加），这部分投入视为现金流出；项目结束时营运资本的收回视为现金流入。</li>
+                    </ul>
+
+                    <div class="explanation" id="sunk-costs">
+                        <strong>沉没成本详解:</strong> 沉没成本是已经发生且无法回收的成本。在投资决策中必须忽略沉没成本，因为无论项目是否进行，这些成本都已经产生，不会影响未来的现金流。
+                    </div>
+
+                    <div class="explanation" id="opportunity-costs">
+                        <strong>机会成本详解:</strong> 机会成本代表了因选择某个方案而放弃的最佳替代方案的收益。在项目评估中，必须将使用现有资源的机会成本计入项目成本，以反映真实的经济成本。
+                    </div>
+
+                    <div class="explanation" id="working-capital">
+                        <strong>营运资本详解:</strong> 营运资本的变化会影响项目的现金流。项目开始时增加的营运资本是现金流出，项目结束时回收的营运资本是现金流入。这反映了企业运营过程中资金的占用和释放。
+                    </div>
+
+                    <div class="example-box">
+                        <div class="example-title">例5-1 沉没成本识别</div>
+                        <p>格力电器过去3年花费100万元研制节能空调，在决定是否投资新项目时，这100万元研发费用属于沉没成本，不应再考虑。</p>
+                    </div>
+
+                    <div class="example-box">
+                        <div class="example-title">例5-2 机会成本计算</div>
+                        <p>晨鸣纸业公司拥有一间空置仓库可对外出租，每年租金10万元，所得税率25%。如果新项目要用该仓库，则放弃的租金（税后7.5万元）是机会成本。</p>
+                    </div>
+
+                    <div class="example-box">
+                        <div class="example-title">例5-3 项目外部性</div>
+                        <p>晨鸣纸业公司新项目预计每年销售收入100万元，但会使公司已有产品销售收入减少5%。这5%的减少额应作为负的外部性考虑在现金流量估算中。</p>
+                    </div>
+
+                    <p><strong>现金流量估算原则:</strong></p>
+                    <ol>
+                        <li><strong>税后原则:</strong> 所有投资分析都应在税后基础上进行。</li>
+                        <li><strong>增量原则:</strong> 只考虑与项目相关的增量现金流量。</li>
+                        <li><strong>一致性原则:</strong> 现金流量的口径应与所使用的折现率保持一致（如权益现金流对应权益资本成本，公司现金流对应WACC；名义现金流对应名义利率）。</li>
+                    </ol>
+
+                    <p><strong>现金流量的构成:</strong></p>
+                    <ul>
+                        <li><strong>初始现金流量:</strong> 项目开始时发生的现金流，主要包括固定资产投资、净营运资本投入等。</li>
+                        <li><strong>营业现金流量:</strong> 项目投产后在其经济年限内由于生产经营活动产生的现金流量。</li>
+                        <li><strong>终结现金流量:</strong> 项目结束时发生的现金流量，主要包括固定资产的税后残值收入、收回的营运资本等。</li>
+                    </ul>
+
+                    <div class="formula-box">
+                        <p><strong>营业现金流量计算公式:</strong></p>
+                        <p>$$营业现金流量 = (销售收入 - 经营费用 - 折旧) \times (1 - T_c) + 折旧$$</p>
+                        <p>或:</p>
+                        <p>$$营业现金流量 = 税后净利润 + 折旧$$</p>
+                        <p>其中，$T_c$ 为公司所得税率。</p>
+                    </div>
+
+                    <div class="formula-box">
+                        <p><strong>出售资产产生的税后现金流量:</strong></p>
+                        <p>$$税后现金流量 = 售价 - T_c \times (售价 - 账面价值)$$</p>
+                    </div>
+
+                    <p><strong><span class="underline-clickable" data-explanation="depreciation-tax-shield">折旧与现金流量</span>:</strong> 折旧本身是非现金支出，但在计算应纳税所得额时扣除，从而产生<strong>折旧的节税收益</strong>。</p>
+
+                    <div class="explanation" id="depreciation-tax-shield">
+                        <strong>折旧的节税收益详解:</strong> 虽然折旧不是实际的现金支出，但它可以减少应纳税所得额，从而减少所得税支出，产生节税效应。这种节税效应等同于现金流入，是项目现金流分析中的重要组成部分。
+                    </div>
+
+                    <div class="formula-box">
+                        <p><strong>折旧的节税收益:</strong></p>
+                        <p>$$折旧的节税收益 = 折旧 \times T_c$$</p>
+                    </div>
+
+                    <p><strong>通货膨胀:</strong> 估算现金流量时，若使用名义现金流量，则应使用名义折现率；若使用实际现金流量，则应使用实际折现率。</p>
+
+                    <div class="formula-box">
+                        <p>$$(1 + 名义利率) = (1 + 实际利率) \times (1 + 通货膨胀率)$$</p>
+                        <p>$$实际现金流量 = \frac{名义现金流量}{(1 + 通货膨胀率)}$$</p>
+                    </div>
+
+                    <p><strong>回收期 (Payback Period):</strong> 在现金流估计和项目初步评估中，会用到静态回收期。它是指收回项目全部初始投资所需的时间。</p>
+
+                    <ul>
+                        <li><strong>计算:</strong>
+                            <ul>
+                                <li>年现金流量相等时：投资回收期 = 初始投资额 / 年现金流量</li>
+                                <li>年现金流量不等时：通过累计现金流量确定收回初始投资的年份，不足整年的部分按当年现金流量比例折算。</li>
+                            </ul>
+                        </li>
+                        <li><strong>决策规则:</strong> 回收期小于等于基准年限则项目可行，否则不可行。多项目中选回收期最短的。</li>
+                        <li><strong>优点:</strong> 简单易懂，一定程度反映风险。</li>
+                        <li><strong>缺点:</strong> 未考虑货币时间价值，忽略回收期后的现金流。</li>
+                    </ul>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题 5-4</div>
+                        <p>某项目初始投资100万元，预计使用寿命5年，直线折旧，期末无残值。每年销售收入50万元，经营成本占销售收入30%，折旧20万元。所得税率25%，折现率10%。</p>
+                        <p>(1) 计算每年税后现金流量。</p>
+                        <p>(2) 计算该项目的净现值。</p>
+                        <p>(3) 计算项目折旧产生的节税收益的现值。</p>
+                        
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <p>(1) 每年税后现金流量CF = (收入 - 经营成本 - 折旧)(1 - 税率) + 折旧</p>
+                            <p>= (50 - 50×0.3 - 20)(1 - 0.25) + 20</p>
+                            <p>= (50 - 15 - 20)×0.75 + 20</p>
+                            <p>= 15×0.75 + 20 = 11.25 + 20 = 31.25万元</p>
+                            
+                            <p>(2) 净现值NPV = -100 + 31.25 × $PVIFA_{10\%,5}$</p>
+                            <p>= -100 + 31.25 × 3.791 = -100 + 118.46875 ≈ 18.47万元</p>
+                            
+                            <p>(3) 折旧的节税收益 = 折旧 × 税率 = 20 × 0.25 = 5万元</p>
+                            <p>节税收益的现值 = 5 × $PVIFA_{10\%,5}$ = 5 × 3.791 = 18.955 ≈ 18.96万元</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="project-feasibility">
+                    <h3>项目可行性判断的各种指标</h3>
+                    
+                    <h4><span class="underline-clickable" data-explanation="npv-concept">净现值 (Net Present Value, NPV)</span></h4>
+                    
+                    <div class="explanation" id="npv-concept">
+                        <strong>净现值详解:</strong> 净现值是最重要的投资决策指标，它直接反映项目对股东财富的贡献。NPV为正表示项目创造价值，NPV为负表示项目毁灭价值。
+                    </div>
+
+                    <ul>
+                        <li><strong>定义:</strong> 项目未来现金净流量的现值与初始投资额现值的差额。</li>
+                        <li><strong>决策规则:</strong> NPV ≥ 0，项目可行；NPV < 0，项目不可行。互斥项目中选择NPV最大的。</li>
+                        <li><strong>优点:</strong> 考虑了货币时间价值和全部现金流，与股东财富最大化目标一致。</li>
+                        <li><strong>缺点:</strong> 折现率的确定可能较复杂；不能直接反映项目的实际收益率。</li>
+                    </ul>
+
+                    <div class="formula-box">
+                        <p><strong>净现值计算公式:</strong></p>
+                        <p>$$NPV = \sum_{t=1}^{N}\frac{CF_t}{(1+r)^t} - CF_0$$</p>
+                        <ul>
+                            <li>$CF_t$: 第 $t$ 年的现金净流量</li>
+                            <li>$r$: 折现率 (通常是项目的资本成本)</li>
+                            <li>$N$: 项目寿命期</li>
+                            <li>$CF_0$: 初始投资额</li>
+                        </ul>
+                    </div>
+
+                    <div class="example-box">
+                        <div class="example-title">例4-3 净现值计算</div>
+                        <p>A方案初始投资100,000元，每年现金流量35,000元（5年），折现率12%。</p>
+                        <p>NPV = $35,000 \times PVIFA_{12\%,5} - 100,000 = 35,000 \times 3.6048 - 100,000 = 126,168 - 100,000 = 26,168$元。</p>
+                    </div>
+
+                    <h4><span class="underline-clickable" data-explanation="pi-concept">净现值率 (Profitability Index, PI)</span></h4>
+                    
+                    <div class="explanation" id="pi-concept">
+                        <strong>净现值率详解:</strong> 也称盈利指数，反映了每单位投资能产生的现值收益。在资本限额情况下，PI是项目排序的重要指标，但在互斥项目决策中可能与NPV法产生冲突。
+                    </div>
+
+                    <ul>
+                        <li><strong>定义:</strong> 项目未来现金流量的现值与初始投资额现值的比率。</li>
+                        <li><strong>决策规则:</strong> PI ≥ 1，项目可行；PI < 1，项目不可行。在资本限额下，常用于项目排序。</li>
+                        <li><strong>优点:</strong> 考虑了货币时间价值，是NPV法的补充，能反映投资效率。</li>
+                        <li><strong>缺点:</strong> 对于规模不同的互斥项目，可能导致错误决策。</li>
+                    </ul>
+
+                    <div class="formula-box">
+                        <p><strong>净现值率计算公式:</strong></p>
+                        <p>$$PI = \frac{\sum_{t=1}^{N}\frac{CF_t}{(1+r)^t}}{CF_0}$$</p>
+                        <p>或</p>
+                        <p>$$PI = \frac{NPV + CF_0}{CF_0}$$</p>
+                    </div>
+
+                    <div class="example-box">
+                        <div class="example-title">例4-10 净现值率计算</div>
+                        <p>项目A初始投资20,000元，未来3年现金流现值为43,200元。</p>
+                        <p>PI = 43,200 / 20,000 = 2.16</p>
+                    </div>
+
+                    <h4><span class="underline-clickable" data-explanation="irr-concept">内含报酬率 (Internal Rate of Return, IRR)</span></h4>
+                    
+                    <div class="explanation" id="irr-concept">
+                        <strong>内含报酬率详解:</strong> IRR是项目的内在收益率，直观反映项目的盈利能力。但在某些情况下可能存在多重解或无解的问题，且在互斥项目比较中可能与NPV法结论不一致。
+                    </div>
+
+                    <ul>
+                        <li><strong>定义:</strong> 使项目净现值等于零的折现率。</li>
+                        <li><strong>决策规则:</strong> IRR ≥ 资本成本，项目可行；IRR < 资本成本，项目不可行。</li>
+                        <li><strong>优点:</strong> 考虑了货币时间价值，直观反映项目收益水平。</li>
+                        <li><strong>缺点:</strong> 可能存在多重IRR或无IRR问题；在互斥项目决策中，尤其规模或期限不同时，可能与NPV法结论不一致。</li>
+                    </ul>
+
+                    <div class="formula-box">
+                        <p><strong>内含报酬率计算:</strong></p>
+                        <p>通过求解以下方程确定IRR：</p>
+                        <p>$$\sum_{t=0}^{N}\frac{CF_t}{(1+IRR)^t} = 0$$</p>
+                        <p>通常需要试错法或财务计算器/软件。</p>
+                    </div>
+
+                    <div class="example-box">
+                        <div class="example-title">例4-4 内含报酬率计算</div>
+                        <p>投资350,000元，1年后产生400,000元现金流量。</p>
+                        <p>$-350,000 + \frac{400,000}{1+IRR} = 0$</p>
+                        <p>$\Rightarrow IRR = \frac{400,000 - 350,000}{350,000} = 14.29\%$</p>
+                    </div>
+
+                    <h4><span class="underline-clickable" data-explanation="discounted-payback">动态回收期 (Discounted Payback Period)</span></h4>
+                    
+                    <div class="explanation" id="discounted-payback">
+                        <strong>动态回收期详解:</strong> 与静态回收期相比，动态回收期考虑了货币时间价值，更准确地反映了项目的风险和收益特征。但仍然忽略了回收期后的现金流。
+                    </div>
+
+                    <ul>
+                        <li><strong>定义:</strong> 用项目的折现现金流量偿还初始投资所需的时间。</li>
+                        <li><strong>计算:</strong> 将未来各期现金流量按资本成本折现，然后计算累计折现现金流量等于初始投资所需的时间。</li>
+                        <li><strong>决策规则:</strong> 动态回收期 ≤ 设定的基准回收期，项目可行。</li>
+                        <li><strong>优点:</strong> 考虑了货币时间价值。</li>
+                        <li><strong>缺点:</strong> 基准回收期确定主观；忽略回收期后的现金流。</li>
+                    </ul>
+
+                    <div class="example-box">
+                        <div class="example-title">例4-11 动态回收期计算</div>
+                        <p>初始投资-10,000元，现金流量逐年不同（5年），折现率12%。计算各期现金流量现值并累计，得到动态回收期为3.94年。</p>
+                    </div>
+
+                    <p><strong>静态回收期 (Payback Period):</strong> 已在"现金流估计"部分介绍。</p>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题 4-3</div>
+                        <p>(1) 计算项目A, B, C的回收期。</p>
+                        <ul>
+                            <li>A: $C_0$= -4000, $C_1$=1000, $C_2$=500, $C_3$=3000</li>
+                            <li>B: $C_0$= -1000, $C_1$=0, $C_2$=1000</li>
+                            <li>C: $C_0$= -5000, $C_1$=1000, $C_2$=1000, $C_3$=3000</li>
+                        </ul>
+                        <p>(4) 若折现率10%，计算各项目净现值。</p>
+                        
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <p><strong>回收期计算:</strong></p>
+                            <ul>
+                                <li>A: 回收期 = 2 + (4000-1000-500)/3000 = 2 + 2500/3000 = 2.83年</li>
+                                <li>B: 回收期 = 2年</li>
+                                <li>C: 回收期 = 3年</li>
+                            </ul>
+                            
+                            <p><strong>净现值计算 (折现率10%):</strong></p>
+                            <ul>
+                                <li>A: NPV = -4000 + 1000/1.1 + 500/1.1² + 3000/1.1³ = -4000 + 909.09 + 413.22 + 2253.95 = -423.74元</li>
+                                <li>B: NPV = -1000 + 1000/1.1² + 2000/1.1³ + 2000/1.1⁴ = -1000 + 826.45 + 1502.63 + 1366.02 = 2695.10元</li>
+                                <li>C: NPV = -5000 + 1000/1.1 + 1000/1.1² + 3000/1.1³ + 4500/1.1⁴ = -5000 + 909.09 + 826.45 + 2253.95 + 3073.55 = 2063.04元</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题 4-13</div>
+                        <p>某公司考虑两个互斥项目A和B。A初始投资50万元，未来5年每年现金流量20万元；B初始投资500万元，未来5年每年现金流量145万元。折现率10%。</p>
+                        <p>(1) 用净现值法决策。</p>
+                        <p>(2) 用盈利指数法决策。</p>
+                        
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <p><strong>(1) 净现值法:</strong></p>
+                            <ul>
+                                <li>NPV(A) = $20 \times PVIFA_{10\%,5} - 50 = 20 \times 3.7908 - 50 = 75.816 - 50 = 25.82$万元</li>
+                                <li>NPV(B) = $145 \times PVIFA_{10\%,5} - 500 = 145 \times 3.7908 - 500 = 549.666 - 500 = 49.67$万元</li>
+                                <li><strong>结论:</strong> 选择项目B（NPV更大）</li>
+                            </ul>
+                            
+                            <p><strong>(2) 盈利指数法:</strong></p>
+                            <ul>
+                                <li>PI(A) = (25.82 + 50) / 50 = 1.5164</li>
+                                <li>PI(B) = (49.67 + 500) / 500 = 1.0993</li>
+                                <li><strong>结论:</strong> 选择项目A（PI更大）</li>
+                            </ul>
+                            
+                            <p><strong>注:</strong> NPV法和PI法在互斥项目决策中可能产生矛盾，一般以NPV法为准，因为它与股东财富最大化目标更直接相关。</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="uncertainty-analysis">
+                    <h3>不确定性分析</h3>
+                    
+                    <p>项目未来现金流量的预测存在不确定性，需要进行分析。</p>
+
+                    <h4><span class="underline-clickable" data-explanation="sensitivity-analysis">敏感性分析 (Sensitivity Analysis)</span></h4>
+                    
+                    <div class="explanation" id="sensitivity-analysis">
+                        <strong>敏感性分析详解:</strong> 敏感性分析是风险分析的重要工具，通过单独改变一个变量来观察其对项目经济指标的影响程度。敏感性越高的变量，项目风险越大，需要更多关注。
+                    </div>
+
+                    <ul>
+                        <li><strong>定义:</strong> 分析单个关键变量（如销售单价、销量、成本）的变化对项目NPV或IRR等经济指标的影响程度。</li>
+                        <li><strong>方法:</strong> 保持其他变量不变，改变一个变量的值，观察指标如何变化。通常会绘制敏感性分析图，横轴为变量变化幅度，纵轴为NPV或IRR。</li>
+                        <li><strong>局限性:</strong> 一次只改变一个变量，未考虑变量间的相互影响；结果解读有主观性。</li>
+                    </ul>
+
+                    <div class="example-box">
+                        <div class="example-title">例6-1 敏感性分析</div>
+                        <p>分析单位价格变动对NPV和IRR的影响，发现单位价格变动越大，NPV和IRR的变动也越大。</p>
+                    </div>
+
+                    <h4>临界点分析 (Break-even Analysis)</h4>
+                    
+                    <p><strong>定义:</strong> 确定使项目净现值为零或会计利润为零时的关键变量（如销售量）的数值，即临界点。</p>
+
+                    <h5><span class="underline-clickable" data-explanation="accounting-breakeven">会计盈亏平衡点 (Accounting Break-even)</span></h5>
+                    
+                    <div class="explanation" id="accounting-breakeven">
+                        <strong>会计盈亏平衡点详解:</strong> 会计盈亏平衡点是指企业收入等于全部成本时的销售量，此时企业既不盈利也不亏损。这是最基础的盈亏分析方法。
+                    </div>
+
+                    <p>净收益为零时的销售量。</p>
+
+                    <div class="formula-box">
+                        <p><strong>会计盈亏平衡点销售量 (税前):</strong></p>
+                        <p>$$会计盈亏平衡点销售量 = \frac{固定成本 + 折旧}{销售单价 - 单位变动成本}$$</p>
+                    </div>
+
+                    <div class="example-box">
+                        <div class="example-title">例6-3 会计盈亏平衡点计算</div>
+                        <p>会计盈亏平衡点 = (25万元 + 15万元) / (2000元 - 1500元) = 400,000 / 500 = 800台/年</p>
+                    </div>
+
+                    <h5><span class="underline-clickable" data-explanation="npv-breakeven">净现值盈亏平衡点 (NPV Break-even)</span></h5>
+                    
+                    <div class="explanation" id="npv-breakeven">
+                        <strong>净现值盈亏平衡点详解:</strong> 净现值盈亏平衡点考虑了货币时间价值，是使项目NPV为零的销售量。这个指标更准确地反映了项目的真实盈亏平衡水平，因为它考虑了投资的机会成本。
+                    </div>
+
+                    <p>净现值为零时的销售量。计算更为复杂，需要考虑初始投资的年金化成本。</p>
+
+                    <div class="formula-box">
+                        <p><strong>净现值盈亏平衡点 (当现金流为年金时):</strong></p>
+                        <p>$$净现值盈亏平衡点销量 = \frac{投资额的等价年度成本 + 固定成本 \times (1 - T_c) - 折旧 \times T_c}{(销售单价 - 单位变动成本) \times (1 - T_c)}$$</p>
+                        <p>其中，投资额的等价年度成本 = $\frac{CF_0}{PVIFA_{r,N}}$</p>
+                    </div>
+
+                    <div class="example-box">
+                        <div class="example-title">例6-3续 净现值盈亏平衡点计算</div>
+                        <p>净现值盈亏平衡点 = (150万元 / $PVIFA_{10\%,10}$ + 25万元 × (1-0.25) - 15万元 × 0.25) / ((2000元 - 1500元) × (1-0.25))</p>
+                        <p>= (150/6.1446 + 25×0.75 - 15×0.25) / (500×0.75)</p>
+                        <p>= (24.41 + 18.75 - 3.75) / 375 = 39.41万元 / 375元/台 ≈ 1051台/年</p>
+                    </div>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题 6-4</div>
+                        <p>某饮料公司项目初始投资100万元，寿命10年。年广告费10万元，产品成本1.5元/瓶，售价4元/瓶。折现率12%，所得税率25%。</p>
+                        <p>(1) 会计盈亏平衡点产量？</p>
+                        <p>(2) 净现值盈亏平衡点产量？</p>
+                        
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <p><strong>(1) 会计盈亏平衡点产量:</strong></p>
+                            <ul>
+                                <li>年固定成本 = 广告费 = 10万元</li>
+                                <li>年折旧 = 100万元 / 10年 = 10万元</li>
+                                <li>会计盈亏平衡点Q = (年固定成本 + 年折旧) / (销售单价 - 单位变动成本)</li>
+                                <li>= (100,000 + 100,000) / (4 - 1.5) = 200,000 / 2.5 = 80,000瓶</li>
+                            </ul>
+                            
+                            <p><strong>(2) 净现值盈亏平衡点产量:</strong></p>
+                            <ul>
+                                <li>等价年度成本 = 100万元 / $PVIFA_{12\%,10}$ = 100 / 5.6502 = 17.6985万元</li>
+                                <li>税后单位贡献 = (4 - 1.5) × (1 - 0.25) = 2.5 × 0.75 = 1.875元</li>
+                                <li>税后固定成本(不含折旧) = 10万元 × (1 - 0.25) = 7.5万元</li>
+                                <li>折旧税盾 = 10万元 × 0.25 = 2.5万元</li>
+                            </ul>
+                            <p>净现值盈亏平衡点Q 使得：</p>
+                            <p>Q × 税后单位贡献 - 税后固定成本(不含折旧) + 折旧税盾 = 等价年度成本</p>
+                            <p>Q × 1.875 - 75,000 + 25,000 = 176,985</p>
+                            <p>Q × 1.875 = 176,985 + 75,000 - 25,000 = 226,985</p>
+                            <p>Q = 226,985 / 1.875 ≈ 121,059瓶</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="mutually-exclusive-projects">
+                    <h3>互斥项目选择</h3>
+                    
+                    <h4>项目周期相同</h4>
+                    <ul>
+                        <li><strong>净现值法:</strong> 选择NPV最大的项目。</li>
+                        <li><strong>内部收益率法:</strong> 可能产生误导，特别是项目规模差异大时。可以使用<span class="underline-clickable" data-explanation="incremental-irr">增量内部收益率法 (Incremental IRR)</span>，计算两个项目差额现金流量的IRR，若该IRR大于资本成本，则投资额较大的项目更优。</li>
+                    </ul>
+
+                    <div class="explanation" id="incremental-irr">
+                        <strong>增量内部收益率法详解:</strong> 当两个项目规模不同时，直接比较IRR可能导致错误结论。增量IRR法通过分析增量投资的收益率来做出正确决策，确保选择能创造更多价值的项目。
+                    </div>
+
+                    <h4>项目周期不同</h4>
+                    <ul>
+                        <li><strong>周期匹配法 (Lowest Common Multiple of Lives):</strong> 假设项目可以被复制，直到所有项目具有相同的寿命期，然后比较复制后项目的总NPV。计算复杂。</li>
+                        <li><strong><span class="underline-clickable" data-explanation="equivalent-annual-annuity">等价年金法 (Equivalent Annual Annuity, EAA / Equivalent Annual Cost, EAC)</span>:</strong> 将项目的NPV（或成本项目的成本现值）转化为在其寿命期内等额的年度现金流量（年金）。</li>
+                    </ul>
+
+                    <div class="explanation" id="equivalent-annual-annuity">
+                        <strong>等价年金法详解:</strong> 等价年金法将不同寿命期的项目转换为相同的年度等价值，使得不同期限的项目可以进行直接比较。这是处理期限不同项目比较的标准方法。
+                    </div>
+
+                    <div class="formula-box">
+                        <p><strong>等价年金法公式:</strong></p>
+                        <p>对于收益型项目：$$EAA = \frac{NPV}{PVIFA_{r,N}}$$</p>
+                        <p>选择EAA最大的项目。</p>
+                        <p>对于成本型项目：$$EAC = \frac{PV_{cost}}{PVIFA_{r,N}}$$</p>
+                        <p>选择EAC最小的项目。</p>
+                        <p>其中，$PV_{cost}$ 为成本的总现值。</p>
+                    </div>
+
+                    <div class="example-box">
+                        <div class="example-title">机器成本比较示例</div>
+                        <p><strong>机器A:</strong> 购置费15,000元，使用3年，每年使用费5,000元。折现率10%。</p>
+                        <p>机器A成本现值 $PV_A = 15,000 + 5,000 \times PVIFA_{10\%,3} = 15,000 + 5,000 \times 2.4869 = 27,434.5$元</p>
+                        <p>$EAC_A = 27,434.5 / 2.4869 \approx 11,031.61$元</p>
+                        
+                        <p><strong>机器B:</strong> 购置费10,000元，使用2年，每年使用费6,000元。折现率10%。</p>
+                        <p>机器B成本现值 $PV_B = 10,000 + 6,000 \times PVIFA_{10\%,2} = 10,000 + 6,000 \times 1.7355 = 20,413$元</p>
+                        <p>$EAC_B = 20,413 / 1.7355 \approx 11,762.16$元</p>
+                        
+                        <p><strong>结论:</strong> 选择机器A，因为其EAC较低。</p>
+                    </div>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题 5-12</div>
+                        <p>某公司考虑从两个相互排斥的设备A和B中选择一个，折现率10%。</p>
+                        <ul>
+                            <li>设备A：$C_0$=-200, $C_1$=80, $C_2$=100, $C_3$=150</li>
+                            <li>设备B：$C_0$=-150, $C_1$=60, $C_2$=80, $C_3$=80, $C_4$=70</li>
+                        </ul>
+                        <p>(1) 计算NPV。</p>
+                        <p>(2) 计算等价年度现金流量 (EAA)。</p>
+                        <p>(3) 应选择哪个设备？</p>
+                        
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <p><strong>(1) 计算NPV:</strong></p>
+                            <ul>
+                                <li>NPV(A) = -200 + 80/1.1 + 100/1.1² + 150/1.1³ = -200 + 72.73 + 82.64 + 112.70 = 68.07万元</li>
+                                <li>NPV(B) = -150 + 60/1.1 + 80/1.1² + 80/1.1³ + 70/1.1⁴ = -150 + 54.55 + 66.12 + 60.11 + 47.81 = 78.59万元</li>
+                            </ul>
+                            
+                            <p><strong>(2) 计算等价年度现金流量 (EAA):</strong></p>
+                            <ul>
+                                <li>EAA(A) = 68.07 / $PVIFA_{10\%,3}$ = 68.07 / 2.4869 ≈ 27.37万元</li>
+                                <li>EAA(B) = 78.59 / $PVIFA_{10\%,4}$ = 78.59 / 3.1699 ≈ 24.79万元</li>
+                            </ul>
+                            
+                            <p><strong>(3) 应选择哪个设备？</strong></p>
+                            <p>若仅看NPV，B更优。但寿命不同，应使用EAA法。EAA(A) > EAA(B)，故选择项目A。</p>
+                            <p><strong>注:</strong> 寿命不同时EAA是更合适的标准，因为它考虑了项目可重复性的影响。</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <section id="financing-decisions">
+                <h2>融资决策知识点</h2>
+
+                <section id="capital-cost-structure">
+                    <h3>资本成本构成</h3>
+                    
+                    <p>资本成本是企业为使用资本而付出的代价，也是投资项目的最低可接受收益率。主要构成包括：</p>
+
+                    <h4><span class="underline-clickable" data-explanation="equity-cost">权益资本成本 ($r_S$)</span></h4>
+                    
+                    <div class="explanation" id="equity-cost">
+                        <strong>权益资本成本详解:</strong> 权益资本成本是股东对投资的期望收益率，反映了股权投资的风险水平。它是企业筹集股权资金所需支付的成本，也是评估项目可行性的重要基准。
+                    </div>
+
+                    <p>投资者对公司普通股投资所要求的收益率。</p>
+
+                    <h5><span class="underline-clickable" data-explanation="capm-model">资本资产定价模型 (CAPM)</span></h5>
+                    
+                    <div class="explanation" id="capm-model">
+                        <strong>CAPM模型详解:</strong> CAPM是现代金融理论的基石，它建立了系统风险与期望收益之间的线性关系。模型假设投资者是理性的且只关心期望收益和风险，市场是有效的。
+                    </div>
+
+                    <div class="formula-box">
+                        <p><strong>CAPM公式:</strong></p>
+                        <p>$$r_S = r_F + \beta \times (\overline{r}_M - r_F)$$</p>
+                        <ul>
+                            <li>$r_F$: 无风险收益率 (通常用国债收益率)</li>
+                            <li>$\beta$ (贝塔): 股票的系统风险系数</li>
+                            <li>$(\overline{r}_M - r_F)$: 市场风险溢价</li>
+                        </ul>
+                    </div>
+
+                    <h5><span class="underline-clickable" data-explanation="beta-coefficient">贝塔系数 ($\beta$)</span></h5>
+                    
+                    <div class="explanation" id="beta-coefficient">
+                        <strong>贝塔系数详解:</strong> 贝塔系数衡量个股收益率相对于市场组合收益率的敏感性，是系统风险的度量指标。贝塔值反映了股票价格与市场整体走势的相关程度。
+                    </div>
+
+                    <p>衡量股票收益率相对于市场组合收益率的敏感性。</p>
+
+                    <div class="formula-box">
+                        <p><strong>贝塔系数计算:</strong></p>
+                        <p>$$\beta = \frac{Cov(R_i, R_M)}{\sigma_M^2}$$</p>
+                        <ul>
+                            <li>$\beta > 1$: 股票风险大于市场平均风险</li>
+                            <li>$\beta < 1$: 股票风险小于市场平均风险</li>
+                            <li>$\beta = 1$: 股票风险等于市场平均风险</li>
+                        </ul>
+                    </div>
+
+                    <p><strong>影响贝塔的因素:</strong></p>
+                    <ol>
+                        <li><strong>经营的周期性:</strong> 业务对宏观经济周期敏感的公司（如房地产）$\beta$较高。</li>
+                        <li><strong><span class="underline-clickable" data-explanation="operating-leverage">经营杠杆</span>:</strong> 固定经营成本占比较高的公司，经营杠杆大，$\beta$较高。</li>
+                        <li><strong><span class="underline-clickable" data-explanation="financial-leverage">财务杠杆</span>:</strong> 负债融资比例较高的公司，财务杠杆大，权益$\beta$较高。</li>
+                    </ol>
+
+                    <div class="explanation" id="operating-leverage">
+                        <strong>经营杠杆详解:</strong> 经营杠杆反映了固定经营成本对企业盈利能力的影响。固定成本比例越高，经营杠杆越大，企业的经营风险也越高，从而影响贝塔值。
+                    </div>
+
+                    <div class="explanation" id="financial-leverage">
+                        <strong>财务杠杆详解:</strong> 财务杠杆反映了债务融资对股东收益的放大效应。负债比例越高，财务杠杆越大，股东面临的财务风险也越高，导致权益贝塔值上升。
+                    </div>
+
+                    <div class="formula-box">
+                        <p><strong>经营杠杆:</strong></p>
+                        <p>$$经营杠杆 = \frac{营业利润变动率}{销售收入变动率} = \frac{\Delta EBIT/EBIT}{\Delta S/S}$$</p>
+                    </div>
+
+                    <div class="formula-box">
+                        <p><strong>财务杠杆对贝塔的影响:</strong></p>
+                        <p>$$\beta_{权益} = \beta_{资产} \times \left(1 + \frac{负债}{权益}\right)$$</p>
+                        <p>(假设负债$\beta$为0)</p>
+                        <p>其中，$\beta_{资产}$ 是公司资产的贝塔，对于无负债公司，$\beta_{资产} = \beta_{权益}$。</p>
+                    </div>
+
+                    <h4>债务资本成本 ($r_B$)</h4>
+                    
+                    <p>公司借入资金的现行成本。通常指税后债务成本。</p>
+
+                    <div class="formula-box">
+                        <p><strong>税后债务成本:</strong></p>
+                        <p>$$税后债务成本 = 税前债务成本 \times (1 - T_C)$$</p>
+                        <p>其中，$T_C$ 为公司所得税率。税前债务成本通常是公司新发债券的到期收益率。</p>
+                    </div>
+
+                    <h4>优先股成本 ($r_P$)</h4>
+                    
+                    <p>公司发行优先股所承担的成本。</p>
+
+                    <div class="formula-box">
+                        <p><strong>优先股成本:</strong></p>
+                        <p>$$r_P = \frac{D_P}{P_0}$$</p>
+                        <ul>
+                            <li>$D_P$: 年优先股股利</li>
+                            <li>$P_0$: 优先股当前市价</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="capital-costs">
+                    <h3>个别资本成本、加权资本成本、边际资本成本、筹资突破点</h3>
+                    
+                    <h4>个别资本成本</h4>
+                    <p>指上述权益资本成本、债务资本成本、优先股成本等。</p>
+
+                    <h4><span class="underline-clickable" data-explanation="wacc-concept">加权平均资本成本 (Weighted Average Cost of Capital, WACC)</span></h4>
+                    
+                    <div class="explanation" id="wacc-concept">
+                        <strong>WACC详解:</strong> WACC是公司各种融资来源成本的加权平均值，是评估公司整体或平均风险投资项目的重要折现率。它反映了公司资本结构和融资成本的综合水平。
+                    </div>
+
+                    <p>公司各种融资来源成本的加权平均值，权重为各种融资方式的市场价值占比。是评估公司整体或平均风险投资项目的折现率。</p>
+
+                    <div class="formula-box">
+                        <p><strong>WACC计算公式:</strong></p>
+                        <p>$$WACC = \frac{B}{V} \times r_B \times (1-T_C) + \frac{S}{V} \times r_S + \frac{P}{V} \times r_P$$</p>
+                        <ul>
+                            <li>$B, S, P$: 分别为债务、普通股、优先股的市场价值</li>
+                            <li>$V = B+S+P$: 公司总市场价值</li>
+                            <li>$r_B, r_S, r_P$: 分别为债务、权益、优先股的资本成本</li>
+                            <li>$T_C$: 公司所得税率</li>
+                        </ul>
+                    </div>
+
+                    <div class="example-box">
+                        <div class="example-title">例8-7 WACC计算</div>
+                        <p>某公司权益资本成本12.875%，股票市值50亿元；债务成本6%（税前），债务市值8亿元；所得税率25%。</p>
+                        <p>WACC = $\frac{8}{50+8} \times 6\% \times (1-0.25) + \frac{50}{50+8} \times 12.875\%$</p>
+                        <p>= $0.1379 \times 4.5\% + 0.8621 \times 12.875\%$</p>
+                        <p>≈ $0.62\% + 11.09\% = 11.71\%$</p>
+                    </div>
+
+                    <h4><span class="underline-clickable" data-explanation="marginal-cost">边际资本成本 (Marginal Cost of Capital, MCC)</span> 和 <span class="underline-clickable" data-explanation="break-point">筹资突破点 (Break Point)</span></h4>
+                    
+                    <div class="explanation" id="marginal-cost">
+                        <strong>边际资本成本详解:</strong> 边际资本成本是指公司新增一元资本所需负担的成本。随着筹资总额的增加，由于风险上升和优质资金来源有限，边际资本成本通常会逐步上升。
+                    </div>
+
+                    <div class="explanation" id="break-point">
+                        <strong>筹资突破点详解:</strong> 筹资突破点是指当公司筹资达到某一数额后，由于风险增加或特定低成本资金来源用尽，导致边际资本成本发生跳跃性上升的那个筹资额。
+                    </div>
+
+                    <p>教材第八章未详细展开这两个概念。边际资本成本是指公司新增一元资本所需负担的成本，通常随着筹资总额的增加，边际资本成本会上升。筹资突破点是指当公司筹资达到某一数额后，由于风险增加或特定低成本资金来源用尽，导致边际资本成本发生跳跃性上升的那个筹资额。</p>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题 8-5</div>
+                        <p>某上市公司目前债务5000万元，权益1亿元，权益贝塔1.2。计划杠杆收购，使负债权益比升至2。收购后权益贝塔是多少？</p>
+                        
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <ul>
+                                <li>初始 B/S = 5000/10000 = 0.5</li>
+                                <li>资产贝塔 $\beta_A = \beta_S / (1 + B/S) = 1.2 / (1+0.5) = 1.2 / 1.5 = 0.8$</li>
+                                <li>杠杆收购后 B/S = 2</li>
+                                <li>新的权益贝塔 $\beta_S' = \beta_A \times (1 + B'/S') = 0.8 \times (1+2) = 0.8 \times 3 = 2.4$</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题 8-11</div>
+                        <p>某公司债务价值160万元，股权价值260万元，所得税率34%。权益资本成本12%，债务资本成本8%。计算公司的税前WACC和税后有效WACC。</p>
+                        
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <p><strong>税前WACC:</strong></p>
+                            <p>税前WACC = $\frac{160}{160+260} \times 8\% + \frac{260}{160+260} \times 12\%$</p>
+                            <p>= $\frac{160}{420} \times 0.08 + \frac{260}{420} \times 0.12$</p>
+                            <p>≈ $0.38095 \times 0.08 + 0.61905 \times 0.12 ≈ 0.03048 + 0.07429 ≈ 10.48\%$</p>
+                            
+                            <p><strong>税后WACC:</strong></p>
+                            <p>税后WACC = $\frac{160}{420} \times 8\% \times (1-0.34) + \frac{260}{420} \times 12\%$</p>
+                            <p>= $0.38095 \times 0.08 \times 0.66 + 0.61905 \times 0.12$</p>
+                            <p>≈ $0.02011 + 0.07429 ≈ 9.44\%$</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <section id="dividend-decisions">
+                <h2>股利决策知识点</h2>
+
+                <section id="dividend-payment-methods">
+                    <h3>股利发放方式</h3>
+                    
+                    <h4><span class="underline-clickable" data-explanation="cash-dividend">现金股利 (Cash Dividend)</span></h4>
+                    
+                    <div class="explanation" id="cash-dividend">
+                        <strong>现金股利详解:</strong> 现金股利是最常见的股利形式，直接为股东提供现金回报。它减少公司现金和留存收益，但为股东提供即时的投资收益。
+                    </div>
+
+                    <p>公司以现金形式向股东支付股利。是最常见的股利形式。</p>
+                    <p><strong>影响:</strong> 减少公司现金和留存收益，股东获得现金收入。</p>
+
+                    <h4><span class="underline-clickable" data-explanation="stock-dividend">股票股利 (Stock Dividend)</span></h4>
+                    
+                    <div class="explanation" id="stock-dividend">
+                        <strong>股票股利详解:</strong> 股票股利不涉及现金流出，而是通过发放额外股票的方式向股东分配收益。这种方式保留了公司现金用于再投资，但会稀释每股价值。
+                    </div>
+
+                    <p>公司向股东派发额外股票作为股利。</p>
+                    <ul>
+                        <li><strong>影响:</strong> 不改变公司总资产和股东权益总额，仅是股东权益内部结构的调整（留存收益转为股本和资本公积）。增加流通股数，可能降低每股股价。</li>
+                        <li><strong>原因:</strong> 公司希望保留现金用于再投资，或希望降低股价以提高流动性。</li>
+                    </ul>
+
+                    <h4><span class="underline-clickable" data-explanation="stock-split">股票分割 (Stock Split)</span></h4>
+                    
+                    <div class="explanation" id="stock-split">
+                        <strong>股票分割详解:</strong> 股票分割的主要目的是降低股价，提高股票的市场流动性。通过增加股票数量而降低单股价格，使更多投资者能够负担得起该股票。
+                    </div>
+
+                    <p>将一股面值较大的股票拆分成数股面值较小的股票。</p>
+                    <p><strong>影响:</strong> 类似股票股利，增加流通股数，降低每股股价，股东权益总额不变。目的是降低股价，增强股票流动性。</p>
+
+                    <h4><span class="underline-clickable" data-explanation="stock-repurchase">股票回购 (Stock Repurchase)</span></h4>
+                    
+                    <div class="explanation" id="stock-repurchase">
+                        <strong>股票回购详解:</strong> 股票回购是现金股利的替代方式，具有税收优势且给股东选择权。回购减少了流通股数，通常会推高每股收益和股价。
+                    </div>
+
+                    <p>公司用现金从市场上购回本公司发行在外的部分股票。</p>
+                    <ul>
+                        <li><strong>影响:</strong> 减少公司现金和发行在外的股票数量，可能提高每股收益和股价。</li>
+                        <li><strong>方式:</strong> 公开市场回购、要约回购、目标回购。</li>
+                        <li><strong>与现金股利比较:</strong> 税收效应不同（回购通常产生资本利得，税负可能较低）；股东有选择权（是否出售）；公司承诺不同（股利通常被视为长期承诺）。</li>
+                    </ul>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题 11-8</div>
+                        <p>Host股价20元/股。</p>
+                        <p>(1) 发放20%股票股利，新股价？</p>
+                        <p>(2) 3:2股票分割，新股价？</p>
+                        <p>(3) 1:3逆向拆分，新股价？</p>
+                        
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <p><strong>(1) 发放20%股票股利:</strong></p>
+                            <p>新股价 = 20 / (1 + 0.20) = 20 / 1.2 = 16.67元</p>
+                            
+                            <p><strong>(2) 3:2股票分割:</strong></p>
+                            <p>3:2分割相当于每2股变3股，即1股变1.5股。新股价 = 20 / 1.5 = 13.33元</p>
+                            
+                            <p><strong>(3) 1:3逆向拆分:</strong></p>
+                            <p>1:3逆向拆分相当于每3股合为1股。新股价 = 20 × 3 = 60元</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="dividend-policy-types">
+                    <h3>股利政策类型</h3>
+                    
+                    <h4><span class="underline-clickable" data-explanation="residual-dividend">剩余型股利政策 (Residual Dividend Policy)</span></h4>
+                    
+                    <div class="explanation" id="residual-dividend">
+                        <strong>剩余型股利政策详解:</strong> 这种政策优先考虑企业的投资需要，只有在满足所有盈利投资项目的资金需求后，才将剩余资金作为股利分配给股东。
+                    </div>
+
+                    <p>公司利润首先满足再投资项目的资金需求，剩余部分才用于发放股利。</p>
+                    <ul>
+                        <li><strong>优点:</strong> 优先保证投资，降低外部融资成本。</li>
+                        <li><strong>缺点:</strong> 股利支付不稳定。</li>
+                    </ul>
+
+                    <h4><span class="underline-clickable" data-explanation="stable-dividend">稳定股利额政策 (Stable Dividend Policy)</span></h4>
+                    
+                    <div class="explanation" id="stable-dividend">
+                        <strong>稳定股利额政策详解:</strong> 这种政策向市场传递公司经营稳定的信号，有助于建立投资者信心。稳定的股利支付吸引偏好稳定收入的投资者群体。
+                    </div>
+
+                    <p>每年支付固定数额的股利，或使股利稳定增长。</p>
+                    <ul>
+                        <li><strong>优点:</strong> 传递公司经营稳定的信号，满足偏好稳定收入的投资者。</li>
+                        <li><strong>缺点:</strong> 股利与当期盈利脱节。</li>
+                    </ul>
+
+                    <h4><span class="underline-clickable" data-explanation="constant-payout">固定股利支付率政策 (Constant Payout Ratio Policy)</span></h4>
+                    
+                    <div class="explanation" id="constant-payout">
+                        <strong>固定股利支付率政策详解:</strong> 这种政策使股利与公司盈利能力直接挂钩，股东可以分享公司业绩增长的成果，但也要承担业绩波动带来的股利不稳定风险。
+                    </div>
+
+                    <p>每年按固定比例从净利润中提取股利。</p>
+                    <ul>
+                        <li><strong>优点:</strong> 股利与盈利挂钩。</li>
+                        <li><strong>缺点:</strong> 股利随盈利波动，不稳定。</li>
+                    </ul>
+
+                    <h4><span class="underline-clickable" data-explanation="low-regular-plus-extra">低正常股利加额外股利政策 (Low Regular Dividend Plus Extras Policy)</span></h4>
+                    
+                    <div class="explanation" id="low-regular-plus-extra">
+                        <strong>低正常股利加额外股利政策详解:</strong> 这种政策结合了稳定性和灵活性的优点，既为股东提供稳定的基本收入，又能在公司业绩好时给予额外回报。
+                    </div>
+
+                    <p>每年支付较低的固定股利，在盈利好的年份再发放额外股利。</p>
+                    <ul>
+                        <li><strong>优点:</strong> 兼具灵活性和一定稳定性。</li>
+                        <li><strong>缺点:</strong> 额外股利的不确定性。</li>
+                    </ul>
+                </section>
+
+                <section id="dividend-theory">
+                    <h3>理论 (股利政策的相关理论)</h3>
+                    
+                    <h4><span class="underline-clickable" data-explanation="dividend-irrelevance">股利无关论 (Dividend Irrelevance Theory - MM理论)</span></h4>
+                    
+                    <div class="explanation" id="dividend-irrelevance">
+                        <strong>股利无关论详解:</strong> MM理论认为在完美市场条件下，投资者可以通过买卖股票自制股利，因此公司的股利政策不会影响股东财富。公司价值只取决于投资决策的质量。
+                    </div>
+
+                    <p>在完美市场（无税、无交易成本）中，公司股利政策不影响公司价值。公司价值取决于其投资决策产生的盈利能力。</p>
+
+                    <h4><span class="underline-clickable" data-explanation="bird-in-hand">一鸟在手论 (Bird-in-Hand Theory)</span></h4>
+                    
+                    <div class="explanation" id="bird-in-hand">
+                        <strong>一鸟在手论详解:</strong> 这个理论基于投资者的风险规避心理，认为确定的股利收入比不确定的资本利得更有价值。投资者会给高股利政策的公司更高的估值。
+                    </div>
+
+                    <p>投资者通常风险规避，认为眼前的现金股利比未来不确定的资本利得更有价值，因此偏好高股利政策的公司，高股利会提升公司价值。</p>
+
+                    <h4><span class="underline-clickable" data-explanation="tax-differential">税差理论 (Tax Differential Theory)</span></h4>
+                    
+                    <div class="explanation" id="tax-differential">
+                        <strong>税差理论详解:</strong> 由于不同类型收入的税收待遇不同，投资者会根据自身税收情况偏好不同的股利政策。这个理论解释了为什么不同公司会采用不同的股利政策。
+                    </div>
+
+                    <p>由于资本利得税率通常低于股利所得税率（或资本利得税可以递延缴纳），投资者偏好低股利政策，公司应减少现金股利，以增加留存收益带来的资本利得，从而最大化股东税后财富。</p>
+
+                    <h4><span class="underline-clickable" data-explanation="agency-cost">代理成本理论 (Agency Cost Theory)</span></h4>
+                    
+                    <div class="explanation" id="agency-cost">
+                        <strong>代理成本理论详解:</strong> 发放股利强制公司将现金返还给股东，减少了管理者可能滥用的自由现金流。这种约束机制有助于保护股东利益，降低代理成本。
+                    </div>
+
+                    <p>发放股利可以减少管理者可支配的自由现金流，从而降低管理者滥用资金（如投资于不良项目、过度消费）的可能性，有助于降低代理成本。</p>
+
+                    <h4><span class="underline-clickable" data-explanation="clientele-effect">追随者效应 (Clientele Effect)</span></h4>
+                    
+                    <div class="explanation" id="clientele-effect">
+                        <strong>追随者效应详解:</strong> 不同投资者群体有不同的股利偏好，公司会吸引与其股利政策相匹配的投资者。这解释了为什么公司很少改变股利政策，因为改变会导致投资者群体的重新配置。
+                    </div>
+
+                    <p>不同类型的投资者对股利政策有不同偏好（如高收入者可能偏好低股利以避税，退休人员可能偏好高股利以获取稳定现金流）。公司会吸引具有相应股利偏好的特定投资者群体。因此，公司股利政策一旦确定，改变它可能会导致现有股东不满并出售股票，股价可能因此波动，但长期来看，市场会达到均衡，公司难以通过改变股利政策持续影响股价。</p>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题 11-13</div>
+                        <p>A公司明年期望股利收益率6%，B公司不支付股利，必要收益率15%。A与B风险等级相当。资本利得不征税，股利税率20%。A公司的税前必要收益率是多少？</p>
+                        
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <p>假设投资者要求相同的税后总收益率。</p>
+                            <ul>
+                                <li>对于B公司（无股利），税后收益率 = 税前收益率（资本利得）= 15%</li>
+                                <li>对于A公司，税后总收益率也应为15%</li>
+                                <li>A公司税后股利收益率 = 税前股利收益率 × (1 - 股利税率) = 6% × (1 - 0.20) = 4.8%</li>
+                                <li>A公司税后资本利得收益率 = 税后总收益率 - 税后股利收益率 = 15% - 4.8% = 10.2%</li>
+                                <li>由于资本利得不征税，A公司税前资本利得收益率 = 10.2%</li>
+                                <li>A公司税前总收益率 = 税前股利收益率 + 税前资本利得收益率 = 6% + 10.2% = 16.2%</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </section>
         </div>
         </main>
-    </div>
+</edits>
+     </div>
 
     <script>
         // Toggle sidebar functionality
