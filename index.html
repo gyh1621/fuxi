@@ -907,6 +907,12 @@
             </div>
             <div class="toc">
                 <ul>
+                    <li><a href="#all-examples-questions">全部示例及思考题</a></li>
+                    <li><a href="#examples-time-value" class="level-2">货币时间价值</a></li>
+                    <li><a href="#examples-securities-valuation" class="level-2">证券估值</a></li>
+                    <li><a href="#examples-investment-decisions" class="level-2">投资决策</a></li>
+                    <li><a href="#examples-risk-return" class="level-2">风险与收益</a></li>
+                    <li><a href="#examples-dividend-decisions" class="level-2">股利决策</a></li>
                     <li><a href="#time-value-money">货币时间价值知识点</a></li>
                     <li><a href="#simple-compound-interest" class="level-2">单利与复利</a></li>
                     <li><a href="#nominal-effective-rates" class="level-2">名义利率与实际利率</a></li>
@@ -956,7 +962,7 @@
 
                 <section id="simple-compound-interest">
                     <h3>单利与复利</h3>
-                    
+
                     <p><strong>定义:</strong></p>
                     <ul>
                         <li><strong><span class="underline-clickable" data-explanation="simple-interest">单利 (Simple Interest)</span>:</strong> 无论投资期限长短，利息都只按初始本金计算，期间产生的利息不加入本金进行再投资。</li>
@@ -995,7 +1001,7 @@
                         </ul>
                     </div>
 
-                    <div class="example-box">
+                    <div class="example-box" id="original-simple-compound-example-1">
                         <div class="example-title">例2-1 计算投资的未来价值</div>
                         <p>投资100万元于某信托产品，预期收益率10%，复利计息，投资期5年。</p>
                         <ul>
@@ -1010,7 +1016,7 @@
                         <strong>复利的威力:</strong> 复利效应在长期投资中表现尤为突出。随着时间的延长，复利产生的收益会呈指数级增长，这就是为什么投资专家总是强调"时间是最好的朋友"的原因。
                     </div>
 
-                    <div class="example-box">
+                    <div class="example-box" id="original-simple-compound-example-2">
                         <div class="example-title">例2-4 复利的力量</div>
                         <p>存入1000元，年利率8%。</p>
                         <ul>
@@ -1019,7 +1025,7 @@
                         </ul>
                     </div>
 
-                    <div class="example-box">
+                    <div class="example-box" id="original-simple-compound-example-3">
                         <div class="example-title">专栏2-4 单利和复利</div>
                         <p>比较1000元存款，利率5%，投资2年和20年的差异：</p>
                         <ul>
@@ -1031,7 +1037,7 @@
                         <p><strong>结论：</strong>由于可以将利息取出再存入以实现复利效果，因此在公司金融理论中通常采用复利计算现值和终值。</p>
                     </div>
 
-                    <div class="thinking-box">
+                    <div class="thinking-box" id="original-simple-compound-thinking-1">
                         <div class="thinking-title">思考题2: 单利计息和复利计息有何区别?</div>
                         <div class="answer">
                             <div class="answer-title">答案:</div>
@@ -1039,7 +1045,7 @@
                         </div>
                     </div>
 
-                    <div class="thinking-box">
+                    <div class="thinking-box" id="original-simple-compound-thinking-2">
                         <div class="thinking-title">思考题6: 如果以5%的年利率存入10000元,5年后你将获得多少?</div>
                         <div class="answer">
                             <div class="answer-title">答案:</div>
@@ -1047,7 +1053,7 @@
                         </div>
                     </div>
 
-                    <div class="thinking-box">
+                    <div class="thinking-box" id="original-simple-compound-thinking-3">
                         <div class="thinking-title">思考题7: 某投资者以5%的年利率存入100000元,若利率按下列方式复利计息:(1)每年一次;(2)每个季度一次;(3)每月一次,那么5年后该投资者的存款终值分别是多少?</div>
                         <div class="answer">
                             <div class="answer-title">答案:</div>
@@ -1062,7 +1068,7 @@
 
                 <section id="nominal-effective-rates">
                     <h3>名义利率与实际利率</h3>
-                    
+
                     <p><strong>定义:</strong></p>
                     <ul>
                         <li><strong><span class="underline-clickable" data-explanation="nominal-rate">名义年利率 (Nominal Annual Percentage Rate, APR)</span>:</strong> 报价的年利率，未考虑一年内多次复利的影响。</li>
@@ -1100,13 +1106,13 @@
                         <strong>连续复利:</strong> 这是复利频率的极限情况，即每时每刻都在复利。虽然在实际中很少使用，但在金融理论和某些衍生品定价中很重要。
                     </div>
 
-                    <div class="example-box">
+                    <div class="example-box" id="original-nominal-effective-example-1">
                         <div class="example-title">例2-5 多年期复利</div>
                         <p>50000元存5年，年利率3.5%，每半年复利一次。</p>
                         <p>$FV = 50000 \times (1 + 0.035/2)^{2 \times 5} = 50000 \times (1.0175)^{10} \approx 59472.22$ 元。</p>
                     </div>
 
-                    <div class="example-box">
+                    <div class="example-box" id="original-nominal-effective-example-2">
                         <div class="example-title">例2-6 计算实际年利率</div>
                         <p>名义年利率8%，每月复利。1元投资1年末的终值：</p>
                         <p>$FV = 1 \times (1 + 0.08/12)^{12} \approx 1.083$ 元。</p>
@@ -1153,7 +1159,7 @@
                         </table>
                     </div>
 
-                    <div class="thinking-box">
+                    <div class="thinking-box" id="original-nominal-effective-thinking-1">
                         <div class="thinking-title">思考题3: 名义利率与实际利率之间是什么关系?</div>
                         <div class="answer">
                             <div class="answer-title">答案:</div>
@@ -1161,7 +1167,7 @@
                         </div>
                     </div>
 
-                    <div class="thinking-box">
+                    <div class="thinking-box" id="original-nominal-effective-thinking-2">
                         <div class="thinking-title">思考题9: 假设一笔贷款的实际年利率为8%,同时要求该贷款每月月底支付结清,那么该贷款的名义利率是多少?</div>
                         <div class="answer">
                             <div class="answer-title">答案:</div>
@@ -1172,7 +1178,7 @@
 
                 <section id="ordinary-annuity">
                     <h3>普通年金现值/终值公式</h3>
-                    
+
                     <p><strong>定义:</strong></p>
                     <p><span class="underline-clickable" data-explanation="ordinary-annuity-def">普通年金</span>是指在一定时期内，每期期末发生等额的系列现金流量。</p>
 
@@ -1198,7 +1204,7 @@
                         <strong>年金现值系数:</strong> 这是一个重要的金融系数，可以直接从年金现值系数表中查得，也可以用计算器或Excel的PV函数计算。它简化了年金现值的计算过程。
                     </div>
 
-                    <div class="example-box">
+                    <div class="example-box" id="original-ordinary-annuity-example-1">
                         <div class="example-title">例2-15 分期付款vs一次性付款</div>
                         <p>购买10000元复印机，或选择从第一年末起每年支付3000元，连续4年，折现率6%。</p>
                         <p>分期付款的现值: $PV = 3000 \times \left[\frac{1}{0.06} - \frac{1}{0.06 \times (1.06)^4}\right] \approx 10395.32$ 元。</p>
@@ -1217,7 +1223,7 @@
                         <strong>房贷计算:</strong> 这是普通年金现值公式的实际应用。银行根据贷款总额、利率和期限，计算出每月应还款额，确保在贷款期结束时正好还清本息。
                     </div>
 
-                    <div class="example-box">
+                    <div class="example-box" id="original-ordinary-annuity-example-2">
                         <div class="example-title">例2-16 房贷计算</div>
                         <p>计划购买15万元汽车，选择方案一：借款15万元，年利率3%，3年期，每月等额还款。</p>
                         <p>月利率 = 0.03/12 = 0.0025，期数 t = 3 × 12 = 36。</p>
@@ -1237,7 +1243,7 @@
                         <strong>零存整取:</strong> 这是年金终值的典型应用，如定期定额投资基金、教育储蓄等。通过每期固定存入一定金额，在期末获得本息总和。
                     </div>
 
-                    <div class="example-box">
+                    <div class="example-box" id="original-ordinary-annuity-example-3">
                         <div class="example-title">例2-17 零存整取</div>
                         <p>每年末存入银行10000元，连续5年，存款利率3.5%。</p>
                         <p>第5年末存款总额 $FV = 10000 \times \frac{(1+0.035)^5 - 1}{0.035} \approx 53624.66$ 元。</p>
@@ -1252,13 +1258,13 @@
                         <strong>偿债基金:</strong> 为了在未来某个时点偿还债务或达到某个资金目标，现在开始每期存入固定金额的基金。这在企业债券偿还和个人理财中很常见。
                     </div>
 
-                    <div class="example-box">
+                    <div class="example-box" id="original-ordinary-annuity-example-4">
                         <div class="example-title">例2-18 偿债基金</div>
                         <p>为在5年后偿还10万元债务，计划从第一年末起每年末存入等额资金，存款利率3.5%。</p>
                         <p>每年需存入金额 $A = 100000 \times \frac{0.035}{(1+0.035)^5 - 1} \approx 18648.14$ 元。</p>
                     </div>
 
-                    <div class="thinking-box">
+                    <div class="thinking-box" id="original-ordinary-annuity-thinking-1">
                         <div class="thinking-title">思考题13: 你计划买一辆价值150000元的汽车,现有以下两种付款方式,并且是每月等额还款,你应选择哪一种?(1)汽车商给予你10%的价格折扣,并以10%的年利率向你提供5年期的贷款来支付剩余款项;(2)汽车商不给予价格折扣,但提供给你5年期的年利率为3%的特别贷款 150000元。</div>
                         <div class="answer">
                             <div class="answer-title">答案:</div>
@@ -1270,7 +1276,7 @@
                         </div>
                     </div>
 
-                    <div class="thinking-box">
+                    <div class="thinking-box" id="original-ordinary-annuity-thinking-2">
                         <div class="thinking-title">思考题14: 假如你在以后的5年中每年末存入银行1000元。若银行利率为3%,那么第十年末银行存款总额为多少?</div>
                         <div class="answer">
                             <div class="answer-title">答案:</div>
@@ -1279,7 +1285,7 @@
                         </div>
                     </div>
 
-                    <div class="thinking-box">
+                    <div class="thinking-box" id="original-ordinary-annuity-thinking-3">
                         <div class="thinking-title">思考题15: 现在你计划在未来的5年内存够100000元。若存款的名义年利率为5%,每月复利计息,那么你每个月要存多少钱才能达到相应的数额?</div>
                         <div class="answer">
                             <div class="answer-title">答案:</div>
@@ -1288,7 +1294,7 @@
                         </div>
                     </div>
 
-                    <div class="thinking-box">
+                    <div class="thinking-box" id="original-ordinary-annuity-thinking-4">
                         <div class="thinking-title">思考题16: 某人从银行借入100万元购买一套住房,贷款期限为20年,贷款年利率为7%,若他采用按月等额还款方式,那么每月应还款多少?</div>
                         <div class="answer">
                             <div class="answer-title">答案:</div>
@@ -1300,7 +1306,7 @@
 
                 <section id="perpetual-annuity">
                     <h3>永续年金现值公式</h3>
-                    
+
                     <p><strong>定义:</strong></p>
                     <p><span class="underline-clickable" data-explanation="perpetual-annuity-def">永续年金</span>是指无限期地、每期期末支付相等金额的现金流量。它只有现值，没有终值。</p>
 
@@ -1324,7 +1330,7 @@
                         <li>公式假定现金流量的发生是有规律且确定的。</li>
                     </ol>
 
-                    <div class="example-box">
+                    <div class="example-box" id="original-perpetual-annuity-example-1">
                         <div class="example-title">例2-13 优先股估值</div>
                         <p>某银行发行一种优先股，每股每年支付现金股利0.3元，年利率为5%。</p>
                         <p>该优先股的现值 $PV = \frac{0.3}{0.05} = 6$ 元。</p>
@@ -1353,7 +1359,7 @@
                         <li><strong>例2-24 (计算大学储蓄增长年金):</strong> 同上，计算未来教育费用的现值。</li>
                     </ul>
 
-                    <div class="thinking-box">
+                    <div class="thinking-box" id="original-perpetual-annuity-thinking-1">
                         <div class="thinking-title">思考题4: 关于永续年金计算公式的三个要点是什么?</div>
                         <div class="answer">
                             <div class="answer-title">答案:</div>
@@ -1365,7 +1371,7 @@
                         </div>
                     </div>
 
-                    <div class="thinking-box">
+                    <div class="thinking-box" id="original-perpetual-annuity-thinking-2">
                         <div class="thinking-title">思考题11: 假定年利率为8%,从2年以后开始,每年有一笔500元的现金流量发生,且现金流量的支付会一直持续下去,那么这一系列现金流量的现值为多少?</div>
                         <div class="answer">
                             <div class="answer-title">答案:</div>
@@ -1377,7 +1383,7 @@
 
                 <section id="annuity-due">
                     <h3>先付年金现值公式</h3>
-                    
+
                     <p><strong>定义:</strong></p>
                     <p><span class="underline-clickable" data-explanation="annuity-due-def">先付年金</span>是指在某一固定时期内，每期期初发生等额现金流量的年金。其第一次支付通常发生在现在（第0期）。</p>
 
@@ -1401,7 +1407,7 @@
                         </ul>
                     </div>
 
-                    <div class="example-box">
+                    <div class="example-box" id="original-annuity-due-example-1">
                         <div class="example-title">例2-20 <span class="underline-clickable" data-explanation="rental-problem">租赁问题</span></div>
                         <p>某公司租用一间办公室5年，每年年初支付租金10万元，折现率为6%。</p>
                         <p>租金的现值 $PV_{due} = 100000 + 100000 \times \left[\frac{1}{0.06} - \frac{1}{0.06 \times (1.06)^4}\right] \approx 446510.61$ 元。</p>
@@ -1412,7 +1418,7 @@
                         <strong>租赁问题详解:</strong> 租赁费用通常在期初支付（如每月1日交房租），这就是典型的先付年金。在评估租赁合同的现值时，必须考虑这种支付时间的特殊性。
                     </div>
 
-                    <div class="thinking-box">
+                    <div class="thinking-box" id="original-annuity-due-thinking-1">
                         <div class="thinking-title">思考题18: 某投资者将从保险公司获得一笔养老保险金,在未来的第一个10年里每年得到10000元,在第二个10年里每年获得25000元。假设年利率为10%,养老保险金在每年年末支付,该养老保险金的现值为多少?如果养老保险金在每年年初支付,该养老保险金的现值又为多少?</div>
                         <div class="answer">
                             <div class="answer-title">答案 (每年年初支付部分):</div>
@@ -1427,7 +1433,7 @@
 
                 <section id="deferred-annuity">
                     <h3>延期年金现值公式</h3>
-                    
+
                     <p><strong>定义:</strong></p>
                     <p><span class="underline-clickable" data-explanation="deferred-annuity-def">延期年金</span>是指最初若干期没有现金流量发生，而是在延期期数之后才开始发生的系列等额现金流量。</p>
 
@@ -1460,7 +1466,7 @@
                         <strong>延期期数:</strong> 指从现在开始到年金支付开始之间的期数。例如，现在是第0期，从第4期开始支付年金，则延期期数m=3。
                     </div>
 
-                    <div class="example-box">
+                    <div class="example-box" id="original-deferred-annuity-example-1">
                         <div class="example-title">例2-19 银行贷款延期还款</div>
                         <p>银行贷款，前3年（m=3）无需还本付息，从第4年末至第10年末（年金期数t=7）每年末还款10000元，年利率8%。</p>
                         <ol>
@@ -1479,7 +1485,7 @@
                         <li>学生贷款在毕业后若干年才开始偿还。</li>
                     </ul>
 
-                    <div class="thinking-box">
+                    <div class="thinking-box" id="original-deferred-annuity-thinking-1">
                         <div class="thinking-title">思考题20: 你的孩子将在12年后上大学,估计那时每年学费将达20000元。你打算从现在开始1年后进行储蓄,直到孩子上大学时为止,若年利率为10%,那么你每年应存人多少钱才能够支付孩子四年的学费?</div>
                         <div class="answer">
                             <div class="answer-title">答案:</div>
@@ -1497,7 +1503,7 @@
 
                 <section id="growing-perpetual-annuity">
                     <h3>永续增长型年金现值公式 / 股票估值模型 (戈登增长模型)</h3>
-                    
+
                     <p><strong>定义:</strong></p>
                     <p><span class="underline-clickable" data-explanation="growing-perpetual-def">永续增长型年金</span>是指无限期地、每期期末支付的现金流量以一个固定比率 $g$ 持续增长。</p>
 
@@ -1534,7 +1540,7 @@
                         <li>增长率 $g$ 假定为永续固定的。</li>
                     </ol>
 
-                    <div class="example-box">
+                    <div class="example-box" id="original-growing-perpetual-example-1">
                         <div class="example-title">例2-14 投资项目估值</div>
                         <p>某项投资预计第一年末产生现金流入10万元，此后每年以2.5%的速度增长。若年利率为5%。</p>
                         <p>该投资项目的现值 $PV = \frac{100000}{0.05 - 0.025} = 4000000$ 元。</p>
@@ -1560,7 +1566,7 @@
                         <li><strong>股利政策分析:</strong> 模型显示了股利、增长率和折现率对股票价值的影响。</li>
                     </ul>
 
-                    <div class="thinking-box">
+                    <div class="thinking-box" id="original-growing-perpetual-thinking-1">
                         <div class="thinking-title">思考题5: 关于永续增长年金计算公式的三个要点是什么?</div>
                         <div class="answer">
                             <div class="answer-title">答案:</div>
@@ -1572,7 +1578,7 @@
                         </div>
                     </div>
 
-                    <div class="thinking-box">
+                    <div class="thinking-box" id="original-growing-perpetual-thinking-2">
                         <div class="thinking-title">思考题12: 某公司今年支付的现金股利为每股0.5元,预计以后支付的股利将以2%的速度增长。若折现率为8%,该公司支付的股利现值是多少?</div>
                         <div class="answer">
                             <div class="answer-title">答案:</div>
@@ -1585,10 +1591,10 @@
 
                 <section id="bond-valuation">
                     <h3>债券估值</h3>
-                    
+
                     <p><strong>基本原理:</strong></p>
                     <p>债券的价值是其未来所有现金流量（利息支付和到期本金）的现值之和。</p>
-                    
+
                     <div class="formula-box">
                         <p>$$PV_{bond} = \sum \frac{C_t}{(1+r)^t} + \frac{FV}{(1+r)^N}$$</p>
                         <ul>
@@ -1601,7 +1607,7 @@
                     </div>
 
                     <p><strong><span class="underline-clickable" data-explanation="coupon-bond">附息债券 (Coupon Bond)</span>:</strong> 定期支付利息，到期偿还本金。其估值是年金（所有利息支付）的现值与单笔款项（本金）的现值的和。</p>
-                    
+
                     <div class="explanation" id="coupon-bond">
                         <strong>附息债券详解:</strong> 这是最常见的债券类型，如国债、企业债等。投资者定期收到利息收入，到期收回本金。估值时需要分别计算利息流和本金的现值。
                     </div>
@@ -1613,7 +1619,7 @@
                         </ul>
                     </div>
 
-                    <div class="example-box">
+                    <div class="example-box" id="original-bond-valuation-example-1">
                         <div class="example-title">例3-3 附息债券估值</div>
                         <p>债券面值1000元，3年期，每半年付息一次。年票面利率10%，年市场利率12%。</p>
                         <ul>
@@ -1634,13 +1640,13 @@
                         <p>$$PV = \frac{FV}{(1+r)^N}$$</p>
                     </div>
 
-                    <div class="example-box">
+                    <div class="example-box" id="original-bond-valuation-example-2">
                         <div class="example-title">例3-2 贴现债券估值</div>
                         <p>贴现债券面值1000元，3年期。若折现率为12%。</p>
                         <p>$PV = \frac{1000}{(1+0.12)^3} \approx 711.78$ 元。</p>
                     </div>
 
-                    <div class="thinking-box">
+                    <div class="thinking-box" id="original-bond-valuation-thinking-1">
                         <div class="thinking-title">思考题1 (第三章): 影响债券价值的因素主要有哪些?</div>
                         <div class="answer">
                             <div class="answer-title">答案:</div>
@@ -1648,7 +1654,7 @@
                         </div>
                     </div>
 
-                    <div class="thinking-box">
+                    <div class="thinking-box" id="original-bond-valuation-thinking-2">
                         <div class="thinking-title">思考题12 (第三章): 假设债券面值为1000元,年利率为5%,4年期,到期一次还本付息,贴现率为8%,该债券价格是多少?</div>
                         <div class="answer">
                             <div class="answer-title">答案:</div>
@@ -1657,7 +1663,7 @@
                         </div>
                     </div>
 
-                    <div class="thinking-box">
+                    <div class="thinking-box" id="original-bond-valuation-thinking-3">
                         <div class="thinking-title">思考题13 (第三章): 付息债券面值为1000元,3年期,每半年付息一次,年息票利率为6%,市场利率为10%,按复利贴现。问该债券的理论价值是多少?如果年息票利率为14%,问该债券的理论价值是多少?如果年息票利率为10%,问该债券的理论价值又是多少?对比不同息票率下债券理论价值与市场利率,你有什么发现吗?</div>
                         <div class="answer">
                             <div class="answer-title">答案:</div>
@@ -1685,9 +1691,9 @@
 
                 <section id="stock-valuation">
                     <h3>股票估值模型</h3>
-                    
+
                     <p><strong>基本原理 (<span class="underline-clickable" data-explanation="ddm-model">股利折现模型 DDM</span>):</strong> 股票的价值是其未来所有预期股利的现值之和。</p>
-                    
+
                     <div class="explanation" id="ddm-model">
                         <strong>股利折现模型详解:</strong> DDM是股票估值的基础理论，认为股票价值等于未来所有股利现金流的现值。虽然有局限性（如不适用于不分红公司），但为股票估值提供了理论框架。
                     </div>
@@ -1712,7 +1718,7 @@
                         <p>(这实质上是一个永续年金的现值)</p>
                     </div>
 
-                    <div class="example-box">
+                    <div class="example-box" id="original-stock-valuation-example-1">
                         <div class="example-title">零增长模型示例</div>
                         <p>若公司每年支付固定股利0.66元，投资者要求回报率10.98%。</p>
                         <p>$P_0 = \frac{0.66}{0.1098} \approx 6.01$ 元。</p>
@@ -1732,7 +1738,7 @@
                         </ul>
                     </div>
 
-                    <div class="example-box">
+                    <div class="example-box" id="original-stock-valuation-example-2">
                         <div class="example-title">教材思考题3-19</div>
                         <p>A公司刚支付2元股利 ($D_0$)，预期股利每年增长8% ($g$)，投资者要求回报率16% ($k$)。</p>
                         <p>$D_1 = 2 \times (1+0.08) = 2.16$ 元。</p>
@@ -1750,7 +1756,7 @@
                         <p>其中，$P_T = \frac{D_0(1+g_1)^T(1+g_2)}{k - g_2}$ (P_T 是第T期末时，后续稳定增长股利的现值)</p>
                     </div>
 
-                    <div class="example-box">
+                    <div class="example-box" id="original-stock-valuation-example-3">
                         <div class="example-title">例3-6 二元增长模型</div>
                         <p>$D_0=0.2$元, $k=16\%$。未来5年($T=5$) $g_1=20\%$，之后$g_2=10\%$。</p>
                         <p>计算过程复杂，涉及分别计算前5年股利的现值，以及第5年末股票价值$P_5$的现值，然后加总。</p>
@@ -1771,7 +1777,7 @@
                         </ul>
                     </div>
 
-                    <div class="thinking-box">
+                    <div class="thinking-box" id="original-stock-valuation-thinking-1">
                         <div class="thinking-title">思考题7 (第三章): 请解释"股息折现模型"。</div>
                         <div class="answer">
                             <div class="answer-title">答案:</div>
@@ -1779,7 +1785,7 @@
                         </div>
                     </div>
 
-                    <div class="thinking-box">
+                    <div class="thinking-box" id="original-stock-valuation-thinking-2">
                         <div class="thinking-title">思考题8 (第三章): 请分别解释"零增长模型""不变增长模型"和"多阶段增长模型"。</div>
                         <div class="answer">
                             <div class="answer-title">答案:</div>
@@ -1791,7 +1797,7 @@
                         </div>
                     </div>
 
-                    <div class="thinking-box">
+                    <div class="thinking-box" id="original-stock-valuation-thinking-3">
                         <div class="thinking-title">思考题9 (第三章): 如何计算公司增长机会价值?</div>
                         <div class="answer">
                             <div class="answer-title">答案:</div>
@@ -1799,7 +1805,7 @@
                         </div>
                     </div>
 
-                    <div class="thinking-box">
+                    <div class="thinking-box" id="original-stock-valuation-thinking-4">
                         <div class="thinking-title">思考题20 (第三章): A公司下年度的股利预计为4元,且预计在未来3年中其股利增长率为15%。之后,A公司的股利增长率将等于行业平均水平5%。如果对其股票所要求的收益率为18%,那么其股票当前价值为多少?</div>
                         <div class="answer">
                             <div class="answer-title">答案:</div>
@@ -1812,7 +1818,7 @@
                         </div>
                     </div>
 
-                    <div class="thinking-box">
+                    <div class="thinking-box" id="original-stock-valuation-thinking-5">
                         <div class="thinking-title">思考题21 (第三章): 假设某公司当前股息为每股0.4元,市场利率为12%,未来5年中的股息增长率为20%.5年之后的增长率为10%,请计算公司股票的价值。</div>
                         <div class="answer">
                             <div class="answer-title">答案:</div>
@@ -1828,11 +1834,11 @@
 
                 <section id="capital-rationing">
                     <h3>资本限额下的投资</h3>
-                    
+
                     <p>当企业面临资本限额（可用投资资金有限）时，目标是在资金约束下选择能使总NPV最大化的项目组合。</p>
 
                     <h4><span class="underline-clickable" data-explanation="pi-ranking-method">净现值率排序法 (Profitability Index Ranking Method)</span></h4>
-                    
+
                     <div class="explanation" id="pi-ranking-method">
                         <strong>净现值率排序法详解:</strong> 这是处理资本限额问题的基本方法，通过PI指标反映每单位投资的价值创造能力。但当项目不可分割或存在相互依赖关系时，可能无法得到最优解。
                     </div>
@@ -1846,17 +1852,17 @@
                     <p><strong>局限性:</strong> 当项目不可分割或存在互斥项目时，此方法可能无法得到最优组合。</p>
 
                     <h4><span class="underline-clickable" data-explanation="portfolio-combination-method">互斥方案组合法</span></h4>
-                    
+
                     <div class="explanation" id="portfolio-combination-method">
                         <strong>互斥方案组合法详解:</strong> 当存在项目间的相互排斥或依赖关系时，需要考虑所有可能的项目组合，从中选择总NPV最大且不超过资本限额的组合。这种方法更精确但计算复杂。
                     </div>
 
                     <p>如果存在互斥项目，或项目间存在依赖关系，需要将它们组合成不同的投资方案，然后计算各方案的总NPV和总投资额，在资本限额内选择总NPV最大的方案。</p>
 
-                    <div class="thinking-box">
+                    <div class="thinking-box" id="original-capital-rationing-thinking-1">
                         <div class="thinking-title">思考题 4-9</div>
                         <p>可用资金100,000元，选择项目组合。</p>
-                        
+
                         <div class="table-container">
                             <table>
                                 <thead>
@@ -1907,11 +1913,11 @@
                                 </tbody>
                             </table>
                         </div>
-                        
+
                         <div class="answer">
                             <div class="answer-title">答案:</div>
                             <p><strong>按PI排序:</strong> A(1.67) > B(1.50) > D(1.20) = E(1.20) = F(1.20) > C(1.15)</p>
-                            
+
                             <p><strong>方案一 (按PI排序选择):</strong></p>
                             <ul>
                                 <li>选择A (-15,000)，剩余85,000</li>
@@ -1919,14 +1925,14 @@
                                 <li>选择E (-75,000)，资金用完</li>
                                 <li><strong>组合 A+B+E:</strong> 总投资 100,000，总NPV = 10+5+15 = 30,000</li>
                             </ul>
-                            
+
                             <p><strong>方案二 (另一种组合):</strong></p>
                             <ul>
                                 <li>选择A+B+D+F</li>
                                 <li>总投资 15+10+60+15 = 100,000</li>
                                 <li>总NPV = 10+5+12+3 = 30,000</li>
                             </ul>
-                            
+
                             <p><strong>结论:</strong> 存在多个组合达到相同的总NPV。实际中还需考虑项目是否可分割等因素。</p>
                         </div>
                     </div>
@@ -1938,7 +1944,7 @@
 
                 <section id="expected-return">
                     <h3>收益率计算 (期望)</h3>
-                    
+
                     <p><strong>投资回报与收益率:</strong></p>
                     <ul>
                         <li><strong>投资回报:</strong> 投资期末收到的收入与期初投资支出之间的差额。</li>
@@ -1973,7 +1979,7 @@
                         </ul>
                     </div>
 
-                    <div class="example-box">
+                    <div class="example-box" id="original-expected-return-example-1">
                         <div class="example-title">例7-1 股票投资收益率计算</div>
                         <p>年初以15元/股买入100股A公司股票，年内每股派息0.9元。</p>
                         <ul>
@@ -1985,10 +1991,10 @@
                         </ul>
                     </div>
 
-                    <div class="example-box">
+                    <div class="example-box" id="original-expected-return-example-2">
                         <div class="example-title">例7-2 预期收益率计算</div>
                         <p>假设宏观经济状况及A、B公司股票在这些状况下的收益率和概率如下：</p>
-                        
+
                         <div class="table-container">
                             <table>
                                 <thead>
@@ -2034,9 +2040,9 @@
                         </ul>
                     </div>
 
-                    <div class="thinking-box">
+                    <div class="thinking-box" id="original-expected-return-thinking-1">
                         <div class="thinking-title">思考题11 (第七章): 假设宏观经济出现萧条、衰退、正常、繁荣的概率,A公司和B公司的股票在不同宏观经济情况下下的收益不同，具体数据如下表。请计算A公司与B公司的预期收益率和方差。</div>
-                        
+
                         <div class="table-container">
                             <table>
                                 <thead>
@@ -2075,7 +2081,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        
+
                         <div class="answer">
                             <div class="answer-title">答案:</div>
                             <ul>
@@ -2088,7 +2094,7 @@
 
                 <section id="risk-variance">
                     <h3>风险计算 (方差)</h3>
-                    
+
                     <p><strong>风险定义:</strong> 资产收益的不确定性。</p>
                     <p><strong>量化指标:</strong> <span class="underline-clickable" data-explanation="variance">方差 (Variance)</span> 和 <span class="underline-clickable" data-explanation="standard-deviation">标准差 (Standard Deviation)</span>。它们衡量随机变量偏离其均值的程度。</p>
 
@@ -2120,10 +2126,10 @@
                         <strong>波动率:</strong> 在金融市场中，波动率是衡量价格变动幅度的重要指标。高波动率意味着价格变化大、风险高，但也可能带来更高的收益机会。
                     </div>
 
-                    <div class="example-box">
+                    <div class="example-box" id="original-risk-variance-example-1">
                         <div class="example-title">示例计算 (基于例7-2及表7-2)</div>
                         <p>E(R<sub>A</sub>) = 13%, E(R<sub>B</sub>) = 6%。</p>
-                        
+
                         <p><strong>A公司股票方差:</strong></p>
                         <p>Var(R<sub>A</sub>) = 0.20×(-0.20-0.13)² + 0.30×(0.10-0.13)² + 0.30×(0.20-0.13)² + 0.20×(0.40-0.13)²</p>
                         <p>= 0.20×(-0.33)² + 0.30×(-0.03)² + 0.30×(0.07)² + 0.20×(0.27)²</p>
@@ -2139,7 +2145,7 @@
                         <p>标准差 σ<sub>B</sub> = √0.0139 ≈ 0.1179 = 11.79%。</p>
                     </div>
 
-                    <div class="thinking-box">
+                    <div class="thinking-box" id="original-risk-variance-thinking-1">
                         <div class="thinking-title">思考题11 (第七章): (续前) 计算A公司与B公司的方差</div>
                         <div class="answer">
                             <div class="answer-title">答案:</div>
@@ -2153,9 +2159,9 @@
 
                 <section id="portfolio-risk-return">
                     <h3>投资组合的收益与风险计算方法 (方差)</h3>
-                    
+
                     <p><strong><span class="underline-clickable" data-explanation="portfolio-weight">投资组合权重 (X<sub>i</sub>)</span>:</strong></p>
-                    
+
                     <div class="explanation" id="portfolio-weight">
                         <strong>投资组合权重详解:</strong> 权重表示各资产在组合中的比例，所有权重之和必须等于1。权重的确定是投资组合管理的核心，直接影响组合的风险收益特征。
                     </div>
@@ -2165,7 +2171,7 @@
                         <p>$$\sum X_i = 1$$</p>
                     </div>
 
-                    <div class="example-box">
+                    <div class="example-box" id="original-portfolio-risk-return-example-1">
                         <div class="example-title">例7-3 投资组合权重计算</div>
                         <p>投资100股A公司股票 (15元/股) 和200股B公司股票 (20元/股)。</p>
                         <ul>
@@ -2199,7 +2205,7 @@
                         <p>ρ<sub>AB</sub> 范围在 -1 到 +1 之间。</p>
                     </div>
 
-                    <div class="example-box">
+                    <div class="example-box" id="original-portfolio-risk-return-example-2">
                         <div class="example-title">示例计算 (基于表7-3)</div>
                         <p>使用例7-2的数据，计算得到 Cov(R<sub>A</sub>,R<sub>B</sub>) = -0.0018。</p>
                         <p>ρ<sub>AB</sub> = -0.0018 / (0.1952 × 0.1179) ≈ -0.078。</p>
@@ -2212,7 +2218,7 @@
                         <p>$$E(R_P) = \sum [X_i \times E(R_i)]$$</p>
                     </div>
 
-                    <div class="example-box">
+                    <div class="example-box" id="original-portfolio-risk-return-example-3">
                         <div class="example-title">例7-3 (续) 组合收益率计算</div>
                         <p>E(R<sub>A</sub>)=13%, E(R<sub>B</sub>)=7% (教材此处B的预期收益率用了7%，与例7-2的6%不同，以7%为准继续)。</p>
                         <p>E(R<sub>P</sub>) = 0.273 × 0.13 + 0.727 × 0.07 ≈ 0.03549 + 0.05089 ≈ 0.08638 = 8.638%。</p>
@@ -2235,7 +2241,7 @@
 
                     <p>教材中提到，通过改变投资组合中不同资产的权重，可以得到不同的风险-收益组合点，这些点构成了投资可行域。可行域的上边界（在给定风险水平下提供最高收益，或在给定收益水平下风险最小）称为有效前沿。投资者会根据自己的风险偏好在有效前沿上选择最优投资组合。这些概念是现代投资组合理论 (Markowitz) 的核心，但本报告未详细展开其数学推导。</p>
 
-                    <div class="thinking-box">
+                    <div class="thinking-box" id="original-portfolio-risk-return-thinking-1">
                         <div class="thinking-title">思考题12 (第七章): 已知股票和市场组合信息如下表。请计算股票A和市场组合的预期收益率、标准差、相关系数,并计算股票A的贝塔系数。如果投资者20%资产投资于股票A.80%投资于市场组合,投资者的投资组合的预期收益率和方差是多少?</div>
                         <div class="answer">
                             <div class="answer-title">答案:</div>
@@ -2253,7 +2259,7 @@
                         </div>
                     </div>
 
-                    <div class="thinking-box">
+                    <div class="thinking-box" id="original-portfolio-risk-return-thinking-2">
                         <div class="thinking-title">思考题13 (第七章): 已知股票X与股票Y的收益率完全负相关 (ρXY=-1),股票X的标准差是0.40,股票Y的标准差是0.20。如何用股票X与股票Y构造一个零风险组合?</div>
                         <div class="answer">
                             <div class="answer-title">答案:</div>
@@ -2268,7 +2274,7 @@
 
                 <section id="market-model-diversification">
                     <h3>市场指数模型、系统风险与非系统风险、分散化</h3>
-                    
+
                     <p><strong><span class="underline-clickable" data-explanation="market-index-model">市场指数模型</span>:</strong></p>
                     <p>假设任何证券的回报率都与某个市场指数（如沪深300指数）的回报率相关。</p>
 
@@ -2321,10 +2327,10 @@
 
                     <p>随着证券数量 N 的增加，组合的非系统风险趋向于0。这意味着分散化可以有效降低非系统风险。</p>
                     <p>然而，系统风险 (由组合的 β<sub>P</sub> 和市场风险 σ<sub>M</sub>² 决定) 无法通过分散化消除。</p>
-                    
+
                     <p><strong>图7-1 (示意):</strong> 展示了随着组合中证券数量增加，总风险下降并趋近于系统风险的水平。</p>
 
-                    <div class="thinking-box">
+                    <div class="thinking-box" id="original-market-model-thinking-1">
                         <div class="thinking-title">思考题1 (第七章): 为什么资产组合不能消除全部风险?</div>
                         <div class="answer">
                             <div class="answer-title">答案:</div>
@@ -2332,7 +2338,7 @@
                         </div>
                     </div>
 
-                    <div class="thinking-box">
+                    <div class="thinking-box" id="original-market-model-thinking-2">
                         <div class="thinking-title">思考题2 (第七章): 请解释市场指数模型。</div>
                         <div class="answer">
                             <div class="answer-title">答案:</div>
@@ -2340,15 +2346,15 @@
                         </div>
                     </div>
 
-                    <div class="thinking-box">
+                    <div class="thinking-box" id="original-market-model-thinking-3">
                         <div class="thinking-title">思考题3 (第七章): 请解释系统风险和非系统风险。</div>
                         <div class="answer">
                             <div class="answer-title">答案:</div>
-                            <p>系统风险是影响整个市场或大部分证券的风险，如利率变动、通货膨胀等，不能通过分散投资消除。非系统风险是特定于个别公司或行业的风险，如管理失误、新产品失败等，可以通过构建多样化的投资组合来降低。</p>
+                            <p>系统风险是影响整个市场或大部分证券的风险，如利率变动、通胀等，不能通过分散投资消除。非系统风险是特定于个别公司或行业的风险，如管理失误、新产品失败等，可以通过构建多样化的投资组合来降低。</p>
                         </div>
                     </div>
 
-                    <div class="thinking-box">
+                    <div class="thinking-box" id="original-market-model-thinking-4">
                         <div class="thinking-title">思考题8 (第七章): 随着多元化的增加,投资组合的公司特有风险趋于</div>
                         <div class="answer">
                             <div class="answer-title">答案:</div>
@@ -2356,7 +2362,7 @@
                         </div>
                     </div>
 
-                    <div class="thinking-box">
+                    <div class="thinking-box" id="original-market-model-thinking-5">
                         <div class="thinking-title">思考题10 (第七章): 可以被分散掉的风险是指</div>
                         <div class="answer">
                             <div class="answer-title">答案:</div>
@@ -2367,7 +2373,7 @@
 
                 <section id="capm-model">
                     <h3>资本资产定价模型 (CAPM) 估计收益率</h3>
-                    
+
                     <p><strong>CAPM 定义:</strong></p>
                     <p><span class="underline-clickable" data-explanation="capm-model-def">资本资产定价模型 (CAPM)</span> 是一个描述证券市场均衡时，风险资产的预期收益率与其不可分散的系统风险 (以Beta衡量) 之间关系的理论模型。</p>
 
@@ -2419,7 +2425,7 @@
                         <li>信息免费且即时为所有投资者获得。</li>
                     </ol>
 
-                    <div class="thinking-box">
+                    <div class="thinking-box" id="original-capm-model-thinking-1">
                         <div class="thinking-title">思考题5 (第七章): 请解释资本资产定价模型成立的条件。</div>
                         <div class="answer">
                             <div class="answer-title">答案:</div>
@@ -2427,7 +2433,7 @@
                         </div>
                     </div>
 
-                    <div class="thinking-box">
+                    <div class="thinking-box" id="original-capm-model-thinking-2">
                         <div class="thinking-title">思考题6 (第七章): 请解释资本资产定价模型。</div>
                         <div class="answer">
                             <div class="answer-title">答案:</div>
@@ -2435,7 +2441,7 @@
                         </div>
                     </div>
 
-                    <div class="thinking-box">
+                    <div class="thinking-box" id="original-capm-model-thinking-3">
                         <div class="thinking-title">思考题9 (第七章): 根据资本资产定价模型,一个多元化的资产组合的收益率是的函数。</div>
                         <div class="answer">
                             <div class="answer-title">答案:</div>
@@ -2446,7 +2452,7 @@
 
                 <section id="sml-cml">
                     <h3>证券市场线 (SML) 与 资本市场线 (CML)</h3>
-                    
+
                     <p><strong><span class="underline-clickable" data-explanation="sml">证券市场线 (Securities Market Line, SML)</span>:</strong></p>
 
                     <div class="explanation" id="sml">
@@ -2454,7 +2460,7 @@
                     </div>
 
                     <p>SML 是 CAPM 公式的图形表示。它在预期收益率-Beta坐标系中，描绘了所有单个证券和投资组合的预期收益率与其系统风险 (Beta) 之间的线性关系。</p>
-                    
+
                     <ul>
                         <li><strong>纵轴截距:</strong> 无风险利率 $r_F$</li>
                         <li><strong>斜率:</strong> 市场风险溢价 $[E(r_M) - r_F]$</li>
@@ -2479,7 +2485,7 @@
                         </ul>
                     </div>
 
-                    <div class="thinking-box">
+                    <div class="thinking-box" id="original-sml-cml-thinking-1">
                         <div class="thinking-title">思考题14 (第七章): (此题涉及根据SML和给定数据推断未知参数)</div>
                         <div class="answer">
                             <div class="answer-title">答案摘要:</div>
@@ -2499,7 +2505,7 @@
 
                 <section id="cash-flow-estimation">
                     <h3>现金流估计</h3>
-                    
+
                     <p>现金流估计是投资决策的基础，核心在于准确识别和计量项目在其整个经济寿命期内发生的现金流入和流出。</p>
 
                     <ul>
@@ -2530,17 +2536,17 @@
                         <strong>营运资本详解:</strong> 营运资本的变化会影响项目的现金流。项目开始时增加的营运资本是现金流出，项目结束时回收的营运资本是现金流入。这反映了企业运营过程中资金的占用和释放。
                     </div>
 
-                    <div class="example-box">
+                    <div class="example-box" id="original-cash-flow-example-1">
                         <div class="example-title">例5-1 沉没成本识别</div>
                         <p>格力电器过去3年花费100万元研制节能空调，在决定是否投资新项目时，这100万元研发费用属于沉没成本，不应再考虑。</p>
                     </div>
 
-                    <div class="example-box">
+                    <div class="example-box" id="original-cash-flow-example-2">
                         <div class="example-title">例5-2 机会成本计算</div>
                         <p>晨鸣纸业公司拥有一间空置仓库可对外出租，每年租金10万元，所得税率25%。如果新项目要用该仓库，则放弃的租金（税后7.5万元）是机会成本。</p>
                     </div>
 
-                    <div class="example-box">
+                    <div class="example-box" id="original-cash-flow-example-3">
                         <div class="example-title">例5-3 项目外部性</div>
                         <p>晨鸣纸业公司新项目预计每年销售收入100万元，但会使公司已有产品销售收入减少5%。这5%的减少额应作为负的外部性考虑在现金流量估算中。</p>
                     </div>
@@ -2604,23 +2610,23 @@
                         <li><strong>缺点:</strong> 未考虑货币时间价值，忽略回收期后的现金流。</li>
                     </ul>
 
-                    <div class="thinking-box">
+                    <div class="thinking-box" id="original-cash-flow-thinking-1">
                         <div class="thinking-title">思考题 5-4</div>
                         <p>某项目初始投资100万元，预计使用寿命5年，直线折旧，期末无残值。每年销售收入50万元，经营成本占销售收入30%，折旧20万元。所得税率25%，折现率10%。</p>
                         <p>(1) 计算每年税后现金流量。</p>
                         <p>(2) 计算该项目的净现值。</p>
                         <p>(3) 计算项目折旧产生的节税收益的现值。</p>
-                        
+
                         <div class="answer">
                             <div class="answer-title">答案:</div>
                             <p>(1) 每年税后现金流量CF = (收入 - 经营成本 - 折旧)(1 - 税率) + 折旧</p>
                             <p>= (50 - 50×0.3 - 20)(1 - 0.25) + 20</p>
                             <p>= (50 - 15 - 20)×0.75 + 20</p>
                             <p>= 15×0.75 + 20 = 11.25 + 20 = 31.25万元</p>
-                            
+
                             <p>(2) 净现值NPV = -100 + 31.25 × $PVIFA_{10\%,5}$</p>
                             <p>= -100 + 31.25 × 3.791 = -100 + 118.46875 ≈ 18.47万元</p>
-                            
+
                             <p>(3) 折旧的节税收益 = 折旧 × 税率 = 20 × 0.25 = 5万元</p>
                             <p>节税收益的现值 = 5 × $PVIFA_{10\%,5}$ = 5 × 3.791 = 18.955 ≈ 18.96万元</p>
                         </div>
@@ -2629,9 +2635,9 @@
 
                 <section id="project-feasibility">
                     <h3>项目可行性判断的各种指标</h3>
-                    
+
                     <h4><span class="underline-clickable" data-explanation="npv-concept">净现值 (Net Present Value, NPV)</span></h4>
-                    
+
                     <div class="explanation" id="npv-concept">
                         <strong>净现值详解:</strong> 净现值是最重要的投资决策指标，它直接反映项目对股东财富的贡献。NPV为正表示项目创造价值，NPV为负表示项目毁灭价值。
                     </div>
@@ -2654,14 +2660,14 @@
                         </ul>
                     </div>
 
-                    <div class="example-box">
+                    <div class="example-box" id="original-project-feasibility-example-1">
                         <div class="example-title">例4-3 净现值计算</div>
                         <p>A方案初始投资100,000元，每年现金流量35,000元（5年），折现率12%。</p>
                         <p>NPV = $35,000 \times PVIFA_{12\%,5} - 100,000 = 35,000 \times 3.6048 - 100,000 = 126,168 - 100,000 = 26,168$元。</p>
                     </div>
 
                     <h4><span class="underline-clickable" data-explanation="pi-concept">净现值率 (Profitability Index, PI)</span></h4>
-                    
+
                     <div class="explanation" id="pi-concept">
                         <strong>净现值率详解:</strong> 也称盈利指数，反映了每单位投资能产生的现值收益。在资本限额情况下，PI是项目排序的重要指标，但在互斥项目决策中可能与NPV法产生冲突。
                     </div>
@@ -2680,14 +2686,14 @@
                         <p>$$PI = \frac{NPV + CF_0}{CF_0}$$</p>
                     </div>
 
-                    <div class="example-box">
+                    <div class="example-box" id="original-project-feasibility-example-2">
                         <div class="example-title">例4-10 净现值率计算</div>
                         <p>项目A初始投资20,000元，未来3年现金流现值为43,200元。</p>
                         <p>PI = 43,200 / 20,000 = 2.16</p>
                     </div>
 
                     <h4><span class="underline-clickable" data-explanation="irr-concept">内含报酬率 (Internal Rate of Return, IRR)</span></h4>
-                    
+
                     <div class="explanation" id="irr-concept">
                         <strong>内含报酬率详解:</strong> IRR是项目的内在收益率，直观反映项目的盈利能力。但在某些情况下可能存在多重解或无解的问题，且在互斥项目比较中可能与NPV法结论不一致。
                     </div>
@@ -2706,7 +2712,7 @@
                         <p>通常需要试错法或财务计算器/软件。</p>
                     </div>
 
-                    <div class="example-box">
+                    <div class="example-box" id="original-project-feasibility-example-3">
                         <div class="example-title">例4-4 内含报酬率计算</div>
                         <p>投资350,000元，1年后产生400,000元现金流量。</p>
                         <p>$-350,000 + \frac{400,000}{1+IRR} = 0$</p>
@@ -2714,7 +2720,7 @@
                     </div>
 
                     <h4><span class="underline-clickable" data-explanation="discounted-payback">动态回收期 (Discounted Payback Period)</span></h4>
-                    
+
                     <div class="explanation" id="discounted-payback">
                         <strong>动态回收期详解:</strong> 与静态回收期相比，动态回收期考虑了货币时间价值，更准确地反映了项目的风险和收益特征。但仍然忽略了回收期后的现金流。
                     </div>
@@ -2727,14 +2733,14 @@
                         <li><strong>缺点:</strong> 基准回收期确定主观；忽略回收期后的现金流。</li>
                     </ul>
 
-                    <div class="example-box">
+                    <div class="example-box" id="original-project-feasibility-example-4">
                         <div class="example-title">例4-11 动态回收期计算</div>
                         <p>初始投资-10,000元，现金流量逐年不同（5年），折现率12%。计算各期现金流量现值并累计，得到动态回收期为3.94年。</p>
                     </div>
 
                     <p><strong>静态回收期 (Payback Period):</strong> 已在"现金流估计"部分介绍。</p>
 
-                    <div class="thinking-box">
+                    <div class="thinking-box" id="original-project-feasibility-thinking-1">
                         <div class="thinking-title">思考题 4-3</div>
                         <p>(1) 计算项目A, B, C的回收期。</p>
                         <ul>
@@ -2743,7 +2749,7 @@
                             <li>C: $C_0$= -5000, $C_1$=1000, $C_2$=1000, $C_3$=3000</li>
                         </ul>
                         <p>(4) 若折现率10%，计算各项目净现值。</p>
-                        
+
                         <div class="answer">
                             <div class="answer-title">答案:</div>
                             <p><strong>回收期计算:</strong></p>
@@ -2752,7 +2758,7 @@
                                 <li>B: 回收期 = 2年</li>
                                 <li>C: 回收期 = 3年</li>
                             </ul>
-                            
+
                             <p><strong>净现值计算 (折现率10%):</strong></p>
                             <ul>
                                 <li>A: NPV = -4000 + 1000/1.1 + 500/1.1² + 3000/1.1³ = -4000 + 909.09 + 413.22 + 2253.95 = -423.74元</li>
@@ -2762,12 +2768,12 @@
                         </div>
                     </div>
 
-                    <div class="thinking-box">
+                    <div class="thinking-box" id="original-project-feasibility-thinking-2">
                         <div class="thinking-title">思考题 4-13</div>
                         <p>某公司考虑两个互斥项目A和B。A初始投资50万元，未来5年每年现金流量20万元；B初始投资500万元，未来5年每年现金流量145万元。折现率10%。</p>
                         <p>(1) 用净现值法决策。</p>
                         <p>(2) 用盈利指数法决策。</p>
-                        
+
                         <div class="answer">
                             <div class="answer-title">答案:</div>
                             <p><strong>(1) 净现值法:</strong></p>
@@ -2776,14 +2782,14 @@
                                 <li>NPV(B) = $145 \times PVIFA_{10\%,5} - 500 = 145 \times 3.7908 - 500 = 549.666 - 500 = 49.67$万元</li>
                                 <li><strong>结论:</strong> 选择项目B（NPV更大）</li>
                             </ul>
-                            
+
                             <p><strong>(2) 盈利指数法:</strong></p>
                             <ul>
                                 <li>PI(A) = (25.82 + 50) / 50 = 1.5164</li>
                                 <li>PI(B) = (49.67 + 500) / 500 = 1.0993</li>
                                 <li><strong>结论:</strong> 选择项目A（PI更大）</li>
                             </ul>
-                            
+
                             <p><strong>注:</strong> NPV法和PI法在互斥项目决策中可能产生矛盾，一般以NPV法为准，因为它与股东财富最大化目标更直接相关。</p>
                         </div>
                     </div>
@@ -2791,11 +2797,11 @@
 
                 <section id="uncertainty-analysis">
                     <h3>不确定性分析</h3>
-                    
+
                     <p>项目未来现金流量的预测存在不确定性，需要进行分析。</p>
 
                     <h4><span class="underline-clickable" data-explanation="sensitivity-analysis">敏感性分析 (Sensitivity Analysis)</span></h4>
-                    
+
                     <div class="explanation" id="sensitivity-analysis">
                         <strong>敏感性分析详解:</strong> 敏感性分析是风险分析的重要工具，通过单独改变一个变量来观察其对项目经济指标的影响程度。敏感性越高的变量，项目风险越大，需要更多关注。
                     </div>
@@ -2806,17 +2812,17 @@
                         <li><strong>局限性:</strong> 一次只改变一个变量，未考虑变量间的相互影响；结果解读有主观性。</li>
                     </ul>
 
-                    <div class="example-box">
+                    <div class="example-box" id="original-uncertainty-analysis-example-1">
                         <div class="example-title">例6-1 敏感性分析</div>
                         <p>分析单位价格变动对NPV和IRR的影响，发现单位价格变动越大，NPV和IRR的变动也越大。</p>
                     </div>
 
                     <h4>临界点分析 (Break-even Analysis)</h4>
-                    
+
                     <p><strong>定义:</strong> 确定使项目净现值为零或会计利润为零时的关键变量（如销售量）的数值，即临界点。</p>
 
                     <h5><span class="underline-clickable" data-explanation="accounting-breakeven">会计盈亏平衡点 (Accounting Break-even)</span></h5>
-                    
+
                     <div class="explanation" id="accounting-breakeven">
                         <strong>会计盈亏平衡点详解:</strong> 会计盈亏平衡点是指企业收入等于全部成本时的销售量，此时企业既不盈利也不亏损。这是最基础的盈亏分析方法。
                     </div>
@@ -2828,13 +2834,13 @@
                         <p>$$会计盈亏平衡点销售量 = \frac{固定成本 + 折旧}{销售单价 - 单位变动成本}$$</p>
                     </div>
 
-                    <div class="example-box">
+                    <div class="example-box" id="original-uncertainty-analysis-example-2">
                         <div class="example-title">例6-3 会计盈亏平衡点计算</div>
                         <p>会计盈亏平衡点 = (25万元 + 15万元) / (2000元 - 1500元) = 400,000 / 500 = 800台/年</p>
                     </div>
 
                     <h5><span class="underline-clickable" data-explanation="npv-breakeven">净现值盈亏平衡点 (NPV Break-even)</span></h5>
-                    
+
                     <div class="explanation" id="npv-breakeven">
                         <strong>净现值盈亏平衡点详解:</strong> 净现值盈亏平衡点考虑了货币时间价值，是使项目NPV为零的销售量。这个指标更准确地反映了项目的真实盈亏平衡水平，因为它考虑了投资的机会成本。
                     </div>
@@ -2847,19 +2853,19 @@
                         <p>其中，投资额的等价年度成本 = $\frac{CF_0}{PVIFA_{r,N}}$</p>
                     </div>
 
-                    <div class="example-box">
+                    <div class="example-box" id="original-uncertainty-analysis-example-3">
                         <div class="example-title">例6-3续 净现值盈亏平衡点计算</div>
                         <p>净现值盈亏平衡点 = (150万元 / $PVIFA_{10\%,10}$ + 25万元 × (1-0.25) - 15万元 × 0.25) / ((2000元 - 1500元) × (1-0.25))</p>
                         <p>= (150/6.1446 + 25×0.75 - 15×0.25) / (500×0.75)</p>
                         <p>= (24.41 + 18.75 - 3.75) / 375 = 39.41万元 / 375元/台 ≈ 1051台/年</p>
                     </div>
 
-                    <div class="thinking-box">
+                    <div class="thinking-box" id="original-uncertainty-analysis-thinking-1">
                         <div class="thinking-title">思考题 6-4</div>
                         <p>某饮料公司项目初始投资100万元，寿命10年。年广告费10万元，产品成本1.5元/瓶，售价4元/瓶。折现率12%，所得税率25%。</p>
                         <p>(1) 会计盈亏平衡点产量？</p>
                         <p>(2) 净现值盈亏平衡点产量？</p>
-                        
+
                         <div class="answer">
                             <div class="answer-title">答案:</div>
                             <p><strong>(1) 会计盈亏平衡点产量:</strong></p>
@@ -2869,7 +2875,7 @@
                                 <li>会计盈亏平衡点Q = (年固定成本 + 年折旧) / (销售单价 - 单位变动成本)</li>
                                 <li>= (100,000 + 100,000) / (4 - 1.5) = 200,000 / 2.5 = 80,000瓶</li>
                             </ul>
-                            
+
                             <p><strong>(2) 净现值盈亏平衡点产量:</strong></p>
                             <ul>
                                 <li>等价年度成本 = 100万元 / $PVIFA_{12\%,10}$ = 100 / 5.6502 = 17.6985万元</li>
@@ -2888,7 +2894,7 @@
 
                 <section id="mutually-exclusive-projects">
                     <h3>互斥项目选择</h3>
-                    
+
                     <h4>项目周期相同</h4>
                     <ul>
                         <li><strong>净现值法:</strong> 选择NPV最大的项目。</li>
@@ -2918,20 +2924,20 @@
                         <p>其中，$PV_{cost}$ 为成本的总现值。</p>
                     </div>
 
-                    <div class="example-box">
+                    <div class="example-box" id="original-mutually-exclusive-example-1">
                         <div class="example-title">机器成本比较示例</div>
                         <p><strong>机器A:</strong> 购置费15,000元，使用3年，每年使用费5,000元。折现率10%。</p>
                         <p>机器A成本现值 $PV_A = 15,000 + 5,000 \times PVIFA_{10\%,3} = 15,000 + 5,000 \times 2.4869 = 27,434.5$元</p>
                         <p>$EAC_A = 27,434.5 / 2.4869 \approx 11,031.61$元</p>
-                        
+
                         <p><strong>机器B:</strong> 购置费10,000元，使用2年，每年使用费6,000元。折现率10%。</p>
                         <p>机器B成本现值 $PV_B = 10,000 + 6,000 \times PVIFA_{10\%,2} = 10,000 + 6,000 \times 1.7355 = 20,413$元</p>
                         <p>$EAC_B = 20,413 / 1.7355 \approx 11,762.16$元</p>
-                        
+
                         <p><strong>结论:</strong> 选择机器A，因为其EAC较低。</p>
                     </div>
 
-                    <div class="thinking-box">
+                    <div class="thinking-box" id="original-mutually-exclusive-thinking-1">
                         <div class="thinking-title">思考题 5-12</div>
                         <p>某公司考虑从两个相互排斥的设备A和B中选择一个，折现率10%。</p>
                         <ul>
@@ -2941,7 +2947,7 @@
                         <p>(1) 计算NPV。</p>
                         <p>(2) 计算等价年度现金流量 (EAA)。</p>
                         <p>(3) 应选择哪个设备？</p>
-                        
+
                         <div class="answer">
                             <div class="answer-title">答案:</div>
                             <p><strong>(1) 计算NPV:</strong></p>
@@ -2949,13 +2955,13 @@
                                 <li>NPV(A) = -200 + 80/1.1 + 100/1.1² + 150/1.1³ = -200 + 72.73 + 82.64 + 112.70 = 68.07万元</li>
                                 <li>NPV(B) = -150 + 60/1.1 + 80/1.1² + 80/1.1³ + 70/1.1⁴ = -150 + 54.55 + 66.12 + 60.11 + 47.81 = 78.59万元</li>
                             </ul>
-                            
+
                             <p><strong>(2) 计算等价年度现金流量 (EAA):</strong></p>
                             <ul>
                                 <li>EAA(A) = 68.07 / $PVIFA_{10\%,3}$ = 68.07 / 2.4869 ≈ 27.37万元</li>
                                 <li>EAA(B) = 78.59 / $PVIFA_{10\%,4}$ = 78.59 / 3.1699 ≈ 24.79万元</li>
                             </ul>
-                            
+
                             <p><strong>(3) 应选择哪个设备？</strong></p>
                             <p>若仅看NPV，B更优。但寿命不同，应使用EAA法。EAA(A) > EAA(B)，故选择项目A。</p>
                             <p><strong>注:</strong> 寿命不同时EAA是更合适的标准，因为它考虑了项目可重复性的影响。</p>
@@ -2969,11 +2975,11 @@
 
                 <section id="capital-cost-structure">
                     <h3>资本成本构成</h3>
-                    
+
                     <p>资本成本是企业为使用资本而付出的代价，也是投资项目的最低可接受收益率。主要构成包括：</p>
 
                     <h4><span class="underline-clickable" data-explanation="equity-cost">权益资本成本 ($r_S$)</span></h4>
-                    
+
                     <div class="explanation" id="equity-cost">
                         <strong>权益资本成本详解:</strong> 权益资本成本是股东对投资的期望收益率，反映了股权投资的风险水平。它是企业筹集股权资金所需支付的成本，也是评估项目可行性的重要基准。
                     </div>
@@ -2981,7 +2987,7 @@
                     <p>投资者对公司普通股投资所要求的收益率。</p>
 
                     <h5><span class="underline-clickable" data-explanation="capm-model">资本资产定价模型 (CAPM)</span></h5>
-                    
+
                     <div class="explanation" id="capm-model">
                         <strong>CAPM模型详解:</strong> CAPM是现代金融理论的基石，它建立了系统风险与期望收益之间的线性关系。模型假设投资者是理性的且只关心期望收益和风险，市场是有效的。
                     </div>
@@ -2997,7 +3003,7 @@
                     </div>
 
                     <h5><span class="underline-clickable" data-explanation="beta-coefficient">贝塔系数 ($\beta$)</span></h5>
-                    
+
                     <div class="explanation" id="beta-coefficient">
                         <strong>贝塔系数详解:</strong> 贝塔系数衡量个股收益率相对于市场组合收益率的敏感性，是系统风险的度量指标。贝塔值反映了股票价格与市场整体走势的相关程度。
                     </div>
@@ -3042,7 +3048,7 @@
                     </div>
 
                     <h4>债务资本成本 ($r_B$)</h4>
-                    
+
                     <p>公司借入资金的现行成本。通常指税后债务成本。</p>
 
                     <div class="formula-box">
@@ -3052,7 +3058,7 @@
                     </div>
 
                     <h4>优先股成本 ($r_P$)</h4>
-                    
+
                     <p>公司发行优先股所承担的成本。</p>
 
                     <div class="formula-box">
@@ -3067,12 +3073,12 @@
 
                 <section id="capital-costs">
                     <h3>个别资本成本、加权资本成本、边际资本成本、筹资突破点</h3>
-                    
+
                     <h4>个别资本成本</h4>
                     <p>指上述权益资本成本、债务资本成本、优先股成本等。</p>
 
                     <h4><span class="underline-clickable" data-explanation="wacc-concept">加权平均资本成本 (Weighted Average Cost of Capital, WACC)</span></h4>
-                    
+
                     <div class="explanation" id="wacc-concept">
                         <strong>WACC详解:</strong> WACC是公司各种融资来源成本的加权平均值，是评估公司整体或平均风险投资项目的重要折现率。它反映了公司资本结构和融资成本的综合水平。
                     </div>
@@ -3099,7 +3105,7 @@
                     </div>
 
                     <h4><span class="underline-clickable" data-explanation="marginal-cost">边际资本成本 (Marginal Cost of Capital, MCC)</span> 和 <span class="underline-clickable" data-explanation="break-point">筹资突破点 (Break Point)</span></h4>
-                    
+
                     <div class="explanation" id="marginal-cost">
                         <strong>边际资本成本详解:</strong> 边际资本成本是指公司新增一元资本所需负担的成本。随着筹资总额的增加，由于风险上升和优质资金来源有限，边际资本成本通常会逐步上升。
                     </div>
@@ -3113,7 +3119,7 @@
                     <div class="thinking-box">
                         <div class="thinking-title">思考题 8-5</div>
                         <p>某上市公司目前债务5000万元，权益1亿元，权益贝塔1.2。计划杠杆收购，使负债权益比升至2。收购后权益贝塔是多少？</p>
-                        
+
                         <div class="answer">
                             <div class="answer-title">答案:</div>
                             <ul>
@@ -3128,14 +3134,14 @@
                     <div class="thinking-box">
                         <div class="thinking-title">思考题 8-11</div>
                         <p>某公司债务价值160万元，股权价值260万元，所得税率34%。权益资本成本12%，债务资本成本8%。计算公司的税前WACC和税后有效WACC。</p>
-                        
+
                         <div class="answer">
                             <div class="answer-title">答案:</div>
                             <p><strong>税前WACC:</strong></p>
                             <p>税前WACC = $\frac{160}{160+260} \times 8\% + \frac{260}{160+260} \times 12\%$</p>
                             <p>= $\frac{160}{420} \times 0.08 + \frac{260}{420} \times 0.12$</p>
                             <p>≈ $0.38095 \times 0.08 + 0.61905 \times 0.12 ≈ 0.03048 + 0.07429 ≈ 10.48\%$</p>
-                            
+
                             <p><strong>税后WACC:</strong></p>
                             <p>税后WACC = $\frac{160}{420} \times 8\% \times (1-0.34) + \frac{260}{420} \times 12\%$</p>
                             <p>= $0.38095 \times 0.08 \times 0.66 + 0.61905 \times 0.12$</p>
@@ -3150,9 +3156,9 @@
 
                 <section id="dividend-payment-methods">
                     <h3>股利发放方式</h3>
-                    
+
                     <h4><span class="underline-clickable" data-explanation="cash-dividend">现金股利 (Cash Dividend)</span></h4>
-                    
+
                     <div class="explanation" id="cash-dividend">
                         <strong>现金股利详解:</strong> 现金股利是最常见的股利形式，直接为股东提供现金回报。它减少公司现金和留存收益，但为股东提供即时的投资收益。
                     </div>
@@ -3161,7 +3167,7 @@
                     <p><strong>影响:</strong> 减少公司现金和留存收益，股东获得现金收入。</p>
 
                     <h4><span class="underline-clickable" data-explanation="stock-dividend">股票股利 (Stock Dividend)</span></h4>
-                    
+
                     <div class="explanation" id="stock-dividend">
                         <strong>股票股利详解:</strong> 股票股利不涉及现金流出，而是通过发放额外股票的方式向股东分配收益。这种方式保留了公司现金用于再投资，但会稀释每股价值。
                     </div>
@@ -3173,7 +3179,7 @@
                     </ul>
 
                     <h4><span class="underline-clickable" data-explanation="stock-split">股票分割 (Stock Split)</span></h4>
-                    
+
                     <div class="explanation" id="stock-split">
                         <strong>股票分割详解:</strong> 股票分割的主要目的是降低股价，提高股票的市场流动性。通过增加股票数量而降低单股价格，使更多投资者能够负担得起该股票。
                     </div>
@@ -3182,7 +3188,7 @@
                     <p><strong>影响:</strong> 类似股票股利，增加流通股数，降低每股股价，股东权益总额不变。目的是降低股价，增强股票流动性。</p>
 
                     <h4><span class="underline-clickable" data-explanation="stock-repurchase">股票回购 (Stock Repurchase)</span></h4>
-                    
+
                     <div class="explanation" id="stock-repurchase">
                         <strong>股票回购详解:</strong> 股票回购是现金股利的替代方式，具有税收优势且给股东选择权。回购减少了流通股数，通常会推高每股收益和股价。
                     </div>
@@ -3200,15 +3206,15 @@
                         <p>(1) 发放20%股票股利，新股价？</p>
                         <p>(2) 3:2股票分割，新股价？</p>
                         <p>(3) 1:3逆向拆分，新股价？</p>
-                        
+
                         <div class="answer">
                             <div class="answer-title">答案:</div>
                             <p><strong>(1) 发放20%股票股利:</strong></p>
                             <p>新股价 = 20 / (1 + 0.20) = 20 / 1.2 = 16.67元</p>
-                            
+
                             <p><strong>(2) 3:2股票分割:</strong></p>
                             <p>3:2分割相当于每2股变3股，即1股变1.5股。新股价 = 20 / 1.5 = 13.33元</p>
-                            
+
                             <p><strong>(3) 1:3逆向拆分:</strong></p>
                             <p>1:3逆向拆分相当于每3股合为1股。新股价 = 20 × 3 = 60元</p>
                         </div>
@@ -3217,9 +3223,9 @@
 
                 <section id="dividend-policy-types">
                     <h3>股利政策类型</h3>
-                    
+
                     <h4><span class="underline-clickable" data-explanation="residual-dividend">剩余型股利政策 (Residual Dividend Policy)</span></h4>
-                    
+
                     <div class="explanation" id="residual-dividend">
                         <strong>剩余型股利政策详解:</strong> 这种政策优先考虑企业的投资需要，只有在满足所有盈利投资项目的资金需求后，才将剩余资金作为股利分配给股东。
                     </div>
@@ -3231,7 +3237,7 @@
                     </ul>
 
                     <h4><span class="underline-clickable" data-explanation="stable-dividend">稳定股利额政策 (Stable Dividend Policy)</span></h4>
-                    
+
                     <div class="explanation" id="stable-dividend">
                         <strong>稳定股利额政策详解:</strong> 这种政策向市场传递公司经营稳定的信号，有助于建立投资者信心。稳定的股利支付吸引偏好稳定收入的投资者群体。
                     </div>
@@ -3243,7 +3249,7 @@
                     </ul>
 
                     <h4><span class="underline-clickable" data-explanation="constant-payout">固定股利支付率政策 (Constant Payout Ratio Policy)</span></h4>
-                    
+
                     <div class="explanation" id="constant-payout">
                         <strong>固定股利支付率政策详解:</strong> 这种政策使股利与公司盈利能力直接挂钩，股东可以分享公司业绩增长的成果，但也要承担业绩波动带来的股利不稳定风险。
                     </div>
@@ -3255,7 +3261,7 @@
                     </ul>
 
                     <h4><span class="underline-clickable" data-explanation="low-regular-plus-extra">低正常股利加额外股利政策 (Low Regular Dividend Plus Extras Policy)</span></h4>
-                    
+
                     <div class="explanation" id="low-regular-plus-extra">
                         <strong>低正常股利加额外股利政策详解:</strong> 这种政策结合了稳定性和灵活性的优点，既为股东提供稳定的基本收入，又能在公司业绩好时给予额外回报。
                     </div>
@@ -3269,9 +3275,9 @@
 
                 <section id="dividend-theory">
                     <h3>理论 (股利政策的相关理论)</h3>
-                    
+
                     <h4><span class="underline-clickable" data-explanation="dividend-irrelevance">股利无关论 (Dividend Irrelevance Theory - MM理论)</span></h4>
-                    
+
                     <div class="explanation" id="dividend-irrelevance">
                         <strong>股利无关论详解:</strong> MM理论认为在完美市场条件下，投资者可以通过买卖股票自制股利，因此公司的股利政策不会影响股东财富。公司价值只取决于投资决策的质量。
                     </div>
@@ -3279,7 +3285,7 @@
                     <p>在完美市场（无税、无交易成本）中，公司股利政策不影响公司价值。公司价值取决于其投资决策产生的盈利能力。</p>
 
                     <h4><span class="underline-clickable" data-explanation="bird-in-hand">一鸟在手论 (Bird-in-Hand Theory)</span></h4>
-                    
+
                     <div class="explanation" id="bird-in-hand">
                         <strong>一鸟在手论详解:</strong> 这个理论基于投资者的风险规避心理，认为确定的股利收入比不确定的资本利得更有价值。投资者会给高股利政策的公司更高的估值。
                     </div>
@@ -3287,7 +3293,7 @@
                     <p>投资者通常风险规避，认为眼前的现金股利比未来不确定的资本利得更有价值，因此偏好高股利政策的公司，高股利会提升公司价值。</p>
 
                     <h4><span class="underline-clickable" data-explanation="tax-differential">税差理论 (Tax Differential Theory)</span></h4>
-                    
+
                     <div class="explanation" id="tax-differential">
                         <strong>税差理论详解:</strong> 由于不同类型收入的税收待遇不同，投资者会根据自身税收情况偏好不同的股利政策。这个理论解释了为什么不同公司会采用不同的股利政策。
                     </div>
@@ -3295,7 +3301,7 @@
                     <p>由于资本利得税率通常低于股利所得税率（或资本利得税可以递延缴纳），投资者偏好低股利政策，公司应减少现金股利，以增加留存收益带来的资本利得，从而最大化股东税后财富。</p>
 
                     <h4><span class="underline-clickable" data-explanation="agency-cost">代理成本理论 (Agency Cost Theory)</span></h4>
-                    
+
                     <div class="explanation" id="agency-cost">
                         <strong>代理成本理论详解:</strong> 发放股利强制公司将现金返还给股东，减少了管理者可能滥用的自由现金流。这种约束机制有助于保护股东利益，降低代理成本。
                     </div>
@@ -3303,17 +3309,17 @@
                     <p>发放股利可以减少管理者可支配的自由现金流，从而降低管理者滥用资金（如投资于不良项目、过度消费）的可能性，有助于降低代理成本。</p>
 
                     <h4><span class="underline-clickable" data-explanation="clientele-effect">追随者效应 (Clientele Effect)</span></h4>
-                    
+
                     <div class="explanation" id="clientele-effect">
                         <strong>追随者效应详解:</strong> 不同投资者群体有不同的股利偏好，公司会吸引与其股利政策相匹配的投资者。这解释了为什么公司很少改变股利政策，因为改变会导致投资者群体的重新配置。
                     </div>
 
                     <p>不同类型的投资者对股利政策有不同偏好（如高收入者可能偏好低股利以避税，退休人员可能偏好高股利以获取稳定现金流）。公司会吸引具有相应股利偏好的特定投资者群体。因此，公司股利政策一旦确定，改变它可能会导致现有股东不满并出售股票，股价可能因此波动，但长期来看，市场会达到均衡，公司难以通过改变股利政策持续影响股价。</p>
 
-                    <div class="thinking-box">
+                    <div class="thinking-box" id="original-dividend-theory-thinking-1">
                         <div class="thinking-title">思考题 11-13</div>
                         <p>A公司明年期望股利收益率6%，B公司不支付股利，必要收益率15%。A与B风险等级相当。资本利得不征税，股利税率20%。A公司的税前必要收益率是多少？</p>
-                        
+
                         <div class="answer">
                             <div class="answer-title">答案:</div>
                             <p>假设投资者要求相同的税后总收益率。</p>
@@ -3329,9 +3335,1138 @@
                     </div>
                 </section>
             </section>
+
+            <!-- 全部示例及思考题 Section -->
+            <section id="all-examples-questions">
+                <h2>全部示例及思考题</h2>
+                <p>本节汇总了所有章节的示例和思考题，按知识点分类整理，方便查阅和复习。</p>
+
+                <!-- 货币时间价值 -->
+                <section id="examples-time-value">
+                    <h3>货币时间价值</h3>
+
+                    <!-- 单利与复利 -->
+                    <h4>单利与复利</h4>
+
+                    <div class="example-box">
+                        <div class="example-title">例2-1 计算投资的未来价值</div>
+                        <p>投资100万元于某信托产品，预期收益率10%，复利计息，投资期5年。</p>
+                        <ul>
+                            <li>$FV = 100 \times (1.1)^5 = 161$ (万元)</li>
+                            <li>若利率变为15%：$FV = 100 \times (1.15)^5 = 201$ (万元)</li>
+                            <li>若利率变为5%：$FV = 100 \times (1.05)^5 = 127$ (万元)</li>
+                        </ul>
+                        <p>对比单利：10%利率下，单利终值为 $100 \times (1 + 0.1 \times 5) = 150$ 万元。这显示了复利的"威力"，特别是在长期和高利率下。</p>
+                        <p><a href="#original-simple-compound-example-1">返回知识点</a></p>
+                    </div>
+
+                    <div class="example-box">
+                        <div class="example-title">例2-4 复利的力量</div>
+                        <p>存入1000元，年利率8%。</p>
+                        <ul>
+                            <li>9年后: $FV = 1000 \times (1.08)^9 \approx 1999$ 元。(存款在9年内几乎翻倍)</li>
+                            <li>90年后: $FV = 1000 \times (1.08)^{90} \approx 1,018,915.09$ 元。(投资者成为百万富翁)</li>
+                        </ul>
+                        <p><a href="#original-simple-compound-example-2">返回知识点</a></p>
+                    </div>
+
+                    <div class="example-box">
+                        <div class="example-title">专栏2-4 单利和复利</div>
+                        <p>比较1000元存款，利率5%，投资2年和20年的差异：</p>
+                        <ul>
+                            <li>2年单利: $1000 + 5\% \times 1000 \times 2 = 1100$ 元</li>
+                            <li>2年复利: $1000 \times (1+5\%)^2 = 1102.5$ 元 (差异小)</li>
+                            <li>20年单利: $1000 + 5\% \times 1000 \times 20 = 2000$ 元</li>
+                            <li>20年复利: $1000 \times (1+5\%)^{20} \approx 2653$ 元 (差异显著)</li>
+                        </ul>
+                        <p><strong>结论：</strong>由于可以将利息取出再存入以实现复利效果，因此在公司金融理论中通常采用复利计算现值和终值。</p>
+                        <p><a href="#original-simple-compound-example-3">返回知识点</a></p>
+                    </div>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题2: 单利计息和复利计息有何区别?</div>
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <p>单利是指不管投资期限长短，只按一定的投资本金计算利息，本金所产生的利息不加入本金重复计算。而复利则是指每经过一个计息期，都要将投资本金所生利息加入本金再计利息。</p>
+                        </div>
+                        <p><a href="#original-simple-compound-thinking-1">返回知识点</a></p>
+                    </div>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题6: 如果以5%的年利率存入10000元,5年后你将获得多少?</div>
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <p>$FV = PV(1+r)^5 = 10000 \times (1.05)^5 = 12762.82$ (元)</p>
+                        </div>
+                        <p><a href="#original-simple-compound-thinking-2">返回知识点</a></p>
+                    </div>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题7: 某投资者以5%的年利率存入100000元,若利率按下列方式复利计息:(1)每年一次;(2)每个季度一次;(3)每月一次,那么5年后该投资者的存款终值分别是多少?</div>
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <ul>
+                                <li>(1) $FV = 100000 \times (1.05)^5 = 127628.16$ (元)</li>
+                                <li>(2) $FV = 100000 \times (1 + 5\%/4)^{4 \times 5} = 128203$ (元)</li>
+                                <li>(3) $FV = 100000 \times (1 + 5\%/12)^{12 \times 5} = 128335$ (元)</li>
+                            </ul>
+                        </div>
+                        <p><a href="#original-simple-compound-thinking-3">返回知识点</a></p>
+                    </div>
+
+                    <!-- 名义利率与实际利率 -->
+                    <h4>名义利率与实际利率</h4>
+
+                    <div class="example-box">
+                        <div class="example-title">例2-5 多年期复利</div>
+                        <p>50000元存5年，年利率3.5%，每半年复利一次。</p>
+                        <p>$FV = 50000 \times (1 + 0.035/2)^{2 \times 5} = 50000 \times (1.0175)^{10} \approx 59472.22$ 元。</p>
+                        <p><a href="#original-nominal-effective-example-1">返回知识点</a></p>
+                    </div>
+
+                    <div class="example-box">
+                        <div class="example-title">例2-6 计算实际年利率</div>
+                        <p>名义年利率8%，每月复利。1元投资1年末的终值：</p>
+                        <p>$FV = 1 \times (1 + 0.08/12)^{12} \approx 1.083$ 元。</p>
+                        <p>实际年回报率为8.3%。</p>
+                        <p><a href="#original-nominal-effective-example-2">返回知识点</a></p>
+                    </div>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题3: 名义利率与实际利率之间是什么关系?</div>
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <p>当计息周期为1年时，名义利率与实际利率相等；当计息周期少于1年时，实际利率大于名义利率。名义利率越高，复利计息次数越多，实际利率与名义利率的差异就越大。</p>
+                        </div>
+                        <p><a href="#original-nominal-effective-thinking-1">返回知识点</a></p>
+                    </div>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题9: 假设一笔贷款的实际年利率为8%,同时要求该贷款每月月底支付结清,那么该贷款的名义利率是多少?</div>
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <p>$(1 + r/12)^{12} - 1 = 0.08$ ⇒ $r \approx 7.7208\%$</p>
+                        </div>
+                        <p><a href="#original-nominal-effective-thinking-2">返回知识点</a></p>
+                    </div>
+
+                    <!-- 普通年金现值/终值公式 -->
+                    <h4>普通年金现值/终值公式</h4>
+
+                    <div class="example-box">
+                        <div class="example-title">例2-15 分期付款vs一次性付款</div>
+                        <p>购买10000元复印机，或选择从第一年末起每年支付3000元，连续4年，折现率6%。</p>
+                        <p>分期付款的现值: $PV = 3000 \times \left[\frac{1}{0.06} - \frac{1}{0.06 \times (1.06)^4}\right] \approx 10395.32$ 元。</p>
+                        <p><strong>结论:</strong> 因为分期付款的现值高于一次性付款，所以应选择一次性付清。</p>
+                        <p><a href="#original-ordinary-annuity-example-1">返回知识点</a></p>
+                    </div>
+
+                    <div class="example-box">
+                        <div class="example-title">例2-16 房贷计算</div>
+                        <p>计划购买15万元汽车，选择方案一：借款15万元，年利率3%，3年期，每月等额还款。</p>
+                        <p>月利率 = 0.03/12 = 0.0025，期数 t = 3 × 12 = 36。</p>
+                        <p>每月还款额 $A = 150000 \times \frac{0.0025}{1 - (1.0025)^{-36}} \approx 4362.18$ 元。</p>
+                        <p><a href="#original-ordinary-annuity-example-2">返回知识点</a></p>
+                    </div>
+
+                    <div class="example-box">
+                        <div class="example-title">例2-17 零存整取</div>
+                        <p>每年末存入银行10000元，连续5年，存款利率3.5%。</p>
+                        <p>第5年末存款总额 $FV = 10000 \times \frac{(1+0.035)^5 - 1}{0.035} \approx 53624.66$ 元。</p>
+                        <p><a href="#original-ordinary-annuity-example-3">返回知识点</a></p>
+                    </div>
+
+                    <div class="example-box">
+                        <div class="example-title">例2-18 偿债基金</div>
+                        <p>为在5年后偿还10万元债务，计划从第一年末起每年末存入等额资金，存款利率3.5%。</p>
+                        <p>每年需存入金额 $A = 100000 \times \frac{0.035}{(1+0.035)^5 - 1} \approx 18648.14$ 元。</p>
+                        <p><a href="#original-ordinary-annuity-example-4">返回知识点</a></p>
+                    </div>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题13: 你计划买一辆价值150000元的汽车,现有以下两种付款方式,并且是每月等额还款,你应选择哪一种?(1)汽车商给予你10%的价格折扣,并以10%的年利率向你提供5年期的贷款来支付剩余款项;(2)汽车商不给予价格折扣,但提供给你5年期的年利率为3%的特别贷款 150000元。</div>
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <ul>
+                                <li>(1) 贷款额 = 150000 × 90% = 135000元。月利率 = 10%/12 ≈ 0.008333。期数 = 60。月还款额 ≈ 2865.69元。</li>
+                                <li>(2) 贷款额 = 150000元。月利率 = 3%/12 = 0.0025。期数 = 60。月还款额 ≈ 2695.30元。</li>
+                                <li><strong>应选择方案(2)。</strong></li>
+                            </ul>
+                        </div>
+                        <p><a href="#original-ordinary-annuity-thinking-1">返回知识点</a></p>
+                    </div>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题14: 假如你在以后的5年中每年末存入银行1000元。若银行利率为3%,那么第十年末银行存款总额为多少?</div>
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <p>首先计算前5年存款在第5年末的终值: $FV_5 = 1000 \times \frac{(1.03)^5 - 1}{0.03} \approx 5309.14$ 元。</p>
+                            <p>然后将此金额再存5年: $FV_{10} = 5309.14 \times (1.03)^5 \approx 6154.71$ 元。</p>
+                        </div>
+                        <p><a href="#original-ordinary-annuity-thinking-2">返回知识点</a></p>
+                    </div>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题15: 现在你计划在未来的5年内存够100000元。若存款的名义年利率为5%,每月复利计息,那么你每个月要存多少钱才能达到相应的数额?</div>
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <p>月利率 = 5%/12 ≈ 0.004167。期数 = 60。</p>
+                            <p>每月存款额 $C = 100000 \times \frac{0.004167}{(1.004167)^{60} - 1} \approx 1468.96$ 元。</p>
+                        </div>
+                        <p><a href="#original-ordinary-annuity-thinking-3">返回知识点</a></p>
+                    </div>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题16: 某人从银行借入100万元购买一套住房,贷款期限为20年,贷款年利率为7%,若他采用按月等额还款方式,那么每月应还款多少?</div>
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <p>月利率 = 7%/12 ≈ 0.005833。期数 = 240。</p>
+                            <p>每月还款额 $A = 1000000 \times \frac{0.005833}{1 - (1.005833)^{-240}} \approx 7752.99$ 元。</p>
+                        </div>
+                        <p><a href="#original-ordinary-annuity-thinking-4">返回知识点</a></p>
+                    </div>
+
+                    <!-- 永续年金现值公式 -->
+                    <h4>永续年金现值公式</h4>
+
+                    <div class="example-box">
+                        <div class="example-title">例2-13 优先股估值</div>
+                        <p>某银行发行一种优先股，每股每年支付现金股利0.3元，年利率为5%。</p>
+                        <p>该优先股的现值 $PV = \frac{0.3}{0.05} = 6$ 元。</p>
+                        <ul>
+                            <li>如果年利率上升到8%，现值降为3.75元。</li>
+                            <li>如果年利率下降到3.5%，现值升为8.57元。</li>
+                        </ul>
+                        <p><a href="#original-perpetual-annuity-example-1">返回知识点</a></p>
+                    </div>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题4: 关于永续年金计算公式的三个要点是什么?</div>
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <ol>
+                                <li>分子是现在开始起1期后收到的有规律的现金流量，而不是现在时点的现金流量。</li>
+                                <li>它不同于单一现金流量的现值。</li>
+                                <li>关于时间的假定，我们假定现金流量的发生是有规律而且是确定的。</li>
+                            </ol>
+                        </div>
+                        <p><a href="#original-perpetual-annuity-thinking-1">返回知识点</a></p>
+                    </div>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题11: 假定年利率为8%,从2年以后开始,每年有一笔500元的现金流量发生,且现金流量的支付会一直持续下去,那么这一系列现金流量的现值为多少?</div>
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <p>这是延期永续年金。首先计算年金在第一期末的价值（相对于年金支付开始的前一期）：$PV_1 = \frac{500}{0.08} = 6250$ 元。</p>
+                            <p>然后将其折现回第0期：$PV_0 = \frac{6250}{(1+0.08)^1} \approx 5787.04$ 元。</p>
+                        </div>
+                        <p><a href="#original-perpetual-annuity-thinking-2">返回知识点</a></p>
+                    </div>
+
+                    <!-- 先付年金现值公式 -->
+                    <h4>先付年金现值公式</h4>
+
+                    <div class="example-box">
+                        <div class="example-title">例2-20 租赁问题</div>
+                        <p>某公司租用一间办公室5年，每年年初支付租金10万元，折现率为6%。</p>
+                        <p>租金的现值 $PV_{due} = 100000 + 100000 \times \left[\frac{1}{0.06} - \frac{1}{0.06 \times (1.06)^4}\right] \approx 446510.61$ 元。</p>
+                        <p>使用标准公式: $PV_{due} = 100000 \times \frac{1 - (1.06)^{-5}}{0.06} \times (1.06) \approx 446510.61$ 元。</p>
+                        <p><a href="#original-annuity-due-example-1">返回知识点</a></p>
+                    </div>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题18: 某投资者将从保险公司获得一笔养老保险金,在未来的第一个10年里每年得到10000元,在第二个10年里每年获得25000元。假设年利率为10%,养老保险金在每年年末支付,该养老保险金的现值为多少?如果养老保险金在每年年初支付,该养老保险金的现值又为多少?</div>
+                        <div class="answer">
+                            <div class="answer-title">答案 (每年年初支付部分):</div>
+                            <ul>
+                                <li>第一个10年 (先付年金): $PV_{due1} = 10000 + 10000 \times A_{0.1}^9$ (其中$A_{0.1}^9$是9期普通年金现值系数) $\approx 10000 + 10000 \times 5.759 = 67590$元。</li>
+                                <li>第二个10年 (延期先付年金): 从第10年年初 (即第9年末) 开始，每年年初支付25000元，共10年。其在第9年末的价值为 $PV_{due2\_at\_t9} = 25000 + 25000 \times A_{0.1}^9 \approx 168975$元。将其折现回第0期: $PV_{due2\_at\_t0} = \frac{168975}{(1.1)^9} \approx 71663.68$元。</li>
+                                <li>总现值 (年初支付) $\approx 67590 + 71663.68 = 139253.68$ 元。</li>
+                            </ul>
+                        </div>
+                        <p><a href="#original-annuity-due-thinking-1">返回知识点</a></p>
+                    </div>
+
+                    <!-- 延期年金现值公式 -->
+                    <h4>延期年金现值公式</h4>
+
+                    <div class="example-box">
+                        <div class="example-title">例2-19 银行贷款延期还款</div>
+                        <p>银行贷款，前3年（m=3）无需还本付息，从第4年末至第10年末（年金期数t=7）每年末还款10000元，年利率8%。</p>
+                        <ol>
+                            <li>计算年金在第3年末的现值:
+                                <p>$PV_3 = 10000 \times \left[\frac{1}{0.08} - \frac{1}{0.08 \times (1.08)^7}\right] \approx 52063.70$ 元。</p>
+                            </li>
+                            <li>将 $PV_3$ 折现回第0期:
+                                <p>$PV_0 = \frac{52063.70}{(1.08)^3} \approx 41329.84$ 元。</p>
+                            </li>
+                        </ol>
+                        <p><a href="#original-deferred-annuity-example-1">返回知识点</a></p>
+                    </div>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题20: 你的孩子将在12年后上大学,估计那时每年学费将达20000元。你打算从现在开始1年后进行储蓄,直到孩子上大学时为止,若年利率为10%,那么你每年应存人多少钱才能够支付孩子四年的学费?</div>
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <ol>
+                                <li>计算大学四年学费在孩子上大学前一年（第11年末）的现值（这是一个4期普通年金）：
+                                    <p>$PV_{tuition\_at\_t11} = 20000 \times \frac{1 - (1.1)^{-4}}{0.1} \approx 63397.46$ 元。</p>
+                                </li>
+                                <li>你需要从第1年末到第11年末（共11期）每年存入C元，使其在第11年末的终值等于 $PV_{tuition\_at\_t11}$。这是一个求偿债基金的问题。
+                                    <p>$C = 63397.46 \times \frac{0.1}{(1.1)^{11} - 1} \approx 3411.23$ 元。</p>
+                                </li>
+                            </ol>
+                        </div>
+                        <p><a href="#original-deferred-annuity-thinking-1">返回知识点</a></p>
+                    </div>
+
+                    <!-- 永续增长型年金现值公式/戈登增长模型 -->
+                    <h4>永续增长型年金现值公式/戈登增长模型</h4>
+
+                    <div class="example-box">
+                        <div class="example-title">例2-14 投资项目估值</div>
+                        <p>某项投资预计第一年末产生现金流入10万元，此后每年以2.5%的速度增长。若年利率为5%。</p>
+                        <p>该投资项目的现值 $PV = \frac{100000}{0.05 - 0.025} = 4000000$ 元。</p>
+                        <p><a href="#original-growing-perpetual-example-1">返回知识点</a></p>
+                    </div>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题5: 关于永续增长年金计算公式的三个要点是什么?</div>
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <ol>
+                                <li>分子是现在开始起1期后收到的现金流量，而不是目前的现金流量。</li>
+                                <li>折现率 r 一定要大于增长率 g。</li>
+                                <li>我们假定现金流量的发生是有规律而且是确定的，并且增长率 g 是永续不变的。</li>
+                            </ol>
+                        </div>
+                        <p><a href="#original-growing-perpetual-thinking-1">返回知识点</a></p>
+                    </div>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题12: 某公司今年支付的现金股利为每股0.5元,预计以后支付的股利将以2%的速度增长。若折现率为8%,该公司支付的股利现值是多少?</div>
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <p>$D_0 = 0.5$ 元, $g = 0.02$, $r = 0.08$。</p>
+                            <p>$D_1 = D_0 \times (1+g) = 0.5 \times (1+0.02) = 0.51$ 元。</p>
+                            <p>$P_0 = \frac{D_1}{r - g} = \frac{0.51}{0.08 - 0.02} = \frac{0.51}{0.06} = 8.5$ 元。</p>
+                        </div>
+                        <p><a href="#original-growing-perpetual-thinking-2">返回知识点</a></p>
+                    </div>
+                </section>
+
+                <!-- 证券估值 -->
+                <section id="examples-securities-valuation">
+                    <h3>证券估值</h3>
+
+                    <!-- 债券估值 -->
+                    <h4>债券估值</h4>
+
+                    <div class="example-box">
+                        <div class="example-title">例3-3 附息债券估值</div>
+                        <p>债券面值1000元，3年期，每半年付息一次。年票面利率10%，年市场利率12%。</p>
+                        <ul>
+                            <li>每期利息 $C = 1000 \times 10\% / 2 = 50$ 元。</li>
+                            <li>每期市场利率 $r = 12\% / 2 = 6\% = 0.06$。</li>
+                            <li>期数 $N = 3 \times 2 = 6$ 期。</li>
+                        </ul>
+                        <p>$PV = 50 \times \frac{1 - (1.06)^{-6}}{0.06} + \frac{1000}{(1.06)^6} \approx 50 \times 4.917324 + 1000 \times 0.704961 \approx 245.87 + 704.96 \approx 950.83$ 元。</p>
+                        <p><a href="#original-bond-valuation-example-1">返回知识点</a></p>
+                    </div>
+
+                    <div class="example-box">
+                        <div class="example-title">例3-2 贴现债券估值</div>
+                        <p>贴现债券面值1000元，3年期。若折现率为12%。</p>
+                        <p>$PV = \frac{1000}{(1+0.12)^3} \approx 711.78$ 元。</p>
+                        <p><a href="#original-bond-valuation-example-2">返回知识点</a></p>
+                    </div>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题1 (第三章): 影响债券价值的因素主要有哪些?</div>
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <p>债券期限、票面利率、市场利率（折现率）、提前赎回条款、税收待遇等。</p>
+                        </div>
+                        <p><a href="#original-bond-valuation-thinking-1">返回知识点</a></p>
+                    </div>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题12 (第三章): 假设债券面值为1000元,年利率为5%,4年期,到期一次还本付息,贴现率为8%,该债券价格是多少?</div>
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <p>到期一次还本付息，意味着债券在第4年末支付 $1000 \times (1+0.05)^4 \approx 1215.51$ 元。</p>
+                            <p>债券价格 $PV = \frac{1215.51}{(1+0.08)^4} \approx 893.43$ 元。</p>
+                        </div>
+                        <p><a href="#original-bond-valuation-thinking-2">返回知识点</a></p>
+                    </div>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题13 (第三章): 付息债券面值为1000元,3年期,每半年付息一次,年息票利率为6%,市场利率为10%,按复利贴现。问该债券的理论价值是多少?如果年息票利率为14%,问该债券的理论价值是多少?如果年息票利率为10%,问该债券的理论价值又是多少?对比不同息票率下债券理论价值与市场利率,你有什么发现吗?</div>
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <ul>
+                                <li>(1) 票面利率6% (每期30元)，市场利率10% (每期5%)，6期: $PV \approx 898.49$元 (折价发行)</li>
+                                <li>(2) 票面利率14% (每期70元)，市场利率10% (每期5%)，6期: $PV \approx 1101.55$元 (溢价发行)</li>
+                                <li>(3) 票面利率10% (每期50元)，市场利率10% (每期5%)，6期: $PV = 1000$元 (平价发行)</li>
+                            </ul>
+                            <p><strong>发现:</strong> 当票面利率低于市场利率时，债券价值低于面值；当票面利率高于市场利率时，债券价值高于面值；当两者相等时，债券价值等于面值。</p>
+                        </div>
+                        <p><a href="#original-bond-valuation-thinking-3">返回知识点</a></p>
+                    </div>
+
+                    <!-- 股票估值模型 -->
+                    <h4>股票估值模型</h4>
+
+                    <div class="example-box">
+                        <div class="example-title">零增长模型示例</div>
+                        <p>若公司每年支付固定股利0.66元，投资者要求回报率10.98%。</p>
+                        <p>$P_0 = \frac{0.66}{0.1098} \approx 6.01$ 元。</p>
+                        <p><a href="#original-stock-valuation-example-1">返回知识点</a></p>
+                    </div>
+
+                    <div class="example-box">
+                        <div class="example-title">教材思考题3-19</div>
+                        <p>A公司刚支付2元股利 ($D_0$)，预期股利每年增长8% ($g$)，投资者要求回报率16% ($k$)。</p>
+                        <p>$D_1 = 2 \times (1+0.08) = 2.16$ 元。</p>
+                        <p>$P_0 = \frac{2.16}{0.16 - 0.08} = \frac{2.16}{0.08} = 27$ 元。</p>
+                        <p><a href="#original-stock-valuation-example-2">返回知识点</a></p>
+                    </div>
+
+                    <div class="example-box">
+                        <div class="example-title">例3-6 二元增长模型</div>
+                        <p>$D_0=0.2$元, $k=16\%$。未来5年($T=5$) $g_1=20\%$，之后$g_2=10\%$。</p>
+                        <p>计算过程复杂，涉及分别计算前5年股利的现值，以及第5年末股票价值$P_5$的现值，然后加总。</p>
+                        <p>教材计算结果约为 $P_0 \approx 5.45$元。</p>
+                        <p><a href="#original-stock-valuation-example-3">返回知识点</a></p>
+                    </div>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题7 (第三章): 请解释"股息折现模型"。</div>
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <p>股息折现模型是一种股票估值方法，它认为股票的内在价值等于其未来所有预期股利现金流量按适当折现率折算的现值之和。</p>
+                        </div>
+                        <p><a href="#original-stock-valuation-thinking-1">返回知识点</a></p>
+                    </div>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题8 (第三章): 请分别解释"零增长模型""不变增长模型"和"多阶段增长模型"。</div>
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <ul>
+                                <li><strong>零增长模型:</strong> 假设公司未来支付的每股股利是固定不变的。</li>
+                                <li><strong>不变增长模型 (戈登增长模型):</strong> 假设公司未来支付的每股股利以一个恒定的增长率g永续增长。</li>
+                                <li><strong>多阶段增长模型 (如二元增长模型):</strong> 假设公司股利在不同阶段有不同的增长率，例如初期高速增长，之后进入稳定增长或零增长阶段。</li>
+                            </ul>
+                        </div>
+                        <p><a href="#original-stock-valuation-thinking-2">返回知识点</a></p>
+                    </div>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题9 (第三章): 如何计算公司增长机会价值?</div>
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <p>PVGO = P₀ - E₁/k，即股票市价减去其无增长时的价值。它代表市场对公司未来能够通过再投资创造超额收益的预期。</p>
+                        </div>
+                        <p><a href="#original-stock-valuation-thinking-3">返回知识点</a></p>
+                    </div>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题20 (第三章): A公司下年度的股利预计为4元,且预计在未来3年中其股利增长率为15%。之后,A公司的股利增长率将等于行业平均水平5%。如果对其股票所要求的收益率为18%,那么其股票当前价值为多少?</div>
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <p>这是一个两阶段增长模型。</p>
+                            <ul>
+                                <li>$D_1=4$, $D_2=4(1.15)=4.6$, $D_3=4.6(1.15)=5.29$, $D_4=5.29(1.15)=6.0845$。</li>
+                                <li>$P_3 = \frac{D_4}{k-g_2} = \frac{6.0845(1.05)}{0.18-0.05} = \frac{6.388725}{0.13} \approx 49.144$。</li>
+                                <li>$P_0 = \frac{D_1}{(1+k)} + \frac{D_2}{(1+k)^2} + \frac{D_3}{(1+k)^3} + \frac{P_3}{(1+k)^3} \approx 31.44$元。</li>
+                            </ul>
+                        </div>
+                        <p><a href="#original-stock-valuation-thinking-4">返回知识点</a></p>
+                    </div>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题21 (第三章): 假设某公司当前股息为每股0.4元,市场利率为12%,未来5年中的股息增长率为20%.5年之后的增长率为10%,请计算公司股票的价值。</div>
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <p>$D_0=0.4$, $k=0.12$, $T=5$, $g_1=0.20$, $g_2=0.10$。</p>
+                            <ul>
+                                <li>$D_1=0.48$, $D_2=0.576$, $D_3=0.6912$, $D_4=0.82944$, $D_5=0.995328$。</li>
+                                <li>$P_5 = \frac{D_5(1+g_2)}{k-g_2} = \frac{0.995328(1.10)}{0.12-0.10} \approx 54.743$。</li>
+                                <li>$P_0 = PV(D_1..D_5) + PV(P_5) \approx 33.54$元。</li>
+                            </ul>
+                        </div>
+                        <p><a href="#original-stock-valuation-thinking-5">返回知识点</a></p>
+                    </div>
+                </section>
+
+                <!-- 投资决策 -->
+                <section id="examples-investment-decisions">
+                    <h3>投资决策</h3>
+
+                    <!-- 现金流估计 -->
+                    <h4>现金流估计</h4>
+
+                    <div class="example-box">
+                        <div class="example-title">例5-1 沉没成本识别</div>
+                        <p>格力电器过去3年花费100万元研制节能空调，在决定是否投资新项目时，这100万元研发费用属于沉没成本，不应再考虑。</p>
+                        <p><a href="#original-cash-flow-example-1">返回知识点</a></p>
+                    </div>
+
+                    <div class="example-box">
+                        <div class="example-title">例5-2 机会成本计算</div>
+                        <p>晨鸣纸业公司拥有一间空置仓库可对外出租，每年租金10万元，所得税率25%。如果新项目要用该仓库，则放弃的租金（税后7.5万元）是机会成本。</p>
+                        <p><a href="#original-cash-flow-example-2">返回知识点</a></p>
+                    </div>
+
+                    <div class="example-box">
+                        <div class="example-title">例5-3 项目外部性</div>
+                        <p>晨鸣纸业公司新项目预计每年销售收入100万元，但会使公司已有产品销售收入减少5%。这5%的减少额应作为负的外部性考虑在现金流量估算中。</p>
+                        <p><a href="#original-cash-flow-example-3">返回知识点</a></p>
+                    </div>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题 5-4</div>
+                        <p>某项目初始投资100万元，预计使用寿命5年，直线折旧，期末无残值。每年销售收入50万元，经营成本占销售收入30%，折旧20万元。所得税率25%，折现率10%。</p>
+                        <p>(1) 计算每年税后现金流量。</p>
+                        <p>(2) 计算该项目的净现值。</p>
+                        <p>(3) 计算项目折旧产生的节税收益的现值。</p>
+
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <p>(1) 每年税后现金流量CF = (收入 - 经营成本 - 折旧)(1 - 税率) + 折旧</p>
+                            <p>= (50 - 50×0.3 - 20)(1 - 0.25) + 20</p>
+                            <p>= (50 - 15 - 20)×0.75 + 20</p>
+                            <p>= 15×0.75 + 20 = 11.25 + 20 = 31.25万元</p>
+
+                            <p>(2) 净现值NPV = -100 + 31.25 × $PVIFA_{10\%,5}$</p>
+                            <p>= -100 + 31.25 × 3.791 = -100 + 118.46875 ≈ 18.47万元</p>
+
+                            <p>(3) 折旧的节税收益 = 折旧 × 税率 = 20 × 0.25 = 5万元</p>
+                            <p>节税收益的现值 = 5 × $PVIFA_{10\%,5}$ = 5 × 3.791 = 18.955 ≈ 18.96万元</p>
+                        </div>
+                        <p><a href="#original-cash-flow-thinking-1">返回知识点</a></p>
+                    </div>
+
+                    <!-- 项目可行性判断的各种指标 -->
+                    <h4>项目可行性判断的各种指标</h4>
+
+                    <div class="example-box">
+                        <div class="example-title">例4-3 净现值计算</div>
+                        <p>A方案初始投资100,000元，每年现金流量35,000元（5年），折现率12%。</p>
+                        <p>NPV = $35,000 \times PVIFA_{12\%,5} - 100,000 = 35,000 \times 3.6048 - 100,000 = 126,168 - 100,000 = 26,168$元。</p>
+                        <p><a href="#original-project-feasibility-example-1">返回知识点</a></p>
+                    </div>
+
+                    <div class="example-box">
+                        <div class="example-title">例4-10 净现值率计算</div>
+                        <p>项目A初始投资20,000元，未来3年现金流现值为43,200元。</p>
+                        <p>PI = 43,200 / 20,000 = 2.16</p>
+                        <p><a href="#original-project-feasibility-example-2">返回知识点</a></p>
+                    </div>
+
+                    <div class="example-box">
+                        <div class="example-title">例4-4 内含报酬率计算</div>
+                        <p>投资350,000元，1年后产生400,000元现金流量。</p>
+                        <p>$-350,000 + \frac{400,000}{1+IRR} = 0$</p>
+                        <p>$\Rightarrow IRR = \frac{400,000 - 350,000}{350,000} = 14.29\%$</p>
+                        <p><a href="#original-project-feasibility-example-3">返回知识点</a></p>
+                    </div>
+
+                    <div class="example-box">
+                        <div class="example-title">例4-11 动态回收期计算</div>
+                        <p>初始投资-10,000元，现金流量逐年不同（5年），折现率12%。计算各期现金流量现值并累计，得到动态回收期为3.94年。</p>
+                        <p><a href="#original-project-feasibility-example-4">返回知识点</a></p>
+                    </div>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题 4-3</div>
+                        <p>(1) 计算项目A, B, C的回收期。</p>
+                        <ul>
+                            <li>A: $C_0$= -4000, $C_1$=1000, $C_2$=500, $C_3$=3000</li>
+                            <li>B: $C_0$= -1000, $C_1$=0, $C_2$=1000</li>
+                            <li>C: $C_0$= -5000, $C_1$=1000, $C_2$=1000, $C_3$=3000</li>
+                        </ul>
+                        <p>(4) 若折现率10%，计算各项目净现值。</p>
+
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <p><strong>回收期计算:</strong></p>
+                            <ul>
+                                <li>A: 回收期 = 2 + (4000-1000-500)/3000 = 2 + 2500/3000 = 2.83年</li>
+                                <li>B: 回收期 = 2年</li>
+                                <li>C: 回收期 = 3年</li>
+                            </ul>
+
+                            <p><strong>净现值计算 (折现率10%):</strong></p>
+                            <ul>
+                                <li>A: NPV = -4000 + 1000/1.1 + 500/1.1² + 3000/1.1³ = -4000 + 909.09 + 413.22 + 2253.95 = -423.74元</li>
+                                <li>B: NPV = -1000 + 1000/1.1² + 2000/1.1³ + 2000/1.1⁴ = -1000 + 826.45 + 1502.63 + 1366.02 = 2695.10元</li>
+                                <li>C: NPV = -5000 + 1000/1.1 + 1000/1.1² + 3000/1.1³ + 4500/1.1⁴ = -5000 + 909.09 + 826.45 + 2253.95 + 3073.55 = 2063.04元</li>
+                            </ul>
+                        </div>
+                        <p><a href="#original-project-feasibility-thinking-1">返回知识点</a></p>
+                    </div>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题 4-13</div>
+                        <p>某公司考虑两个互斥项目A和B。A初始投资50万元，未来5年每年现金流量20万元；B初始投资500万元，未来5年每年现金流量145万元。折现率10%。</p>
+                        <p>(1) 用净现值法决策。</p>
+                        <p>(2) 用盈利指数法决策。</p>
+
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <p><strong>(1) 净现值法:</strong></p>
+                            <ul>
+                                <li>NPV(A) = $20 \times PVIFA_{10\%,5} - 50 = 20 \times 3.7908 - 50 = 75.816 - 50 = 25.82$万元</li>
+                                <li>NPV(B) = $145 \times PVIFA_{10\%,5} - 500 = 145 \times 3.7908 - 500 = 549.666 - 500 = 49.67$万元</li>
+                                <li><strong>结论:</strong> 选择项目B（NPV更大）</li>
+                            </ul>
+
+                            <p><strong>(2) 盈利指数法:</strong></p>
+                            <ul>
+                                <li>PI(A) = (25.82 + 50) / 50 = 1.5164</li>
+                                <li>PI(B) = (49.67 + 500) / 500 = 1.0993</li>
+                                <li><strong>结论:</strong> 选择项目A（PI更大）</li>
+                            </ul>
+
+                            <p><strong>注:</strong> NPV法和PI法在互斥项目决策中可能产生矛盾，一般以NPV法为准，因为它与股东财富最大化目标更直接相关。</p>
+                        </div>
+                        <p><a href="#original-project-feasibility-thinking-2">返回知识点</a></p>
+                    </div>
+
+                    <!-- 不确定性分析 -->
+                    <h4>不确定性分析</h4>
+
+                    <div class="example-box">
+                        <div class="example-title">例6-1 敏感性分析</div>
+                        <p>分析单位价格变动对NPV和IRR的影响，发现单位价格变动越大，NPV和IRR的变动也越大。</p>
+                        <p><a href="#original-uncertainty-analysis-example-1">返回知识点</a></p>
+                    </div>
+
+                    <div class="example-box">
+                        <div class="example-title">例6-3 会计盈亏平衡点计算</div>
+                        <p>会计盈亏平衡点 = (25万元 + 15万元) / (2000元 - 1500元) = 400,000 / 500 = 800台/年</p>
+                        <p><a href="#original-uncertainty-analysis-example-2">返回知识点</a></p>
+                    </div>
+
+                    <div class="example-box">
+                        <div class="example-title">例6-3续 净现值盈亏平衡点计算</div>
+                        <p>净现值盈亏平衡点 = (150万元 / $PVIFA_{10\%,10}$ + 25万元 × (1-0.25) - 15万元 × 0.25) / ((2000元 - 1500元) × (1-0.25))</p>
+                        <p>= (150/6.1446 + 25×0.75 - 15×0.25) / (500×0.75)</p>
+                        <p>= (24.41 + 18.75 - 3.75) / 375 = 39.41万元 / 375元/台 ≈ 1051台/年</p>
+                        <p><a href="#original-uncertainty-analysis-example-3">返回知识点</a></p>
+                    </div>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题 6-4</div>
+                        <p>某饮料公司项目初始投资100万元，寿命10年。年广告费10万元，产品成本1.5元/瓶，售价4元/瓶。折现率12%，所得税率25%。</p>
+                        <p>(1) 会计盈亏平衡点产量？</p>
+                        <p>(2) 净现值盈亏平衡点产量？</p>
+
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <p><strong>(1) 会计盈亏平衡点产量:</strong></p>
+                            <ul>
+                                <li>年固定成本 = 广告费 = 10万元</li>
+                                <li>年折旧 = 100万元 / 10年 = 10万元</li>
+                                <li>会计盈亏平衡点Q = (年固定成本 + 年折旧) / (销售单价 - 单位变动成本)</li>
+                                <li>= (100,000 + 100,000) / (4 - 1.5) = 200,000 / 2.5 = 80,000瓶</li>
+                            </ul>
+
+                            <p><strong>(2) 净现值盈亏平衡点产量:</strong></p>
+                            <ul>
+                                <li>等价年度成本 = 100万元 / $PVIFA_{12\%,10}$ = 100 / 5.6502 = 17.6985万元</li>
+                                <li>税后单位贡献 = (4 - 1.5) × (1 - 0.25) = 2.5 × 0.75 = 1.875元</li>
+                                <li>税后固定成本(不含折旧) = 10万元 × (1 - 0.25) = 7.5万元</li>
+                                <li>折旧税盾 = 10万元 × 0.25 = 2.5万元</li>
+                            </ul>
+                            <p>净现值盈亏平衡点Q 使得：</p>
+                            <p>Q × 税后单位贡献 - 税后固定成本(不含折旧) + 折旧税盾 = 等价年度成本</p>
+                            <p>Q × 1.875 - 75,000 + 25,000 = 176,985</p>
+                            <p>Q × 1.875 = 176,985 + 75,000 - 25,000 = 226,985</p>
+                            <p>Q = 226,985 / 1.875 ≈ 121,059瓶</p>
+                        </div>
+                        <p><a href="#original-uncertainty-analysis-thinking-1">返回知识点</a></p>
+                    </div>
+
+                    <!-- 互斥项目选择 -->
+                    <h4>互斥项目选择</h4>
+
+                    <div class="example-box">
+                        <div class="example-title">机器成本比较示例</div>
+                        <p><strong>机器A:</strong> 购置费15,000元，使用3年，每年使用费5,000元。折现率10%。</p>
+                        <p>机器A成本现值 $PV_A = 15,000 + 5,000 \times PVIFA_{10\%,3} = 15,000 + 5,000 \times 2.4869 = 27,434.5$元</p>
+                        <p>$EAC_A = 27,434.5 / 2.4869 \approx 11,031.61$元</p>
+
+                        <p><strong>机器B:</strong> 购置费10,000元，使用2年，每年使用费6,000元。折现率10%。</p>
+                        <p>机器B成本现值 $PV_B = 10,000 + 6,000 \times PVIFA_{10\%,2} = 10,000 + 6,000 \times 1.7355 = 20,413$元</p>
+                        <p>$EAC_B = 20,413 / 1.7355 \approx 11,762.16$元</p>
+
+                        <p><strong>结论:</strong> 选择机器A，因为其EAC较低。</p>
+                        <p><a href="#original-mutually-exclusive-example-1">返回知识点</a></p>
+                    </div>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题 5-12</div>
+                        <p>某公司考虑从两个相互排斥的设备A和B中选择一个，折现率10%。</p>
+                        <ul>
+                            <li>设备A：$C_0$=-200, $C_1$=80, $C_2$=100, $C_3$=150</li>
+                            <li>设备B：$C_0$=-150, $C_1$=60, $C_2$=80, $C_3$=80, $C_4$=70</li>
+                        </ul>
+                        <p>(1) 计算NPV。</p>
+                        <p>(2) 计算等价年度现金流量 (EAA)。</p>
+                        <p>(3) 应选择哪个设备？</p>
+
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <p><strong>(1) 计算NPV:</strong></p>
+                            <ul>
+                                <li>NPV(A) = -200 + 80/1.1 + 100/1.1² + 150/1.1³ = -200 + 72.73 + 82.64 + 112.70 = 68.07万元</li>
+                                <li>NPV(B) = -150 + 60/1.1 + 80/1.1² + 80/1.1³ + 70/1.1⁴ = -150 + 54.55 + 66.12 + 60.11 + 47.81 = 78.59万元</li>
+                            </ul>
+
+                            <p><strong>(2) 计算等价年度现金流量 (EAA):</strong></p>
+                            <ul>
+                                <li>EAA(A) = 68.07 / $PVIFA_{10\%,3}$ = 68.07 / 2.4869 ≈ 27.37万元</li>
+                                <li>EAA(B) = 78.59 / $PVIFA_{10\%,4}$ = 78.59 / 3.1699 ≈ 24.79万元</li>
+                            </ul>
+
+                            <p><strong>(3) 应选择哪个设备？</strong></p>
+                            <p>若仅看NPV，B更优。但寿命不同，应使用EAA法。EAA(A) > EAA(B)，故选择项目A。</p>
+                            <p><strong>注:</strong> 寿命不同时EAA是更合适的标准，因为它考虑了项目可重复性的影响。</p>
+                        </div>
+                        <p><a href="#original-mutually-exclusive-thinking-1">返回知识点</a></p>
+                    </div>
+
+                    <!-- 资本限额下的投资 -->
+                    <h4>资本限额下的投资</h4>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题 4-9</div>
+                        <p>可用资金100,000元，选择项目组合。</p>
+
+                        <div class="table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>项目</th>
+                                        <th>投资支出</th>
+                                        <th>净现值</th>
+                                        <th>PI</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>A</td>
+                                        <td>-15,000</td>
+                                        <td>10,000</td>
+                                        <td>1.67</td>
+                                    </tr>
+                                    <tr>
+                                        <td>B</td>
+                                        <td>-10,000</td>
+                                        <td>5,000</td>
+                                        <td>1.50</td>
+                                    </tr>
+                                    <tr>
+                                        <td>C</td>
+                                        <td>-100,000</td>
+                                        <td>15,000</td>
+                                        <td>1.15</td>
+                                    </tr>
+                                    <tr>
+                                        <td>D</td>
+                                        <td>-60,000</td>
+                                        <td>12,000</td>
+                                        <td>1.20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>E</td>
+                                        <td>-75,000</td>
+                                        <td>15,000</td>
+                                        <td>1.20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>F</td>
+                                        <td>-15,000</td>
+                                        <td>3,000</td>
+                                        <td>1.20</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <p><strong>按PI排序:</strong> A(1.67) > B(1.50) > D(1.20) = E(1.20) = F(1.20) > C(1.15)</p>
+
+                            <p><strong>方案一 (按PI排序选择):</strong></p>
+                            <ul>
+                                <li>选择A (-15,000)，剩余85,000</li>
+                                <li>选择B (-10,000)，剩余75,000</li>
+                                <li>选择E (-75,000)，资金用完</li>
+                                <li><strong>组合 A+B+E:</strong> 总投资 100,000，总NPV = 10+5+15 = 30,000</li>
+                            </ul>
+
+                            <p><strong>方案二 (另一种组合):</strong></p>
+                            <ul>
+                                <li>选择A+B+D+F</li>
+                                <li>总投资 15+10+60+15 = 100,000</li>
+                                <li>总NPV = 10+5+12+3 = 30,000</li>
+                            </ul>
+
+                            <p><strong>结论:</strong> 存在多个组合达到相同的总NPV。实际中还需考虑项目是否可分割等因素。</p>
+                        </div>
+                        <p><a href="#original-capital-rationing-thinking-1">返回知识点</a></p>
+                    </div>
+                </section>
+
+                <!-- 风险与收益 -->
+                <section id="examples-risk-return">
+                    <h3>风险与收益</h3>
+
+                    <!-- 收益率计算(期望) -->
+                    <h4>收益率计算(期望)</h4>
+
+                    <div class="example-box">
+                        <div class="example-title">例7-1 股票投资收益率计算</div>
+                        <p>年初以15元/股买入100股A公司股票，年内每股派息0.9元。</p>
+                        <ul>
+                            <li>初始投资 = 15 × 100 = 1500元</li>
+                            <li>股利收入 = 0.9 × 100 = 90元</li>
+                            <li>若年末股价升至18元/股，资本利得 = (18-15) × 100 = 300元</li>
+                            <li>总回报 = 90 + 300 = 390元</li>
+                            <li>收益率 R = (90/1500) + (300/1500) = 0.06 + 0.20 = 0.26 = 26%</li>
+                        </ul>
+                        <p><a href="#original-expected-return-example-1">返回知识点</a></p>
+                    </div>
+
+                    <div class="example-box">
+                        <div class="example-title">例7-2 预期收益率计算</div>
+                        <p>假设宏观经济状况及A、B公司股票在这些状况下的收益率和概率如下：</p>
+
+                        <div class="table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>宏观经济状况</th>
+                                        <th>概率 (P<sub>i</sub>)</th>
+                                        <th>A公司收益率 (R<sub>Ai</sub>)</th>
+                                        <th>B公司收益率 (R<sub>Bi</sub>)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>萧条</td>
+                                        <td>20%</td>
+                                        <td>-20%</td>
+                                        <td>5%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>衰退</td>
+                                        <td>30%</td>
+                                        <td>10%</td>
+                                        <td>20%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>正常</td>
+                                        <td>30%</td>
+                                        <td>20%</td>
+                                        <td>-10%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>繁荣</td>
+                                        <td>20%</td>
+                                        <td>40%</td>
+                                        <td>10%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <ul>
+                            <li>A公司预期收益率 E(R<sub>A</sub>) = (-0.20×0.20) + (0.10×0.30) + (0.20×0.30) + (0.40×0.20) = -0.04 + 0.03 + 0.06 + 0.08 = 0.13 = 13%</li>
+                            <li>B公司预期收益率 E(R<sub>B</sub>) = (0.05×0.20) + (0.20×0.30) + (-0.10×0.30) + (0.10×0.20) = 0.01 + 0.06 - 0.03 + 0.02 = 0.06 = 6%</li>
+                        </ul>
+                        <p><a href="#original-expected-return-example-2">返回知识点</a></p>
+                    </div>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题11 (第七章): 假设宏观经济出现萧条、衰退、正常、繁荣的概率,A公司和B公司的股票在不同宏观经济情况下下的收益不同，具体数据如下表。请计算A公司与B公司的预期收益率和方差。</div>
+
+                        <div class="table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>经济状况</th>
+                                        <th>概率</th>
+                                        <th>A公司收益</th>
+                                        <th>B公司收益</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>萧条</td>
+                                        <td>0.15</td>
+                                        <td>-20%</td>
+                                        <td>5%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>衰退</td>
+                                        <td>0.25</td>
+                                        <td>10%</td>
+                                        <td>20%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>正常</td>
+                                        <td>0.35</td>
+                                        <td>20%</td>
+                                        <td>-10%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>繁荣</td>
+                                        <td>0.25</td>
+                                        <td>40%</td>
+                                        <td>10%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <ul>
+                                <li>A公司预期收益率 E(R<sub>A</sub>) = 0.15×(-0.20) + 0.25×0.10 + 0.35×0.20 + 0.25×0.40 = 16.5%</li>
+                                <li>B公司预期收益率 E(R<sub>B</sub>) = 0.15×0.05 + 0.25×0.20 + 0.35×(-0.10) + 0.25×0.10 = 4.75%</li>
+                            </ul>
+                        </div>
+                        <p><a href="#original-expected-return-thinking-1">返回知识点</a></p>
+                    </div>
+
+                    <!-- 风险计算(方差) -->
+                    <h4>风险计算(方差)</h4>
+
+                    <div class="example-box">
+                        <div class="example-title">示例计算 (基于例7-2及表7-2)</div>
+                        <p>E(R<sub>A</sub>) = 13%, E(R<sub>B</sub>) = 6%。</p>
+
+                        <p><strong>A公司股票方差:</strong></p>
+                        <p>Var(R<sub>A</sub>) = 0.20×(-0.20-0.13)² + 0.30×(0.10-0.13)² + 0.30×(0.20-0.13)² + 0.20×(0.40-0.13)²</p>
+                        <p>= 0.20×(-0.33)² + 0.30×(-0.03)² + 0.30×(0.07)² + 0.20×(0.27)²</p>
+                        <p>= 0.20×0.1089 + 0.30×0.0009 + 0.30×0.0049 + 0.20×0.0729</p>
+                        <p>= 0.02178 + 0.00027 + 0.00147 + 0.01458 = 0.0381</p>
+                        <p>标准差 σ<sub>A</sub> = √0.0381 ≈ 0.1952 = 19.52%。</p>
+
+                        <p><strong>B公司股票方差:</strong></p>
+                        <p>Var(R<sub>B</sub>) = 0.20×(0.05-0.06)² + 0.30×(0.20-0.06)² + 0.30×(-0.10-0.06)² + 0.20×(0.10-0.06)²</p>
+                        <p>= 0.20×(-0.01)² + 0.30×(0.14)² + 0.30×(-0.16)² + 0.20×(0.04)²</p>
+                        <p>= 0.20×0.0001 + 0.30×0.0196 + 0.30×0.0256 + 0.20×0.0016</p>
+                        <p>= 0.00002 + 0.00588 + 0.00768 + 0.00032 = 0.0139</p>
+                        <p>标准差 σ<sub>B</sub> = √0.0139 ≈ 0.1179 = 11.79%。</p>
+                        <p><a href="#original-risk-variance-example-1">返回知识点</a></p>
+                    </div>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题11 (第七章): (续前) 计算A公司与B公司的方差</div>
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <ul>
+                                <li>A公司方差 Var(R<sub>A</sub>) = 0.15×(-0.20-0.165)² + 0.25×(0.10-0.165)² + 0.35×(0.20-0.165)² + 0.25×(0.40-0.165)² = 0.03528</li>
+                                <li>B公司方差 Var(R<sub>B</sub>) = 0.15×(0.05-0.0475)² + 0.25×(0.20-0.0475)² + 0.35×(-0.10-0.0475)² + 0.25×(0.10-0.0475)² = 0.01222</li>
+                            </ul>
+                        </div>
+                        <p><a href="#original-risk-variance-thinking-1">返回知识点</a></p>
+                    </div>
+
+                    <!-- 投资组合的收益与风险计算方法(方差) -->
+                    <h4>投资组合的收益与风险计算方法(方差)</h4>
+
+                    <div class="example-box">
+                        <div class="example-title">例7-3 投资组合权重计算</div>
+                        <p>投资100股A公司股票 (15元/股) 和200股B公司股票 (20元/股)。</p>
+                        <ul>
+                            <li>A公司股票价值 = 100 × 15 = 1500元</li>
+                            <li>B公司股票价值 = 200 × 20 = 4000元</li>
+                            <li>组合总价值 = 1500 + 4000 = 5500元</li>
+                            <li>X<sub>A</sub> = 1500 / 5500 ≈ 27.3%</li>
+                            <li>X<sub>B</sub> = 4000 / 5500 ≈ 72.7%</li>
+                        </ul>
+                        <p><a href="#original-portfolio-risk-return-example-1">返回知识点</a></p>
+                    </div>
+
+                    <div class="example-box">
+                        <div class="example-title">示例计算 (基于表7-3)</div>
+                        <p>使用例7-2的数据，计算得到 Cov(R<sub>A</sub>,R<sub>B</sub>) = -0.0018。</p>
+                        <p>ρ<sub>AB</sub> = -0.0018 / (0.1952 × 0.1179) ≈ -0.078。</p>
+                        <p>负相关系数表明两种证券的未来价格倾向于反向变动。</p>
+                        <p><a href="#original-portfolio-risk-return-example-2">返回知识点</a></p>
+                    </div>
+
+                    <div class="example-box">
+                        <div class="example-title">例7-3 (续) 组合收益率计算</div>
+                        <p>E(R<sub>A</sub>)=13%, E(R<sub>B</sub>)=7% (教材此处B的预期收益率用了7%，与例7-2的6%不同，以7%为准继续)。</p>
+                        <p>E(R<sub>P</sub>) = 0.273 × 0.13 + 0.727 × 0.07 ≈ 0.03549 + 0.05089 ≈ 0.08638 = 8.638%。</p>
+                        <p><a href="#original-portfolio-risk-return-example-3">返回知识点</a></p>
+                    </div>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题12 (第七章): 已知股票和市场组合信息如下表。请计算股票A和市场组合的预期收益率、标准差、相关系数,并计算股票A的贝塔系数。如果投资者20%资产投资于股票A.80%投资于市场组合,投资者的投资组合的预期收益率和方差是多少?</div>
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <ul>
+                                <li>股票A预期收益率 = 9.6%</li>
+                                <li>市场组合预期收益率 = 7.8%</li>
+                                <li>股票A标准差 = 11.47%</li>
+                                <li>市场组合标准差 = 7.72%</li>
+                                <li>股票A与市场组合协方差 = 0.004013</li>
+                                <li>相关系数 = 0.45332</li>
+                                <li>股票A的Beta系数 = 0.6733</li>
+                                <li>投资者组合预期收益率 = 0.20 × 0.096 + 0.8 × 0.078 = 8.16%</li>
+                                <li>投资者组合方差 = 0.009939</li>
+                            </ul>
+                        </div>
+                        <p><a href="#original-portfolio-risk-return-thinking-1">返回知识点</a></p>
+                    </div>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题13 (第七章): 已知股票X与股票Y的收益率完全负相关 (ρXY=-1),股票X的标准差是0.40,股票Y的标准差是0.20。如何用股票X与股票Y构造一个零风险组合?</div>
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <p>设X的投资比例为a，则Y的投资比例为(1-a)。</p>
+                            <p>组合标准差 σ<sub>P</sub> = |aσ<sub>X</sub> - (1-a)σ<sub>Y</sub>| (因为ρ<sub>XY</sub>=-1)。</p>
+                            <p>要使 σ<sub>P</sub> = 0, 则 aσ<sub>X</sub> = (1-a)σ<sub>Y</sub>。</p>
+                            <p>a × 0.40 = (1-a) × 0.20  ⇒ 0.40a = 0.20 - 0.20a ⇒ 0.60a = 0.20 ⇒ a = 1/3。</p>
+                            <p>因此，投资组合中股票X的比例为1/3，股票Y的比例为2/3。</p>
+                        </div>
+                        <p><a href="#original-portfolio-risk-return-thinking-2">返回知识点</a></p>
+                    </div>
+
+                    <!-- 市场指数模型、系统风险与非系统风险、分散化 -->
+                    <h4>市场指数模型、系统风险与非系统风险、分散化</h4>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题1 (第七章): 为什么资产组合不能消除全部风险?</div>
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <p>因为存在系统风险（市场风险），它是由影响整个市场的宏观经济因素等引起的，不能通过在一个特定市场内分散投资来消除。分散化主要减少与特定公司相关的非系统风险。</p>
+                        </div>
+                        <p><a href="#original-market-model-thinking-1">返回知识点</a></p>
+                    </div>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题2 (第七章): 请解释市场指数模型。</div>
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <p>市场指数模型是一种统计模型，它假设单个证券的收益率与一个广泛的市场指数（如股票市场指数）的收益率之间存在线性关系。该模型将证券收益分解为由市场驱动的部分（通过Beta系数衡量）和公司特有的部分（Alpha和随机误差项）。</p>
+                        </div>
+                        <p><a href="#original-market-model-thinking-2">返回知识点</a></p>
+                    </div>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题3 (第七章): 请解释系统风险和非系统风险。</div>
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <p>系统风险是影响整个市场或大部分证券的风险，如利率变动、通胀等，不能通过分散投资消除。非系统风险是特定于个别公司或行业的风险，如管理失误、新产品失败等，可以通过构建多样化的投资组合来降低。</p>
+                        </div>
+                        <p><a href="#original-market-model-thinking-3">返回知识点</a></p>
+                    </div>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题8 (第七章): 随着多元化的增加,投资组合的公司特有风险趋于</div>
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <p>A. 0</p>
+                        </div>
+                        <p><a href="#original-market-model-thinking-4">返回知识点</a></p>
+                    </div>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题10 (第七章): 可以被分散掉的风险是指</div>
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <p>A. 公司特有风险 (也即非系统风险)</p>
+                        </div>
+                        <p><a href="#original-market-model-thinking-5">返回知识点</a></p>
+                    </div>
+
+                    <!-- 资本资产定价模型(CAPM)估计收益率 -->
+                    <h4>资本资产定价模型(CAPM)估计收益率</h4>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题5 (第七章): 请解释资本资产定价模型成立的条件。</div>
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <p>见上述假设条件1-6。</p>
+                        </div>
+                        <p><a href="#original-capm-model-thinking-1">返回知识点</a></p>
+                    </div>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题6 (第七章): 请解释资本资产定价模型。</div>
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <p>资本资产定价模型（CAPM）是一个金融模型，它通过将资产的预期回报与其系统风险（用贝塔系数衡量）联系起来，来确定风险资产的理论上的适当要求回报率。模型表明，资产的预期回报等于无风险利率加上一个风险溢价，该风险溢价等于资产的贝塔乘以市场风险溢价。</p>
+                        </div>
+                        <p><a href="#original-capm-model-thinking-2">返回知识点</a></p>
+                    </div>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题9 (第七章): 根据资本资产定价模型,一个多元化的资产组合的收益率是的函数。</div>
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <p>A. 市场风险 (由组合的Beta衡量)</p>
+                        </div>
+                        <p><a href="#original-capm-model-thinking-3">返回知识点</a></p>
+                    </div>
+
+                    <!-- 证券市场线(SML)与资本市场线(CML) -->
+                    <h4>证券市场线(SML)与资本市场线(CML)</h4>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题14 (第七章): (此题涉及根据SML和给定数据推断未知参数)</div>
+                        <div class="answer">
+                            <div class="answer-title">答案摘要:</div>
+                            <ul>
+                                <li>无风险资产 (证券4) Beta=0, 预期收益率=7% (即$r_F=7\%$)</li>
+                                <li>证券1预期收益率7%，因此其Beta也为0</li>
+                                <li>通过证券2的信息 (Beta=0.8, E(R)=14%) 和$r_F$，可以推出市场组合预期收益率 $E(r_M) = 15.75\%$</li>
+                                <li>SML方程为: E(R) = 7% + 8.75% × β</li>
+                            </ul>
+                        </div>
+                        <p><a href="#original-sml-cml-thinking-1">返回知识点</a></p>
+                    </div>
+                </section>
+
+                <!-- 股利决策 -->
+                <section id="examples-dividend-decisions">
+                    <h3>股利决策</h3>
+
+                    <!-- 理论 (股利政策的相关理论) -->
+                    <h4>理论 (股利政策的相关理论)</h4>
+
+                    <div class="thinking-box">
+                        <div class="thinking-title">思考题 11-13</div>
+                        <p>A公司明年期望股利收益率6%，B公司不支付股利，必要收益率15%。A与B风险等级相当。资本利得不征税，股利税率20%。A公司的税前必要收益率是多少？</p>
+
+                        <div class="answer">
+                            <div class="answer-title">答案:</div>
+                            <p>假设投资者要求相同的税后总收益率。</p>
+                            <ul>
+                                <li>对于B公司（无股利），税后收益率 = 税前收益率（资本利得）= 15%</li>
+                                <li>对于A公司，税后总收益率也应为15%</li>
+                                <li>A公司税后股利收益率 = 税前股利收益率 × (1 - 股利税率) = 6% × (1 - 0.20) = 4.8%</li>
+                                <li>A公司税后资本利得收益率 = 税后总收益率 - 税后股利收益率 = 15% - 4.8% = 10.2%</li>
+                                <li>由于资本利得不征税，A公司税前资本利得收益率 = 10.2%</li>
+                                <li>A公司税前总收益率 = 税前股利收益率 + 税前资本利得收益率 = 6% + 10.2% = 16.2%</li>
+                            </ul>
+                        </div>
+                        <p><a href="#original-dividend-theory-thinking-1">返回知识点</a></p>
+                    </div>
+                </section>
+            </section>
         </div>
         </main>
-</edits>
      </div>
 
     <script>
