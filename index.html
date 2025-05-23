@@ -26,11 +26,16 @@
             line-height: 1.6;
             color: #333;
             background-color: #f8f9fa;
+            -webkit-text-size-adjust: 100%;
+            -webkit-tap-highlight-color: transparent;
+            touch-action: manipulation;
+            --vh: 1vh;
         }
 
         .container {
             display: flex;
             min-height: 100vh;
+            min-height: calc(var(--vh, 1vh) * 100);
         }
 
         .sidebar {
@@ -39,11 +44,13 @@
             border-right: 1px solid #e1e5e9;
             position: fixed;
             height: 100vh;
+            height: calc(var(--vh, 1vh) * 100);
             overflow-y: auto;
             z-index: 1000;
             transform: translateX(-100%);
             transition: transform 0.3s ease;
             box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+            -webkit-overflow-scrolling: touch;
         }
 
         .sidebar.open {
@@ -131,9 +138,14 @@
             color: white;
             font-size: 24px;
             cursor: pointer;
-            padding: 5px 10px;
+            padding: 8px 12px;
             border-radius: 4px;
             transition: background-color 0.2s ease;
+            min-width: 44px;
+            min-height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .toggle-btn:hover {
@@ -148,7 +160,9 @@
             margin-top: 20px;
             margin-bottom: 20px;
             border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            word-wrap: break-word;
+            overflow-wrap: break-word;
         }
 
         h1 {
@@ -182,13 +196,22 @@
             text-decoration-color: #fbbc04;
             cursor: pointer;
             color: #333;
-            transition: background-color 0.2s ease;
-            padding: 2px 4px;
-            border-radius: 3px;
+            transition: all 0.2s ease;
+            padding: 6px 8px;
+            margin: 2px;
+            border-radius: 4px;
+            display: inline-block;
+            min-height: 32px;
+            line-height: 1.2;
+            -webkit-tap-highlight-color: rgba(251, 188, 4, 0.3);
+            touch-action: manipulation;
         }
 
-        .underline-clickable:hover {
+        .underline-clickable:hover,
+        .underline-clickable:active {
             background-color: #fff3cd;
+            transform: translateY(-1px);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
         .explanation {
@@ -267,23 +290,57 @@
             margin-bottom: 8px;
         }
 
+        .table-container {
+            width: 100%;
+            overflow-x: auto;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: thin;
+            scrollbar-color: #ccc #f1f1f1;
+        }
+
+        .table-container::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .table-container::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 4px;
+        }
+
+        .table-container::-webkit-scrollbar-thumb {
+            background: #ccc;
+            border-radius: 4px;
+        }
+
+        .table-container::-webkit-scrollbar-thumb:hover {
+            background: #999;
+        }
+
         table {
             width: 100%;
             border-collapse: collapse;
-            margin: 20px 0;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            min-width: 600px;
+            background: white;
         }
 
         th, td {
             border: 1px solid #ddd;
-            padding: 12px 15px;
+            padding: 14px 16px;
             text-align: center;
+            white-space: nowrap;
+            min-width: 120px;
         }
 
         th {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             font-weight: 600;
+            position: sticky;
+            top: 0;
+            z-index: 10;
         }
 
         td {
@@ -309,6 +366,15 @@
             display: block;
         }
 
+        /* Tablet styles */
+        @media (max-width: 1024px) {
+            .content {
+                margin: 15px;
+                padding: 25px 20px;
+            }
+        }
+
+        /* Mobile landscape and smaller tablets */
         @media (max-width: 768px) {
             .sidebar {
                 width: 280px;
@@ -323,22 +389,34 @@
                 padding: 20px 15px;
             }
 
+            .header {
+                padding: 15px 20px;
+            }
+
+            .toggle-btn {
+                font-size: 28px;
+                padding: 10px 15px;
+            }
+
             h1 {
-                font-size: 24px;
+                font-size: 26px;
+                line-height: 1.3;
             }
 
             h2 {
-                font-size: 20px;
+                font-size: 22px;
                 margin: 25px 0 15px 0;
+                line-height: 1.3;
             }
 
             h3 {
-                font-size: 18px;
+                font-size: 19px;
                 margin: 20px 0 10px 0;
+                line-height: 1.3;
             }
 
             .header-content h1 {
-                font-size: 18px;
+                font-size: 20px;
                 border: none;
                 padding: 0;
                 margin: 0;
@@ -347,30 +425,198 @@
             .formula-box {
                 padding: 15px;
                 font-size: 14px;
+                overflow-x: auto;
+                border-radius: 6px;
+            }
+
+            .example-box, .thinking-box {
+                padding: 15px;
+                margin: 15px 0;
+            }
+
+            .underline-clickable {
+                padding: 2px 4px;
+                margin: 0 2px;
+            }
+
+            .table-container {
+                margin: 15px 0;
+                border-radius: 6px;
             }
 
             table {
-                font-size: 12px;
+                font-size: 13px;
+                min-width: 500px;
             }
 
             th, td {
-                padding: 8px 6px;
+                padding: 12px 10px;
+                min-width: 100px;
+                font-size: 13px;
+            }
+
+            .toc a {
+                padding: 16px 20px;
+                font-size: 16px;
+                min-height: 48px;
             }
         }
 
+        /* Mobile portrait */
         @media (max-width: 480px) {
             .sidebar {
                 width: 100%;
+                transform: translateX(-100%);
+            }
+
+            .header {
+                padding: 12px 15px;
+            }
+
+            .toggle-btn {
+                font-size: 30px;
+                padding: 12px;
+                min-width: 48px;
+                min-height: 48px;
+            }
+
+            .header-content h1 {
+                font-size: 18px;
             }
 
             .content {
                 margin: 5px;
-                padding: 15px 10px;
+                padding: 15px 12px;
+            }
+
+            h1 {
+                font-size: 24px;
+                line-height: 1.2;
+                margin-bottom: 20px;
+            }
+
+            h2 {
+                font-size: 20px;
+                margin: 20px 0 12px 0;
+                line-height: 1.2;
+            }
+
+            h3 {
+                font-size: 18px;
+                margin: 18px 0 10px 0;
+                line-height: 1.2;
+            }
+
+            .formula-box {
+                font-size: 13px;
+                padding: 12px;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .example-box, .thinking-box {
+                padding: 12px;
+                margin: 12px 0;
+                font-size: 14px;
+            }
+
+            .example-title, .thinking-title, .answer-title {
+                font-size: 14px;
+                padding: 8px 12px;
+            }
+
+            .table-container {
+                margin: 12px 0;
+                border-radius: 4px;
+            }
+
+            table {
+                font-size: 12px;
+                min-width: 450px;
+            }
+
+            th, td {
+                padding: 10px 8px;
+                min-width: 90px;
+                font-size: 12px;
+            }
+
+            .toc a {
+                padding: 18px 20px;
+                font-size: 16px;
+                min-height: 48px;
+            }
+
+            .underline-clickable {
+                padding: 8px 10px;
+                margin: 2px;
+                border-radius: 4px;
+                min-height: 36px;
+            }
+
+            .explanation {
+                margin: 10px 0;
+                padding: 12px;
+                font-size: 14px;
+            }
+        }
+
+        /* Extra small phones */
+        @media (max-width: 360px) {
+            .header {
+                padding: 10px 12px;
+            }
+
+            .content {
+                margin: 3px;
+                padding: 12px 10px;
+            }
+
+            .toggle-btn {
+                font-size: 28px;
+                padding: 10px;
+            }
+
+            .header-content h1 {
+                font-size: 16px;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            h3 {
+                font-size: 16px;
             }
 
             .formula-box {
                 font-size: 12px;
                 padding: 10px;
+            }
+
+            .toc a {
+                padding: 16px 15px;
+                font-size: 15px;
+                min-height: 44px;
+            }
+
+            .table-container {
+                margin: 10px 0;
+            }
+
+            table {
+                font-size: 11px;
+                min-width: 400px;
+            }
+
+            th, td {
+                padding: 8px 6px;
+                min-width: 80px;
+                font-size: 11px;
             }
         }
     </style>
@@ -1030,38 +1276,40 @@
 
                         <div class="example-box">
                             <div class="example-title">【例7-2】</div>
-                            <table>
-                                <tr>
-                                    <th>宏观经济状况</th>
-                                    <th>概率 ($P_i$)</th>
-                                    <th>A公司收益率 ($R_{Ai}$)</th>
-                                    <th>B公司收益率 ($R_{Bi}$)</th>
-                                </tr>
-                                <tr>
-                                    <td>萧条</td>
-                                    <td>0.20</td>
-                                    <td>-20%</td>
-                                    <td>5%</td>
-                                </tr>
-                                <tr>
-                                    <td>衰退</td>
-                                    <td>0.30</td>
-                                    <td>10%</td>
-                                    <td>20%</td>
-                                </tr>
-                                <tr>
-                                    <td>正常</td>
-                                    <td>0.30</td>
-                                    <td>20%</td>
-                                    <td>-10%</td>
-                                </tr>
-                                <tr>
-                                    <td>繁荣</td>
-                                    <td>0.20</td>
-                                    <td>40%</td>
-                                    <td>10%</td>
-                                </tr>
-                            </table>
+                            <div class="table-container">
+                                <table>
+                                    <tr>
+                                        <th>宏观经济状况</th>
+                                        <th>概率 ($P_i$)</th>
+                                        <th>A公司收益率 ($R_{Ai}$)</th>
+                                        <th>B公司收益率 ($R_{Bi}$)</th>
+                                    </tr>
+                                    <tr>
+                                        <td>萧条</td>
+                                        <td>0.20</td>
+                                        <td>-20%</td>
+                                        <td>5%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>衰退</td>
+                                        <td>0.30</td>
+                                        <td>10%</td>
+                                        <td>20%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>正常</td>
+                                        <td>0.30</td>
+                                        <td>20%</td>
+                                        <td>-10%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>繁荣</td>
+                                        <td>0.20</td>
+                                        <td>40%</td>
+                                        <td>10%</td>
+                                    </tr>
+                                </table>
+                            </div>
                             <p>$E(R_A) = (0.20 \times -0.20) + (0.30 \times 0.10) + (0.30 \times 0.20) + (0.20 \times 0.40) = -0.04 + 0.03 + 0.06 + 0.08 = 0.13 = 13\%$</p>
                             <p>$E(R_B) = (0.20 \times 0.05) + (0.30 \times 0.20) + (0.30 \times -0.10) + (0.20 \times 0.10) = 0.01 + 0.06 - 0.03 + 0.02 = 0.06 = 6\%$</p>
                         </div>
@@ -1396,6 +1644,65 @@
             });
         });
 
+        // Touch and swipe support for mobile sidebar
+        let touchStartX = 0;
+        let touchStartY = 0;
+        let touchEndX = 0;
+        let touchEndY = 0;
+        let isSidebarTouching = false;
+
+        // Add touch events for swipe gestures
+        document.addEventListener('touchstart', function(e) {
+            touchStartX = e.changedTouches[0].screenX;
+            touchStartY = e.changedTouches[0].screenY;
+            isSidebarTouching = e.target.closest('.sidebar') !== null;
+        }, {passive: true});
+
+        document.addEventListener('touchend', function(e) {
+            touchEndX = e.changedTouches[0].screenX;
+            touchEndY = e.changedTouches[0].screenY;
+            handleSwipeGesture();
+        }, {passive: true});
+
+        function handleSwipeGesture() {
+            const swipeThreshold = 50;
+            const swipeDistance = touchEndX - touchStartX;
+            const verticalDistance = Math.abs(touchEndY - touchStartY);
+            
+            // Only process horizontal swipes
+            if (verticalDistance > 100) return;
+            
+            // Swipe right from left edge to open sidebar (only on mobile)
+            if (swipeDistance > swipeThreshold && touchStartX < 50 && window.innerWidth <= 768) {
+                if (!sidebar.classList.contains('open')) {
+                    sidebar.classList.add('open');
+                    mainContent.classList.add('sidebar-open');
+                    overlay.classList.add('show');
+                }
+            }
+            
+            // Swipe left to close sidebar (when sidebar is open)
+            if (swipeDistance < -swipeThreshold && (isSidebarTouching || sidebar.classList.contains('open')) && window.innerWidth <= 768) {
+                sidebar.classList.remove('open');
+                mainContent.classList.remove('sidebar-open');
+                overlay.classList.remove('show');
+            }
+        }
+
+        // Enhance toggle button for better touch interaction
+        toggleBtn.addEventListener('touchstart', function(e) {
+            e.preventDefault();
+            this.style.transform = 'scale(0.95)';
+        }, {passive: false});
+
+        toggleBtn.addEventListener('touchend', function(e) {
+            e.preventDefault();
+            this.style.transform = 'scale(1)';
+            sidebar.classList.toggle('open');
+            mainContent.classList.toggle('sidebar-open');
+            overlay.classList.toggle('show');
+        }, {passive: false});
+
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -1412,9 +1719,25 @@
             });
         });
 
-        // Clickable underlined text functionality
+        // Enhanced clickable underlined text functionality with touch support
         document.querySelectorAll('.underline-clickable').forEach(function(element) {
-            element.addEventListener('click', function() {
+            // Add touch feedback
+            element.addEventListener('touchstart', function() {
+                this.style.transform = 'scale(0.98)';
+                this.style.backgroundColor = '#fff3cd';
+            }, {passive: true});
+
+            element.addEventListener('touchend', function() {
+                this.style.transform = 'scale(1)';
+                setTimeout(() => {
+                    if (!this.parentElement.querySelector('.explanation.show')) {
+                        this.style.backgroundColor = '';
+                    }
+                }, 150);
+            }, {passive: true});
+
+            element.addEventListener('click', function(e) {
+                e.preventDefault();
                 const explanationId = this.getAttribute('data-explanation');
                 const explanation = document.getElementById(explanationId);
                 
@@ -1423,11 +1746,25 @@
                     document.querySelectorAll('.explanation.show').forEach(function(exp) {
                         if (exp !== explanation) {
                             exp.classList.remove('show');
+                            // Reset background color of other clickable elements
+                            const otherClickables = document.querySelectorAll('.underline-clickable');
+                            otherClickables.forEach(clickable => {
+                                if (clickable !== element) {
+                                    clickable.style.backgroundColor = '';
+                                }
+                            });
                         }
                     });
                     
                     // Toggle current explanation
                     explanation.classList.toggle('show');
+                    
+                    // Update background color based on state
+                    if (explanation.classList.contains('show')) {
+                        this.style.backgroundColor = '#fff3cd';
+                    } else {
+                        this.style.backgroundColor = '';
+                    }
                     
                     // Scroll to explanation if it's now visible
                     if (explanation.classList.contains('show')) {
@@ -1436,11 +1773,38 @@
                                 behavior: 'smooth',
                                 block: 'nearest'
                             });
-                        }, 100);
+                        }, 150);
                     }
                 }
             });
+
+            // Add keyboard support
+            element.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    this.click();
+                }
+            });
+
+            // Make elements focusable for keyboard navigation
+            element.setAttribute('tabindex', '0');
+            element.setAttribute('role', 'button');
+            element.setAttribute('aria-expanded', 'false');
         });
+
+        // Throttle function for better performance
+        function throttle(func, limit) {
+            let inThrottle;
+            return function() {
+                const args = arguments;
+                const context = this;
+                if (!inThrottle) {
+                    func.apply(context, args);
+                    inThrottle = true;
+                    setTimeout(() => inThrottle = false, limit);
+                }
+            }
+        }
 
         // Highlight current section in TOC
         function highlightCurrentSection() {
@@ -1469,8 +1833,8 @@
             });
         }
 
-        // Add scroll event listener for TOC highlighting
-        window.addEventListener('scroll', highlightCurrentSection);
+        // Add throttled scroll event listener for TOC highlighting
+        window.addEventListener('scroll', throttle(highlightCurrentSection, 100), {passive: true});
         
         // Initial call to highlight current section
         highlightCurrentSection();
@@ -1502,9 +1866,48 @@
             return allValid;
         }
 
+        // Enhanced mobile viewport handling
+        function handleViewportChanges() {
+            const vh = window.innerHeight * 0.01;
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+            
+            // Close sidebar if orientation changes to landscape on mobile
+            if (window.innerWidth > 768 && sidebar.classList.contains('open')) {
+                sidebar.classList.remove('open');
+                mainContent.classList.remove('sidebar-open');
+                overlay.classList.remove('show');
+            }
+        }
+
+        // Handle orientation changes and resize events
+        window.addEventListener('resize', throttle(handleViewportChanges, 150), {passive: true});
+        window.addEventListener('orientationchange', function() {
+            setTimeout(handleViewportChanges, 100);
+        }, {passive: true});
+
+        // Prevent zoom on double tap for iOS
+        let lastTouchEnd = 0;
+        document.addEventListener('touchend', function(e) {
+            const now = (new Date()).getTime();
+            if (now - lastTouchEnd <= 300) {
+                e.preventDefault();
+            }
+            lastTouchEnd = now;
+        }, {passive: false});
+
         // Run validation on page load
         document.addEventListener('DOMContentLoaded', function() {
             validateExplanations();
+            handleViewportChanges();
+            
+            // Initialize ARIA attributes for explanations
+            document.querySelectorAll('.explanation').forEach(function(explanation) {
+                const clickableElement = document.querySelector(`[data-explanation="${explanation.id}"]`);
+                if (clickableElement) {
+                    clickableElement.setAttribute('aria-controls', explanation.id);
+                    explanation.setAttribute('aria-hidden', 'true');
+                }
+            });
             
             // Also check if MathJax is loaded properly
             if (typeof MathJax !== 'undefined') {
