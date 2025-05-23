@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover">
     <title>金融学核心知识点解析</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -11,6 +11,37 @@
             tex: {
                 inlineMath: [['$', '$'], ['\\(', '\\)']],
                 displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            chtml: {
+                scale: 0.9,
+                minScale: 0.5,
+                mtextInheritFont: true,
+                merrorInheritFont: true
+            },
+            options: {
+                menuOptions: {
+                    settings: {
+                        assistiveMml: true,
+                        collapsible: true,
+                        explorer: true
+                    }
+                }
+            },
+            startup: {
+                ready() {
+                    MathJax.startup.defaultReady();
+                    MathJax.startup.promise.then(() => {
+                        // Make formulas responsive on mobile
+                        if (window.innerWidth <= 768) {
+                            document.querySelectorAll('.MathJax').forEach(el => {
+                                el.style.fontSize = '0.85em';
+                                el.style.maxWidth = '100%';
+                                el.style.overflowX = 'auto';
+                                el.style.overflowY = 'hidden';
+                            });
+                        }
+                    });
+                }
             }
         };
     </script>
@@ -30,6 +61,7 @@
             -webkit-tap-highlight-color: transparent;
             touch-action: manipulation;
             --vh: 1vh;
+            overflow-x: hidden;
         }
 
         .container {
@@ -164,6 +196,7 @@
             word-wrap: break-word;
             overflow-wrap: break-word;
             line-height: 1.7;
+            overflow-x: hidden;
         }
 
         h1 {
@@ -248,6 +281,10 @@
             text-align: center;
             box-shadow: 0 2px 5px rgba(0,0,0,0.05);
             line-height: 1.6;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            max-width: 100%;
+            word-wrap: break-word;
         }
 
         .example-box {
@@ -331,7 +368,6 @@
         table {
             width: 100%;
             border-collapse: collapse;
-            min-width: 600px;
             background: white;
         }
 
@@ -339,8 +375,8 @@
             border: 1px solid #ddd;
             padding: 14px 16px;
             text-align: center;
-            white-space: nowrap;
-            min-width: 120px;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
         }
 
         th {
@@ -379,16 +415,22 @@
         p {
             margin: 18px 0;
             line-height: 1.7;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
         }
 
         ul, ol {
             margin: 20px 0;
             padding-left: 30px;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
         }
 
         li {
             margin: 8px 0;
             line-height: 1.6;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
         }
 
         .content > * + * {
@@ -407,6 +449,46 @@
             padding: 15px 20px;
             border-left: 4px solid #e9ecef;
             background: #f8f9fa;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        /* Comprehensive mobile overflow prevention */
+        * {
+            max-width: 100%;
+            box-sizing: border-box;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        /* Enhanced text breaking for long content */
+        .content, .content * {
+            word-break: break-word;
+            hyphens: auto;
+            -webkit-hyphens: auto;
+            -ms-hyphens: auto;
+        }
+
+        /* Force break long URLs and text strings */
+        .content a,
+        .content code,
+        .content pre {
+            word-break: break-all;
+            overflow-wrap: anywhere;
+        }
+
+        /* Ensure MathJax formulas are responsive */
+        .MathJax_Display {
+            overflow-x: auto !important;
+            overflow-y: hidden !important;
+            max-width: 100% !important;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        mjx-container {
+            overflow-x: auto !important;
+            overflow-y: hidden !important;
+            max-width: 100% !important;
         }
 
         @media (max-width: 1024px) {
@@ -430,6 +512,8 @@
                 margin: 15px 10px;
                 padding: 25px 18px;
                 line-height: 1.8;
+                max-width: calc(100vw - 20px);
+                overflow-x: hidden;
             }
 
             .header {
@@ -473,6 +557,8 @@
                 border-radius: 6px;
                 margin: 20px 0 25px 0;
                 line-height: 1.7;
+                max-width: calc(100vw - 36px);
+                box-sizing: border-box;
             }
 
             .example-box, .thinking-box {
@@ -489,16 +575,17 @@
             .table-container {
                 margin: 20px 0 25px 0;
                 border-radius: 6px;
+                max-width: calc(100vw - 36px);
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
             }
 
             table {
                 font-size: 13px;
-                min-width: 500px;
             }
 
             th, td {
                 padding: 12px 10px;
-                min-width: 100px;
                 font-size: 13px;
             }
 
@@ -512,20 +599,31 @@
             p {
                 margin: 16px 0;
                 line-height: 1.8;
+                word-break: break-word;
+                hyphens: auto;
             }
 
             ul, ol {
                 margin: 18px 0;
                 padding-left: 25px;
+                word-break: break-word;
             }
 
             li {
                 margin: 6px 0;
                 line-height: 1.7;
+                word-break: break-word;
+                hyphens: auto;
             }
 
             .content > * + * {
                 margin-top: 18px;
+            }
+
+            /* Mobile text optimization */
+            .content {
+                text-size-adjust: 100%;
+                -webkit-text-size-adjust: 100%;
             }
         }
 
@@ -555,6 +653,8 @@
                 margin: 8px 5px;
                 padding: 20px 15px;
                 line-height: 1.9;
+                max-width: calc(100vw - 10px);
+                overflow-x: hidden;
             }
 
             h1 {
@@ -582,6 +682,8 @@
                 -webkit-overflow-scrolling: touch;
                 margin: 18px 0 22px 0;
                 line-height: 1.8;
+                max-width: calc(100vw - 30px);
+                box-sizing: border-box;
             }
 
             .example-box, .thinking-box {
@@ -599,16 +701,17 @@
             .table-container {
                 margin: 18px 0 22px 0;
                 border-radius: 4px;
+                max-width: calc(100vw - 30px);
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
             }
 
             table {
                 font-size: 12px;
-                min-width: 450px;
             }
 
             th, td {
                 padding: 10px 8px;
-                min-width: 90px;
                 font-size: 12px;
             }
 
@@ -636,20 +739,34 @@
             p {
                 margin: 15px 0;
                 line-height: 1.9;
+                word-break: break-word;
+                hyphens: auto;
+                overflow-wrap: anywhere;
             }
 
             ul, ol {
                 margin: 16px 0;
                 padding-left: 22px;
+                word-break: break-word;
             }
 
             li {
                 margin: 5px 0;
                 line-height: 1.8;
+                word-break: break-word;
+                hyphens: auto;
+                overflow-wrap: anywhere;
             }
 
             .content > * + * {
                 margin-top: 16px;
+            }
+
+            /* Aggressive text breaking for small screens */
+            .content {
+                word-break: break-word;
+                overflow-wrap: anywhere;
+                hyphens: auto;
             }
         }
 
@@ -663,6 +780,8 @@
                 margin: 5px 3px;
                 padding: 18px 12px;
                 line-height: 2.0;
+                max-width: calc(100vw - 6px);
+                overflow-x: hidden;
             }
 
             .toggle-btn {
@@ -694,6 +813,10 @@
                 padding: 12px;
                 margin: 15px 0 18px 0;
                 line-height: 1.9;
+                max-width: calc(100vw - 24px);
+                box-sizing: border-box;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
             }
 
             .example-box, .thinking-box {
@@ -710,16 +833,17 @@
 
             .table-container {
                 margin: 15px 0 18px 0;
+                max-width: calc(100vw - 24px);
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
             }
 
             table {
                 font-size: 11px;
-                min-width: 400px;
             }
 
             th, td {
                 padding: 8px 6px;
-                min-width: 80px;
                 font-size: 11px;
             }
 
@@ -733,20 +857,42 @@
             p {
                 margin: 12px 0;
                 line-height: 2.0;
+                word-break: break-word;
+                hyphens: auto;
+                overflow-wrap: anywhere;
             }
 
             ul, ol {
                 margin: 14px 0;
                 padding-left: 20px;
+                word-break: break-word;
             }
 
             li {
                 margin: 4px 0;
                 line-height: 1.9;
+                word-break: break-word;
+                hyphens: auto;
+                overflow-wrap: anywhere;
             }
 
             .content > * + * {
                 margin-top: 14px;
+            }
+
+            /* Maximum text breaking for very small screens */
+            .content, .content * {
+                word-break: break-all;
+                overflow-wrap: anywhere;
+                hyphens: auto;
+                -webkit-hyphens: auto;
+            }
+
+            /* Ensure no horizontal scroll on tiny screens */
+            body {
+                overflow-x: hidden;
+                width: 100vw;
+                max-width: 100vw;
             }
         }
     </style>
@@ -1847,6 +1993,67 @@
                     });
                 }
             });
+        });
+
+        // Responsive MathJax handling
+        function makeMathJaxResponsive() {
+            if (typeof MathJax !== 'undefined' && MathJax.startup && MathJax.startup.document) {
+                // Wait for MathJax to be ready
+                MathJax.startup.promise.then(() => {
+                    const isMobile = window.innerWidth <= 768;
+                    
+                    document.querySelectorAll('.MathJax, mjx-container').forEach(el => {
+                        if (isMobile) {
+                            el.style.fontSize = '0.85em';
+                            el.style.maxWidth = '100%';
+                            el.style.overflowX = 'auto';
+                            el.style.overflowY = 'hidden';
+                            el.style.webkitOverflowScrolling = 'touch';
+                        } else {
+                            el.style.fontSize = '';
+                            el.style.maxWidth = '';
+                            el.style.overflowX = '';
+                            el.style.overflowY = '';
+                        }
+                    });
+                });
+            }
+        }
+
+        // Mobile content optimization
+        function optimizeMobileContent() {
+            const isMobile = window.innerWidth <= 768;
+            const content = document.querySelector('.content');
+            
+            if (content) {
+                if (isMobile) {
+                    // Add mobile-specific optimizations
+                    content.style.overflowX = 'hidden';
+                    content.style.wordWrap = 'break-word';
+                    content.style.overflowWrap = 'break-word';
+                } else {
+                    // Reset for desktop
+                    content.style.overflowX = '';
+                }
+            }
+        }
+
+        // Handle window resize for responsive adjustments
+        let resizeTimeout;
+        window.addEventListener('resize', function() {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(() => {
+                makeMathJaxResponsive();
+                optimizeMobileContent();
+            }, 250);
+        });
+
+        // Initialize responsive features when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(() => {
+                makeMathJaxResponsive();
+                optimizeMobileContent();
+            }, 500);
         });
 
         // Enhanced clickable underlined text functionality with touch support
